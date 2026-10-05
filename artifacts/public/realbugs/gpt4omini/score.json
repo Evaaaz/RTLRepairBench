@@ -1,0 +1,29 @@
+{
+  "tag": "gpt4omini",
+  "n": 274,
+  "nospec": {
+    "pct": 19.3,
+    "recovered": 53,
+    "n": 274
+  },
+  "spec": {
+    "pct": 35.8,
+    "recovered": 98,
+    "n": 274
+  },
+  "speconly": {
+    "pct": 35.0,
+    "recovered": 96,
+    "n": 274
+  },
+  "intent_effect": {
+    "fixed": 54,
+    "lost": 9,
+    "mcnemar_p": 6.108279451688681e-09
+  },
+  "regen_vs_repair": {
+    "speconly_fixes_spec_misses": 31,
+    "spec_fixes_speconly_misses": 33,
+    "mcnemar_p": 0.9006532462520331
+  }
+}

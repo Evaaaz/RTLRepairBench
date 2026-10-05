@@ -1,0 +1,186 @@
+{
+  "generated_by": "code/scripts/x4_realbug_cycle1_rescore.py",
+  "models": {
+    "claude_opus_4_6": {
+      "cycle0": {
+        "discordant": [
+          21,
+          65
+        ],
+        "mcnemar_p": 0.0,
+        "n": 273,
+        "pct": {
+          "nospec": 7.7,
+          "spec": 44.7,
+          "speconly": 60.8
+        },
+        "speconly_minus_spec_pp": 16.1
+      },
+      "cycle1": {
+        "discordant": [
+          22,
+          72
+        ],
+        "mcnemar_p": 0.0,
+        "n": 273,
+        "pct": {
+          "nospec": 9.5,
+          "spec": 51.6,
+          "speconly": 70.0
+        },
+        "speconly_minus_spec_pp": 18.3
+      }
+    },
+    "claude_opus_4_8": {
+      "cycle0": {
+        "discordant": [
+          25,
+          28
+        ],
+        "mcnemar_p": 0.7838,
+        "n": 271,
+        "pct": {
+          "nospec": 28.4,
+          "spec": 62.4,
+          "speconly": 63.5
+        },
+        "speconly_minus_spec_pp": 1.1
+      },
+      "cycle1": {
+        "discordant": [
+          35,
+          28
+        ],
+        "mcnemar_p": 0.45,
+        "n": 271,
+        "pct": {
+          "nospec": 34.3,
+          "spec": 71.6,
+          "speconly": 69.0
+        },
+        "speconly_minus_spec_pp": -2.6
+      }
+    },
+    "gpt41": {
+      "cycle0": {
+        "discordant": [
+          52,
+          37
+        ],
+        "mcnemar_p": 0.1374,
+        "n": 271,
+        "pct": {
+          "nospec": 25.1,
+          "spec": 41.7,
+          "speconly": 36.2
+        },
+        "speconly_minus_spec_pp": -5.5
+      },
+      "cycle1": {
+        "discordant": [
+          61,
+          38
+        ],
+        "mcnemar_p": 0.0265,
+        "n": 271,
+        "pct": {
+          "nospec": 27.3,
+          "spec": 46.5,
+          "speconly": 38.0
+        },
+        "speconly_minus_spec_pp": -8.5
+      }
+    },
+    "gpt4omini": {
+      "cycle0": {
+        "discordant": [
+          33,
+          34
+        ],
+        "mcnemar_p": 1.0,
+        "n": 274,
+        "pct": {
+          "nospec": 17.5,
+          "spec": 35.4,
+          "speconly": 35.8
+        },
+        "speconly_minus_spec_pp": 0.4
+      },
+      "cycle1": {
+        "discordant": [
+          31,
+          37
+        ],
+        "mcnemar_p": 0.5446,
+        "n": 274,
+        "pct": {
+          "nospec": 19.0,
+          "spec": 39.1,
+          "speconly": 41.2
+        },
+        "speconly_minus_spec_pp": 2.2
+      }
+    },
+    "gpt54mini": {
+      "cycle0": {
+        "discordant": [
+          16,
+          33
+        ],
+        "mcnemar_p": 0.0213,
+        "n": 274,
+        "pct": {
+          "nospec": 26.6,
+          "spec": 46.0,
+          "speconly": 52.2
+        },
+        "speconly_minus_spec_pp": 6.2
+      },
+      "cycle1": {
+        "discordant": [
+          20,
+          35
+        ],
+        "mcnemar_p": 0.0581,
+        "n": 274,
+        "pct": {
+          "nospec": 29.6,
+          "spec": 51.5,
+          "speconly": 56.9
+        },
+        "speconly_minus_spec_pp": 5.5
+      }
+    },
+    "gpt55": {
+      "cycle0": {
+        "discordant": [
+          19,
+          18
+        ],
+        "mcnemar_p": 1.0,
+        "n": 260,
+        "pct": {
+          "nospec": 48.8,
+          "spec": 70.8,
+          "speconly": 70.4
+        },
+        "speconly_minus_spec_pp": -0.4
+      },
+      "cycle1": {
+        "discordant": [
+          24,
+          12
+        ],
+        "mcnemar_p": 0.0652,
+        "n": 260,
+        "pct": {
+          "nospec": 57.3,
+          "spec": 81.5,
+          "speconly": 76.9
+        },
+        "speconly_minus_spec_pp": -4.6
+      }
+    }
+  },
+  "note": "Same retained candidates as the panel; only the comparison start cycle changes. cycle0 is the scorer the panel shipped with, cycle1 guards the pre-initialization compare that the oracle appendix identifies."
+}

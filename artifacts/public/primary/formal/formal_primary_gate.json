@@ -1,0 +1,367 @@
+{
+  "arms": {
+    "spec0_loc0": {
+      "conflicts": [],
+      "definitive_formal_results": 76,
+      "inconclusive_simulation": [
+        {
+          "arm": "spec0_loc0",
+          "case_id": "main_0009",
+          "simulation_status": "COMPILE_FAIL"
+        },
+        {
+          "arm": "spec0_loc0",
+          "case_id": "main_0045",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec0_loc0",
+          "case_id": "main_0010",
+          "simulation_status": "COMPILE_FAIL"
+        },
+        {
+          "arm": "spec0_loc0",
+          "case_id": "main_0073",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec0_loc0",
+          "case_id": "main_0074",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec0_loc0",
+          "case_id": "main_0008",
+          "simulation_status": "COMPILE_FAIL"
+        },
+        {
+          "arm": "spec0_loc0",
+          "case_id": "main_0017",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec0_loc0",
+          "case_id": "main_0072",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec0_loc0",
+          "case_id": "main_0018",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec0_loc0",
+          "case_id": "main_0052",
+          "simulation_status": "NOT_RUN"
+        }
+      ],
+      "minimum_definitive": 77,
+      "passed": false,
+      "records": 85
+    },
+    "spec0_loc1": {
+      "conflicts": [],
+      "definitive_formal_results": 79,
+      "inconclusive_simulation": [
+        {
+          "arm": "spec0_loc1",
+          "case_id": "main_0017",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec0_loc1",
+          "case_id": "main_0008",
+          "simulation_status": "COMPILE_FAIL"
+        },
+        {
+          "arm": "spec0_loc1",
+          "case_id": "main_0046",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec0_loc1",
+          "case_id": "main_0047",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec0_loc1",
+          "case_id": "main_0070",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec0_loc1",
+          "case_id": "main_0043",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec0_loc1",
+          "case_id": "main_0081",
+          "simulation_status": "NOT_RUN"
+        }
+      ],
+      "minimum_definitive": 77,
+      "passed": false,
+      "records": 85
+    },
+    "spec1_loc0": {
+      "conflicts": [],
+      "definitive_formal_results": 78,
+      "inconclusive_simulation": [
+        {
+          "arm": "spec1_loc0",
+          "case_id": "main_0033",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec1_loc0",
+          "case_id": "main_0010",
+          "simulation_status": "COMPILE_FAIL"
+        },
+        {
+          "arm": "spec1_loc0",
+          "case_id": "main_0049",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec1_loc0",
+          "case_id": "main_0074",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec1_loc0",
+          "case_id": "main_0008",
+          "simulation_status": "COMPILE_FAIL"
+        },
+        {
+          "arm": "spec1_loc0",
+          "case_id": "main_0072",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec1_loc0",
+          "case_id": "main_0073",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec1_loc0",
+          "case_id": "main_0071",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec1_loc0",
+          "case_id": "main_0009",
+          "simulation_status": "COMPILE_FAIL"
+        }
+      ],
+      "minimum_definitive": 77,
+      "passed": false,
+      "records": 85
+    },
+    "spec1_loc1": {
+      "conflicts": [],
+      "definitive_formal_results": 83,
+      "inconclusive_simulation": [
+        {
+          "arm": "spec1_loc1",
+          "case_id": "main_0071",
+          "simulation_status": "NOT_RUN"
+        },
+        {
+          "arm": "spec1_loc1",
+          "case_id": "main_0010",
+          "simulation_status": "COMPILE_FAIL"
+        },
+        {
+          "arm": "spec1_loc1",
+          "case_id": "main_0009",
+          "simulation_status": "COMPILE_FAIL"
+        },
+        {
+          "arm": "spec1_loc1",
+          "case_id": "main_0008",
+          "simulation_status": "COMPILE_FAIL"
+        },
+        {
+          "arm": "spec1_loc1",
+          "case_id": "main_0072",
+          "simulation_status": "NOT_RUN"
+        }
+      ],
+      "minimum_definitive": 77,
+      "passed": false,
+      "records": 85
+    }
+  },
+  "conflicts": [],
+  "expected_cases_per_arm": 85,
+  "gate": "formal_primary_coverage",
+  "inconclusive_simulation": [
+    {
+      "arm": "spec0_loc0",
+      "case_id": "main_0009",
+      "simulation_status": "COMPILE_FAIL"
+    },
+    {
+      "arm": "spec0_loc0",
+      "case_id": "main_0045",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec0_loc0",
+      "case_id": "main_0010",
+      "simulation_status": "COMPILE_FAIL"
+    },
+    {
+      "arm": "spec0_loc0",
+      "case_id": "main_0073",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec0_loc0",
+      "case_id": "main_0074",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec0_loc0",
+      "case_id": "main_0008",
+      "simulation_status": "COMPILE_FAIL"
+    },
+    {
+      "arm": "spec0_loc0",
+      "case_id": "main_0017",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec0_loc0",
+      "case_id": "main_0072",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec0_loc0",
+      "case_id": "main_0018",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec0_loc0",
+      "case_id": "main_0052",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec1_loc0",
+      "case_id": "main_0033",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec1_loc0",
+      "case_id": "main_0010",
+      "simulation_status": "COMPILE_FAIL"
+    },
+    {
+      "arm": "spec1_loc0",
+      "case_id": "main_0049",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec1_loc0",
+      "case_id": "main_0074",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec1_loc0",
+      "case_id": "main_0008",
+      "simulation_status": "COMPILE_FAIL"
+    },
+    {
+      "arm": "spec1_loc0",
+      "case_id": "main_0072",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec1_loc0",
+      "case_id": "main_0073",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec1_loc0",
+      "case_id": "main_0071",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec1_loc0",
+      "case_id": "main_0009",
+      "simulation_status": "COMPILE_FAIL"
+    },
+    {
+      "arm": "spec0_loc1",
+      "case_id": "main_0017",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec0_loc1",
+      "case_id": "main_0008",
+      "simulation_status": "COMPILE_FAIL"
+    },
+    {
+      "arm": "spec0_loc1",
+      "case_id": "main_0046",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec0_loc1",
+      "case_id": "main_0047",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec0_loc1",
+      "case_id": "main_0070",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec0_loc1",
+      "case_id": "main_0043",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec0_loc1",
+      "case_id": "main_0081",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec1_loc1",
+      "case_id": "main_0071",
+      "simulation_status": "NOT_RUN"
+    },
+    {
+      "arm": "spec1_loc1",
+      "case_id": "main_0010",
+      "simulation_status": "COMPILE_FAIL"
+    },
+    {
+      "arm": "spec1_loc1",
+      "case_id": "main_0009",
+      "simulation_status": "COMPILE_FAIL"
+    },
+    {
+      "arm": "spec1_loc1",
+      "case_id": "main_0008",
+      "simulation_status": "COMPILE_FAIL"
+    },
+    {
+      "arm": "spec1_loc1",
+      "case_id": "main_0072",
+      "simulation_status": "NOT_RUN"
+    }
+  ],
+  "malformed_record_indexes": [],
+  "minimum_definitive_per_arm": 77,
+  "passed": false,
+  "public_document_sha256": "4b55d5e1812e8ed2e3ae5c7b2f6b2bf092327e8d3ec5035537611ebf3f3bc543",
+  "reporting_mode": "formal_where_supported_plus_independent_simulation_fallback",
+  "required_arms": [
+    "spec0_loc0",
+    "spec1_loc0",
+    "spec0_loc1",
+    "spec1_loc1"
+  ],
+  "schema_version": 1
+}

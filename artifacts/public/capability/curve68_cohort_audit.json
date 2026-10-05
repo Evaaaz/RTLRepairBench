@@ -1,0 +1,1058 @@
+{
+  "schema_version": 1,
+  "generated_by": "code/scripts/second_model_capability_curve.py",
+  "status": "verified_exact_case_arm_roster",
+  "scoring_rule": "strict_formal_proved_only_for_all_models",
+  "cohort_manifest": {
+    "path": "configs/vericodegen/curve68_manifest.json",
+    "sha256": "0f310b65b8355e5377f66208ab8429f3b70eb8d6461e9a697f32d9fae0928c71",
+    "cohort": "retained_equivalence_harness_scheduled_cohort",
+    "count": 68,
+    "case_ids_sha256": "7db08fda17e8a5cd0aeecca6e040faed37da9816ad2e048c02c13cf72ac2b65e"
+  },
+  "cohort_relationship": {
+    "formal_intersection_count": 68,
+    "formal_intersection_case_ids_sha256": "f23d72278fc1b9174c47eadc41613390bb26d84d4ff49cd4bbba9e51878c6f57",
+    "overlap_count": 52,
+    "identical": false,
+    "curve_only_case_ids": [
+      "main_0017",
+      "main_0018",
+      "main_0026",
+      "main_0033",
+      "main_0043",
+      "main_0045",
+      "main_0046",
+      "main_0047",
+      "main_0049",
+      "main_0052",
+      "main_0064",
+      "main_0071",
+      "main_0072",
+      "main_0073",
+      "main_0074",
+      "main_0081"
+    ],
+    "formal_only_case_ids": [
+      "main_0000",
+      "main_0001",
+      "main_0002",
+      "main_0003",
+      "main_0016",
+      "main_0021",
+      "main_0022",
+      "main_0028",
+      "main_0053",
+      "main_0054",
+      "main_0055",
+      "main_0056",
+      "main_0061",
+      "main_0068",
+      "main_0069",
+      "main_0076"
+    ]
+  },
+  "source_bindings": [
+    {
+      "model": "nvcf/meta/llama-3.3-70b-instruct",
+      "results": {
+        "path": "generated/second_model/results.json",
+        "sha256": "b2abb7cee2f5b16b23fe73bb1c3c26b177ec43356a121580adfaaca80a734ada",
+        "records": 272
+      },
+      "verdicts": {
+        "path": "generated/second_model/verdicts.jsonl",
+        "sha256": "de5d95590096aeade14507ed34e5042b3bf8b21f243c86ba71d8da5bcd5dae62",
+        "records": 272
+      },
+      "observed_case_count": 68,
+      "observed_case_ids_sha256": "7db08fda17e8a5cd0aeecca6e040faed37da9816ad2e048c02c13cf72ac2b65e",
+      "exact_case_arm_roster": true,
+      "parsed_cells": 272,
+      "verdict_distribution": {
+        "COUNTEREXAMPLE": 139,
+        "ERROR": 2,
+        "PROVED": 131
+      },
+      "scoring_rule": "PROVED=true; COUNTEREXAMPLE/ERROR/NO_PARSE=false",
+      "cohort_selection_evidence": {
+        "rule": "case has a retained historical equivalence harness source directory",
+        "case_harnesses": [
+          {
+            "case_id": "main_0004",
+            "srcdir": "generated/formal/candidates/call-0089e9c59cb93aba9f4c46c4/formal/pdr/src",
+            "equiv_top_sha256": "e88e654570da7dd5b6ea127c95468368fcafed0eeced97aa493395b9181da7ce",
+            "golden_sha256": "c840cc7b652ddf3525031da72eb63adb580ca9c63b71de22c7d77474d3c82af2"
+          },
+          {
+            "case_id": "main_0005",
+            "srcdir": "generated/formal/candidates/call-a12c9c920cb5c2f291b52643/formal/pdr/src",
+            "equiv_top_sha256": "e88e654570da7dd5b6ea127c95468368fcafed0eeced97aa493395b9181da7ce",
+            "golden_sha256": "c840cc7b652ddf3525031da72eb63adb580ca9c63b71de22c7d77474d3c82af2"
+          },
+          {
+            "case_id": "main_0006",
+            "srcdir": "generated/formal/candidates/call-255f8bfa092786517046f37c/formal/pdr/src",
+            "equiv_top_sha256": "031c19346392260283936a5afcf8c17f03ce800cba2b09aba166622cc35043c2",
+            "golden_sha256": "2731e82b23a3e4a124e2fee72cc104b46907efb22c4d5710e1202943aeb5fe96"
+          },
+          {
+            "case_id": "main_0007",
+            "srcdir": "generated/formal/candidates/call-2e1979b05533c4dfce5b8f16/formal/pdr/src",
+            "equiv_top_sha256": "031c19346392260283936a5afcf8c17f03ce800cba2b09aba166622cc35043c2",
+            "golden_sha256": "2731e82b23a3e4a124e2fee72cc104b46907efb22c4d5710e1202943aeb5fe96"
+          },
+          {
+            "case_id": "main_0008",
+            "srcdir": "generated/formal/candidates/call-24ab361d0daeeeb0854cb867/formal/pdr/src",
+            "equiv_top_sha256": "a00945e3f25ef47a359a99b7f64b31bd8c6ae6b0edbb08c15fb220184d9fa235",
+            "golden_sha256": "30670e2208baf7a56bdce5bf9ff7fbaa67cc6b017ef5252d82b54f15c077a2e3"
+          },
+          {
+            "case_id": "main_0009",
+            "srcdir": "generated/formal/candidates/call-5aa47f87eb68320c02fb6caa/formal/pdr/src",
+            "equiv_top_sha256": "a00945e3f25ef47a359a99b7f64b31bd8c6ae6b0edbb08c15fb220184d9fa235",
+            "golden_sha256": "30670e2208baf7a56bdce5bf9ff7fbaa67cc6b017ef5252d82b54f15c077a2e3"
+          },
+          {
+            "case_id": "main_0010",
+            "srcdir": "generated/formal/candidates/call-366a87f60843dbf2e5bbc3c1/formal/pdr/src",
+            "equiv_top_sha256": "a00945e3f25ef47a359a99b7f64b31bd8c6ae6b0edbb08c15fb220184d9fa235",
+            "golden_sha256": "30670e2208baf7a56bdce5bf9ff7fbaa67cc6b017ef5252d82b54f15c077a2e3"
+          },
+          {
+            "case_id": "main_0011",
+            "srcdir": "generated/formal/candidates/call-2c41d66b3d1cca138fe7c04d/formal/pdr/src",
+            "equiv_top_sha256": "8ae8a384903bd5895204cb1daf62b4b4396f59fd0d7c804ecb5f0294ec351059",
+            "golden_sha256": "efc554e609e87ca220785dc3d2b6da51861cb49697f31a51c02d65d627cd1f95"
+          },
+          {
+            "case_id": "main_0012",
+            "srcdir": "generated/formal/candidates/call-7717f8ec9fd03972b6b5e3c3/formal/pdr/src",
+            "equiv_top_sha256": "8ae8a384903bd5895204cb1daf62b4b4396f59fd0d7c804ecb5f0294ec351059",
+            "golden_sha256": "efc554e609e87ca220785dc3d2b6da51861cb49697f31a51c02d65d627cd1f95"
+          },
+          {
+            "case_id": "main_0013",
+            "srcdir": "generated/formal/candidates/call-38700fefd2321ae2b21123a9/formal/pdr/src",
+            "equiv_top_sha256": "8ae8a384903bd5895204cb1daf62b4b4396f59fd0d7c804ecb5f0294ec351059",
+            "golden_sha256": "efc554e609e87ca220785dc3d2b6da51861cb49697f31a51c02d65d627cd1f95"
+          },
+          {
+            "case_id": "main_0014",
+            "srcdir": "generated/formal/candidates/call-2ddd201b896988809120429f/formal/pdr/src",
+            "equiv_top_sha256": "1f2e8ced0f5585954fe701a3e878fb99da11b16ace84778f829d436a0adde6bd",
+            "golden_sha256": "35f0e797b4bd8301dcf76c010d27d12b65f9068f4612ae88951810ac6b218682"
+          },
+          {
+            "case_id": "main_0015",
+            "srcdir": "generated/formal/candidates/call-3859481a9f4e9355ebd7a7d4/formal/pdr/src",
+            "equiv_top_sha256": "8070369651cdc4ea0d0d023a28705c0f3ade2fb2f6d84a44729c0a2bdb1f883a",
+            "golden_sha256": "26d9dd3e47a6f29d80afe12337e405da7b466e9b0f248e4f15ab41bf3c9e6eb5"
+          },
+          {
+            "case_id": "main_0017",
+            "srcdir": "generated/formal/candidates/call-1b2e42bec907744408b26d68/formal/pdr/src",
+            "equiv_top_sha256": "23120f07fa1186d47a86b88dc9945914e215bf352e5f0f92bac67e31101b080f",
+            "golden_sha256": "19dae650c9cfd254728bca2063aa325d73603867b49b057e3d843fd8aba10175"
+          },
+          {
+            "case_id": "main_0018",
+            "srcdir": "generated/formal/candidates/call-29955aa393ff5618033481f8/formal/pdr/src",
+            "equiv_top_sha256": "23120f07fa1186d47a86b88dc9945914e215bf352e5f0f92bac67e31101b080f",
+            "golden_sha256": "19dae650c9cfd254728bca2063aa325d73603867b49b057e3d843fd8aba10175"
+          },
+          {
+            "case_id": "main_0019",
+            "srcdir": "generated/formal/candidates/call-41e2d74a6a9e12010f99c0ff/formal/pdr/src",
+            "equiv_top_sha256": "abe4aa4e042a42a624200111edc4bdbaa98d4542b3c7ccd90890b7d6f2f99607",
+            "golden_sha256": "8b51ec25a2521d641025500875a1f669df94080e3e0a481468682bf639b04924"
+          },
+          {
+            "case_id": "main_0020",
+            "srcdir": "generated/formal/candidates/call-4d17873b026ceee54f7142a7/formal/pdr/src",
+            "equiv_top_sha256": "abe4aa4e042a42a624200111edc4bdbaa98d4542b3c7ccd90890b7d6f2f99607",
+            "golden_sha256": "8b51ec25a2521d641025500875a1f669df94080e3e0a481468682bf639b04924"
+          },
+          {
+            "case_id": "main_0023",
+            "srcdir": "generated/formal/candidates/call-7548e6a99e4759330097e860/formal/pdr/src",
+            "equiv_top_sha256": "765be06024d9d4e7b437b2905fe0536accd3f01d3af6c20d642dde181a6bde13",
+            "golden_sha256": "a2c8ec013874d852532d8856951e2ac0eb40cfc58956181b0a2b7796f469dc57"
+          },
+          {
+            "case_id": "main_0024",
+            "srcdir": "generated/formal/candidates/call-0a47e8ca75e7cfb820a56b6e/formal/pdr/src",
+            "equiv_top_sha256": "a7a41201cb7844a7fec838fc533b55d198fbc3b9a0cf5554f5133d87850632cb",
+            "golden_sha256": "dedf937fde2cf19fa001f195d4b6d84d03f5b605f2668fc73914bcd3a1bb1602"
+          },
+          {
+            "case_id": "main_0025",
+            "srcdir": "generated/formal/candidates/call-0219866a69ab01b8d9127566/formal/pdr/src",
+            "equiv_top_sha256": "a7a41201cb7844a7fec838fc533b55d198fbc3b9a0cf5554f5133d87850632cb",
+            "golden_sha256": "dedf937fde2cf19fa001f195d4b6d84d03f5b605f2668fc73914bcd3a1bb1602"
+          },
+          {
+            "case_id": "main_0026",
+            "srcdir": "generated/formal/candidates/call-40e394d7c0c1047d05f35fbc/formal/pdr/src",
+            "equiv_top_sha256": "f12095697ed209e9a4d800bc9b7f77e8198e0e0afbcf57a07bcf62adb9dfb69c",
+            "golden_sha256": "88452d5d191d48e1b235c81c1b399badf5a64967c1bf48893aee0a31854b138c"
+          },
+          {
+            "case_id": "main_0027",
+            "srcdir": "generated/formal/candidates/call-6c6465274d0b478900310dd5/formal/pdr/src",
+            "equiv_top_sha256": "28e7c9ebc28f3c01e05d2d1787147562d1113ce4bea6d9f4cf69f363b146a314",
+            "golden_sha256": "e4ab335da8a95e5fdac73eca8caf8ad575e8e1c8d460b20d2a3f4cb23ea2ac83"
+          },
+          {
+            "case_id": "main_0029",
+            "srcdir": "generated/formal/candidates/call-30268c865842067bbf276b09/formal/pdr/src",
+            "equiv_top_sha256": "031c19346392260283936a5afcf8c17f03ce800cba2b09aba166622cc35043c2",
+            "golden_sha256": "e6b93fb58d1a087c6715f116e88532657a54257c32ca3365857df539d3a01faf"
+          },
+          {
+            "case_id": "main_0030",
+            "srcdir": "generated/formal/candidates/call-5673de864b0674ff350e000e/formal/pdr/src",
+            "equiv_top_sha256": "031c19346392260283936a5afcf8c17f03ce800cba2b09aba166622cc35043c2",
+            "golden_sha256": "e6b93fb58d1a087c6715f116e88532657a54257c32ca3365857df539d3a01faf"
+          },
+          {
+            "case_id": "main_0031",
+            "srcdir": "generated/formal/candidates/call-18c8715c9b247155989db9fd/formal/pdr/src",
+            "equiv_top_sha256": "75caa0f425d579d5840e26a577335db9674ccb30ef0455330e0bcc4c3164e0e5",
+            "golden_sha256": "9ff656e41f8cd57212ba861245ca55e8f6ba20e4ed6e8b0cab17d339c924ebfd"
+          },
+          {
+            "case_id": "main_0032",
+            "srcdir": "generated/formal/candidates/call-193bfe06bed54841ee038b9a/formal/pdr/src",
+            "equiv_top_sha256": "34fea3b91bd6d37757f6c9bacd4b3fa36713491fcc7d1549686c5f365ee27c4a",
+            "golden_sha256": "4b861f2ffffeb903861f85b04cd3f4096c617743dd8e36faf4573d3f1142a435"
+          },
+          {
+            "case_id": "main_0033",
+            "srcdir": "generated/formal/candidates/call-2f52c34f1802dc2eaab4a595/formal/pdr/src",
+            "equiv_top_sha256": "34fea3b91bd6d37757f6c9bacd4b3fa36713491fcc7d1549686c5f365ee27c4a",
+            "golden_sha256": "4b861f2ffffeb903861f85b04cd3f4096c617743dd8e36faf4573d3f1142a435"
+          },
+          {
+            "case_id": "main_0034",
+            "srcdir": "generated/formal/candidates/call-a6ba814d1550d3dcd4571def/formal/pdr/src",
+            "equiv_top_sha256": "0e1611018c6c4e93922bf000e878786b7c881c34f1007c7c29e792b0e432555a",
+            "golden_sha256": "502f2f6adc9ed25d7521ade7707f8117282c9ab31bf6d76b1c567f4a6df98c5f"
+          },
+          {
+            "case_id": "main_0035",
+            "srcdir": "generated/formal/candidates/call-12156b60bcdb3557766a5624/formal/pdr/src",
+            "equiv_top_sha256": "9b4284274d2422bf0aba4ee8da27a67ee518685c0d4ef0cf4c14c13e227769c5",
+            "golden_sha256": "98f214a7ae5aa2f732c0f7235bf50998bfa26ed405d401d1950f2976134b7d80"
+          },
+          {
+            "case_id": "main_0036",
+            "srcdir": "generated/formal/candidates/call-bef2017fb5c4c1725078d275/formal/pdr/src",
+            "equiv_top_sha256": "9b4284274d2422bf0aba4ee8da27a67ee518685c0d4ef0cf4c14c13e227769c5",
+            "golden_sha256": "98f214a7ae5aa2f732c0f7235bf50998bfa26ed405d401d1950f2976134b7d80"
+          },
+          {
+            "case_id": "main_0037",
+            "srcdir": "generated/formal/candidates/call-34bd7414377db738e3fb3054/formal/pdr/src",
+            "equiv_top_sha256": "37e48151b78d967bc7da376ba5f3728483fbd0e4caeaed33e42ed2d71b3b4821",
+            "golden_sha256": "1555675294f651f6ff2687aa1b8a7a037e44a36abd33fe3ac8fb8dde1f1ec617"
+          },
+          {
+            "case_id": "main_0038",
+            "srcdir": "generated/formal/candidates/call-1fa72f69e92918ec9b6c7664/formal/pdr/src",
+            "equiv_top_sha256": "37e48151b78d967bc7da376ba5f3728483fbd0e4caeaed33e42ed2d71b3b4821",
+            "golden_sha256": "1555675294f651f6ff2687aa1b8a7a037e44a36abd33fe3ac8fb8dde1f1ec617"
+          },
+          {
+            "case_id": "main_0039",
+            "srcdir": "generated/formal/candidates/call-52846af157fa4efa0f043c21/formal/pdr/src",
+            "equiv_top_sha256": "93ad0d0a82395a454a7b1c9213070705e40043d24bf6103b21d5906f044f24a9",
+            "golden_sha256": "80880524c07707e4ea3d32f549e7a868ec5b759a43e12d69f75ba203ac4a3449"
+          },
+          {
+            "case_id": "main_0040",
+            "srcdir": "generated/formal/candidates/call-0e7f7053020d1cf2aed8766f/formal/pdr/src",
+            "equiv_top_sha256": "832672d3b446b240cf264900af6924892d3afad3a9b252eb0848ea209065c557",
+            "golden_sha256": "4556e30b0c146a3c6054d78839c4af0abb3349f9263a6fe2829e81adb3cb9890"
+          },
+          {
+            "case_id": "main_0041",
+            "srcdir": "generated/formal/candidates/call-22671f8cf9b3af0863563884/formal/pdr/src",
+            "equiv_top_sha256": "109a5624a68a57495da554a2325ab20d80f033fd629424de4c82e5b31a78f917",
+            "golden_sha256": "a6f8ffd84e6d84581567bff92058d4b2f309d3fffccfd985364e5e6e50359844"
+          },
+          {
+            "case_id": "main_0042",
+            "srcdir": "generated/formal/candidates/call-0ffd7bf3a5a4f27d91718b4f/formal/pdr/src",
+            "equiv_top_sha256": "109a5624a68a57495da554a2325ab20d80f033fd629424de4c82e5b31a78f917",
+            "golden_sha256": "a6f8ffd84e6d84581567bff92058d4b2f309d3fffccfd985364e5e6e50359844"
+          },
+          {
+            "case_id": "main_0043",
+            "srcdir": "generated/formal/candidates/call-0fb3931243bd1052e0e5f6fe/formal/pdr/src",
+            "equiv_top_sha256": "f4dce3e9ba7da434d6700d7ec46e90f74bfe578e3fd61514f738220b43a7b395",
+            "golden_sha256": "a74c9c677fe394e9b0cc52fcfac48d9703b2f81c0b3be622b12c51a7c7171380"
+          },
+          {
+            "case_id": "main_0044",
+            "srcdir": "generated/formal/candidates/call-1b519030c20a7bf2e0931d88/formal/pdr/src",
+            "equiv_top_sha256": "f4dce3e9ba7da434d6700d7ec46e90f74bfe578e3fd61514f738220b43a7b395",
+            "golden_sha256": "a74c9c677fe394e9b0cc52fcfac48d9703b2f81c0b3be622b12c51a7c7171380"
+          },
+          {
+            "case_id": "main_0045",
+            "srcdir": "generated/formal/candidates/call-0de87b82a007e7962f021943/formal/pdr/src",
+            "equiv_top_sha256": "23120f07fa1186d47a86b88dc9945914e215bf352e5f0f92bac67e31101b080f",
+            "golden_sha256": "41b7c5aa9f747e05c3ee371f8429931c1de3c0d4ad4a11b617bc788ed7d3bc4e"
+          },
+          {
+            "case_id": "main_0046",
+            "srcdir": "generated/formal/candidates/call-39f5c9995424bdbe1b68758b/formal/pdr/src",
+            "equiv_top_sha256": "23120f07fa1186d47a86b88dc9945914e215bf352e5f0f92bac67e31101b080f",
+            "golden_sha256": "41b7c5aa9f747e05c3ee371f8429931c1de3c0d4ad4a11b617bc788ed7d3bc4e"
+          },
+          {
+            "case_id": "main_0047",
+            "srcdir": "generated/formal/candidates/call-23128f553933b6ee1d1c72b8/formal/pdr/src",
+            "equiv_top_sha256": "23120f07fa1186d47a86b88dc9945914e215bf352e5f0f92bac67e31101b080f",
+            "golden_sha256": "41b7c5aa9f747e05c3ee371f8429931c1de3c0d4ad4a11b617bc788ed7d3bc4e"
+          },
+          {
+            "case_id": "main_0048",
+            "srcdir": "generated/formal/candidates/call-1f1cccea07becc7cace4597b/formal/pdr/src",
+            "equiv_top_sha256": "23120f07fa1186d47a86b88dc9945914e215bf352e5f0f92bac67e31101b080f",
+            "golden_sha256": "41b7c5aa9f747e05c3ee371f8429931c1de3c0d4ad4a11b617bc788ed7d3bc4e"
+          },
+          {
+            "case_id": "main_0049",
+            "srcdir": "generated/formal/candidates/call-5115613c54dc4387cc56fe4f/formal/pdr/src",
+            "equiv_top_sha256": "f59975ddc7e492394de2a402ced8ec9e51513a58588a16b05cd37ef15f7b8ce9",
+            "golden_sha256": "5df4d0e4759f37540a61996c2e9e249d57a42ab9d1f15d30e5635877892f9176"
+          },
+          {
+            "case_id": "main_0050",
+            "srcdir": "generated/formal/candidates/call-6ca5baf0704803cc3c2ccb7c/formal/pdr/src",
+            "equiv_top_sha256": "954d49cc63f495a54909d903d2e2bf98b5aacdce3b36a9ccada7f0c67564c5fa",
+            "golden_sha256": "b62f9e47408c09f85f554523e6487b6dab1a4218efa9deb8056c9e246e9bbbcd"
+          },
+          {
+            "case_id": "main_0051",
+            "srcdir": "generated/formal/candidates/call-368b2d93814790985ccc6350/formal/pdr/src",
+            "equiv_top_sha256": "954d49cc63f495a54909d903d2e2bf98b5aacdce3b36a9ccada7f0c67564c5fa",
+            "golden_sha256": "b62f9e47408c09f85f554523e6487b6dab1a4218efa9deb8056c9e246e9bbbcd"
+          },
+          {
+            "case_id": "main_0052",
+            "srcdir": "generated/formal/candidates/call-117988cd49422f9b8c9a630d/formal/pdr/src",
+            "equiv_top_sha256": "954d49cc63f495a54909d903d2e2bf98b5aacdce3b36a9ccada7f0c67564c5fa",
+            "golden_sha256": "b62f9e47408c09f85f554523e6487b6dab1a4218efa9deb8056c9e246e9bbbcd"
+          },
+          {
+            "case_id": "main_0057",
+            "srcdir": "generated/formal/candidates/call-1398eaa0082f9bad99b4b246/formal/pdr/src",
+            "equiv_top_sha256": "591440768fe116cd7b65a908a67f6d9c0ede2c81eee85efc058efaac9a97c2df",
+            "golden_sha256": "95bad89265873e92521eac9cd0e7ee4ce46146a58dc95b69286e3d05ae7e025a"
+          },
+          {
+            "case_id": "main_0058",
+            "srcdir": "generated/formal/candidates/call-224849558ba450aecabbf6fe/formal/pdr/src",
+            "equiv_top_sha256": "591440768fe116cd7b65a908a67f6d9c0ede2c81eee85efc058efaac9a97c2df",
+            "golden_sha256": "95bad89265873e92521eac9cd0e7ee4ce46146a58dc95b69286e3d05ae7e025a"
+          },
+          {
+            "case_id": "main_0059",
+            "srcdir": "generated/formal/candidates/call-1512e0ab2188b4e669e10cc5/formal/pdr/src",
+            "equiv_top_sha256": "f8e02d6a1770eb83502ac4cc107ee2b1d52c2b0198736c01229e4a3877167467",
+            "golden_sha256": "778c80301d6ef672146603b7eb9eb7bb725cabc03e03b467545cb38bfd26ba33"
+          },
+          {
+            "case_id": "main_0060",
+            "srcdir": "generated/formal/candidates/call-6604c1778cec4dd8f33e4f2f/formal/pdr/src",
+            "equiv_top_sha256": "f8e02d6a1770eb83502ac4cc107ee2b1d52c2b0198736c01229e4a3877167467",
+            "golden_sha256": "778c80301d6ef672146603b7eb9eb7bb725cabc03e03b467545cb38bfd26ba33"
+          },
+          {
+            "case_id": "main_0062",
+            "srcdir": "generated/formal/candidates/call-3ce5c5382ee92e240b6dfee2/formal/pdr/src",
+            "equiv_top_sha256": "aa2601285ff9b8986f706d7d9732ec75a93a3fb7d8cd0253f15f51e5ee4026af",
+            "golden_sha256": "d380025ca663fead1a7ca630a851eb36bb877d48c09ac2cff614834cfd35892e"
+          },
+          {
+            "case_id": "main_0063",
+            "srcdir": "generated/formal/candidates/call-30878ea927c9ccc3d7d19351/formal/pdr/src",
+            "equiv_top_sha256": "7b441ada79edcb2e5f67305c4e458913afff589a4c8c806e08003de97d7f1e8f",
+            "golden_sha256": "74bbc6975bddce8bf9d6bb9e70c7d1e12e5ce7d6c17a73631f363a84e2e84b81"
+          },
+          {
+            "case_id": "main_0064",
+            "srcdir": "generated/formal/candidates/call-1546ddd2a8256cff13eebd17/formal/pdr/src",
+            "equiv_top_sha256": "7b441ada79edcb2e5f67305c4e458913afff589a4c8c806e08003de97d7f1e8f",
+            "golden_sha256": "74bbc6975bddce8bf9d6bb9e70c7d1e12e5ce7d6c17a73631f363a84e2e84b81"
+          },
+          {
+            "case_id": "main_0065",
+            "srcdir": "generated/formal/candidates/call-31bb27b5e402dcc18e27e49b/formal/pdr/src",
+            "equiv_top_sha256": "f9e3d62f915e6b7af75f0fa06811237d4accf9de97c4c6fad1e9bf7c9af2a5c3",
+            "golden_sha256": "38300c64efa8bf6c7e146e7a176e47fef3b8ccbe7f79c1d129960223a1243dc5"
+          },
+          {
+            "case_id": "main_0066",
+            "srcdir": "generated/formal/candidates/call-195e0287ffcc738249e555d3/formal/pdr/src",
+            "equiv_top_sha256": "f9e3d62f915e6b7af75f0fa06811237d4accf9de97c4c6fad1e9bf7c9af2a5c3",
+            "golden_sha256": "38300c64efa8bf6c7e146e7a176e47fef3b8ccbe7f79c1d129960223a1243dc5"
+          },
+          {
+            "case_id": "main_0067",
+            "srcdir": "generated/formal/candidates/call-241f447fa53cde1465cbb0b0/formal/pdr/src",
+            "equiv_top_sha256": "f9e3d62f915e6b7af75f0fa06811237d4accf9de97c4c6fad1e9bf7c9af2a5c3",
+            "golden_sha256": "38300c64efa8bf6c7e146e7a176e47fef3b8ccbe7f79c1d129960223a1243dc5"
+          },
+          {
+            "case_id": "main_0071",
+            "srcdir": "generated/formal/candidates/call-02ee6bf62eae8ea9481c6dc9/formal/pdr/src",
+            "equiv_top_sha256": "f9e3d62f915e6b7af75f0fa06811237d4accf9de97c4c6fad1e9bf7c9af2a5c3",
+            "golden_sha256": "02e8e8b95d889b71b58bc8b0631df97837421a2ec7844d2ca64c2c266d9ad831"
+          },
+          {
+            "case_id": "main_0072",
+            "srcdir": "generated/formal/candidates/call-2a512ccc47097eabc99906be/formal/pdr/src",
+            "equiv_top_sha256": "f9e3d62f915e6b7af75f0fa06811237d4accf9de97c4c6fad1e9bf7c9af2a5c3",
+            "golden_sha256": "02e8e8b95d889b71b58bc8b0631df97837421a2ec7844d2ca64c2c266d9ad831"
+          },
+          {
+            "case_id": "main_0073",
+            "srcdir": "generated/formal/candidates/call-b06ca925ffd6958cf3cac9e4/formal/pdr/src",
+            "equiv_top_sha256": "f9e3d62f915e6b7af75f0fa06811237d4accf9de97c4c6fad1e9bf7c9af2a5c3",
+            "golden_sha256": "02e8e8b95d889b71b58bc8b0631df97837421a2ec7844d2ca64c2c266d9ad831"
+          },
+          {
+            "case_id": "main_0074",
+            "srcdir": "generated/formal/candidates/call-eb4d15d5a92c3b3f36f71fe2/formal/pdr/src",
+            "equiv_top_sha256": "f9e3d62f915e6b7af75f0fa06811237d4accf9de97c4c6fad1e9bf7c9af2a5c3",
+            "golden_sha256": "02e8e8b95d889b71b58bc8b0631df97837421a2ec7844d2ca64c2c266d9ad831"
+          },
+          {
+            "case_id": "main_0075",
+            "srcdir": "generated/formal/candidates/call-1f88909a12298dab19375cd9/formal/pdr/src",
+            "equiv_top_sha256": "63ee9bc453ccf24b87b865c6318f6162910b88347897d83535b81308897fe1f7",
+            "golden_sha256": "aa88971e82383088b07945cbc9721bb6748439d91379b42f748ee0f7a1142177"
+          },
+          {
+            "case_id": "main_0077",
+            "srcdir": "generated/formal/candidates/call-2df56a9d23c39aa00c54cf32/formal/pdr/src",
+            "equiv_top_sha256": "8bfc2efac88b3114f743706933a522233148146d06a8abeb4a1f815f1981c76f",
+            "golden_sha256": "995fa06d8737c933dcff7dc0163b5c2bc6cfe51ba3c6c2c697353fb3cdfbfd9b"
+          },
+          {
+            "case_id": "main_0078",
+            "srcdir": "generated/formal/candidates/call-1942e4bb04d68c8592d9c1af/formal/pdr/src",
+            "equiv_top_sha256": "8bfc2efac88b3114f743706933a522233148146d06a8abeb4a1f815f1981c76f",
+            "golden_sha256": "995fa06d8737c933dcff7dc0163b5c2bc6cfe51ba3c6c2c697353fb3cdfbfd9b"
+          },
+          {
+            "case_id": "main_0079",
+            "srcdir": "generated/formal/candidates/call-3a54c4677e1a086786736647/formal/pdr/src",
+            "equiv_top_sha256": "954d49cc63f495a54909d903d2e2bf98b5aacdce3b36a9ccada7f0c67564c5fa",
+            "golden_sha256": "71d47c45355f733ac54327c05ff6f71aec6f9f4d32155b9a035976d3c70d96e6"
+          },
+          {
+            "case_id": "main_0080",
+            "srcdir": "generated/formal/candidates/call-407a31f0364e9d244153d23e/formal/pdr/src",
+            "equiv_top_sha256": "954d49cc63f495a54909d903d2e2bf98b5aacdce3b36a9ccada7f0c67564c5fa",
+            "golden_sha256": "71d47c45355f733ac54327c05ff6f71aec6f9f4d32155b9a035976d3c70d96e6"
+          },
+          {
+            "case_id": "main_0081",
+            "srcdir": "generated/formal/candidates/call-7915185d594c3969b721b6e1/formal/pdr/src",
+            "equiv_top_sha256": "954d49cc63f495a54909d903d2e2bf98b5aacdce3b36a9ccada7f0c67564c5fa",
+            "golden_sha256": "71d47c45355f733ac54327c05ff6f71aec6f9f4d32155b9a035976d3c70d96e6"
+          },
+          {
+            "case_id": "main_0082",
+            "srcdir": "generated/formal/candidates/call-7f96b2d87f2ef29a7712e670/formal/pdr/src",
+            "equiv_top_sha256": "313bc5e2f4977a15ad3f5d8b4e99e6e966ea2dd56d8222f771e5ab5a6bf80951",
+            "golden_sha256": "d153f03f4eb35630e629fbc096340c08195a3a9f7bcc9ec1886f0a54fa0f6883"
+          },
+          {
+            "case_id": "main_0083",
+            "srcdir": "generated/formal/candidates/call-67958c1a42d167286d10c3e0/formal/pdr/src",
+            "equiv_top_sha256": "ddf4302af977460c394887f77c681eea852b69e49947e38b2b87f4189eced34e",
+            "golden_sha256": "6dc5a9dabd04ea82e1833508fae8e62bc4d1197bffda43c24a0bb423c551e787"
+          },
+          {
+            "case_id": "main_0084",
+            "srcdir": "generated/formal/candidates/call-217cede5a1717540fced7153/formal/pdr/src",
+            "equiv_top_sha256": "3aa9f680770b75d1cc7b15024e2abebebda11f3aef64ade0af77f3edc29ebf87",
+            "golden_sha256": "037c6f461763c4e58c3d0e03917ac15dc626d644261c39bf3efeb6249f78bd98"
+          }
+        ],
+        "case_harnesses_sha256": "b9f41c90e40da11b2078d591530001bc2b24654b39741540c56e590a325196fb"
+      }
+    },
+    {
+      "model": "azure/openai/gpt-4.1",
+      "results": {
+        "path": "generated/second_model/runs/azure__openai__gpt-4.1/results.json",
+        "sha256": "0933671fe21eb4571fa43926e49beab41ea8180c552c96f3915fbfc059fce4f3",
+        "records": 272
+      },
+      "verdicts": {
+        "path": "generated/second_model/runs/azure__openai__gpt-4.1/verdicts.jsonl",
+        "sha256": "aed97d3bd7484de57fb2151ad734064dcadc1c3cadbc8998fb0aea23b9c9a35a",
+        "records": 272
+      },
+      "observed_case_count": 68,
+      "observed_case_ids_sha256": "7db08fda17e8a5cd0aeecca6e040faed37da9816ad2e048c02c13cf72ac2b65e",
+      "exact_case_arm_roster": true,
+      "parsed_cells": 272,
+      "verdict_distribution": {
+        "COUNTEREXAMPLE": 103,
+        "ERROR": 2,
+        "PROVED": 167
+      },
+      "scoring_rule": "PROVED=true; COUNTEREXAMPLE/ERROR/NO_PARSE=false"
+    },
+    {
+      "model": "openai/openai/gpt-4o-mini",
+      "results": {
+        "path": "generated/second_model/runs/openai__openai__gpt-4o-mini/results.json",
+        "sha256": "b950e5590a1dad7048c8abde858c007def151ffda652b23d4924cb59ced16ada",
+        "records": 272
+      },
+      "verdicts": {
+        "path": "generated/second_model/runs/openai__openai__gpt-4o-mini/verdicts.jsonl",
+        "sha256": "cc1ac456b925221e4aeab97e85c67103b8d37aca658962882bf02687437f0b03",
+        "records": 272
+      },
+      "observed_case_count": 68,
+      "observed_case_ids_sha256": "7db08fda17e8a5cd0aeecca6e040faed37da9816ad2e048c02c13cf72ac2b65e",
+      "exact_case_arm_roster": true,
+      "parsed_cells": 272,
+      "verdict_distribution": {
+        "COUNTEREXAMPLE": 135,
+        "ERROR": 1,
+        "PROVED": 136
+      },
+      "scoring_rule": "PROVED=true; COUNTEREXAMPLE/ERROR/NO_PARSE=false"
+    },
+    {
+      "model": "OriGen_Fix (RTL-specific 7B)",
+      "results": {
+        "path": "generated/second_model/runs/origen_fix/results.json",
+        "sha256": "0a6722550e46e87909aa9d653b5f752c3b1033fa2e9a8ec367b7318155bf58ee",
+        "records": 272
+      },
+      "verdicts": {
+        "path": "generated/second_model/runs/origen_fix/verdicts.jsonl",
+        "sha256": "8424df21381663b4582af9f7713d9b0536b39e194c0519962abe64c4b37ae40f",
+        "records": 272
+      },
+      "observed_case_count": 68,
+      "observed_case_ids_sha256": "7db08fda17e8a5cd0aeecca6e040faed37da9816ad2e048c02c13cf72ac2b65e",
+      "exact_case_arm_roster": true,
+      "parsed_cells": 272,
+      "verdict_distribution": {
+        "COUNTEREXAMPLE": 145,
+        "ERROR": 3,
+        "PROVED": 124
+      },
+      "scoring_rule": "PROVED=true; COUNTEREXAMPLE/ERROR/NO_PARSE=false"
+    },
+    {
+      "model": "azure/openai/gpt-5.5",
+      "rows": {
+        "path": "generated/reports/vericodegen_full85_rows.jsonl",
+        "sha256": "182f21a4b2a722a399f426ce483eb0093085eb3fcdd161e77ee7097e98782f66",
+        "records": 450,
+        "selected_records": 272
+      },
+      "observed_case_count": 68,
+      "observed_case_ids_sha256": "7db08fda17e8a5cd0aeecca6e040faed37da9816ad2e048c02c13cf72ac2b65e",
+      "exact_case_arm_roster": true,
+      "formal_status_distribution": {
+        "COUNTEREXAMPLE": 5,
+        "MISSING": 20,
+        "PROVED": 244,
+        "TIMEOUT": 2,
+        "UNSUPPORTED": 1
+      },
+      "evidence_distribution": {
+        "http_200_model_failure": 20,
+        "independent_simulation_fallback_after_timeout": 2,
+        "independent_simulation_fallback_after_unsupported": 1,
+        "replayable_formal_counterexample": 5,
+        "unbounded_formal_proof": 244
+      },
+      "formal_definitive_cells": 249,
+      "non_formal_cells": 23,
+      "historical_hybrid_success_cells": 246,
+      "strict_formal_success_cells": 244,
+      "scoring_rule": "PROVED=true; every other formal status=false",
+      "cohort_selection_evidence": {
+        "historical_rule": "first main-study call per case with a retained formal/pdr/src/equiv_top.sv harness",
+        "derived_count": 68,
+        "derived_case_ids_sha256": "7db08fda17e8a5cd0aeecca6e040faed37da9816ad2e048c02c13cf72ac2b65e",
+        "exact_manifest_match": true,
+        "case_harnesses": [
+          {
+            "case_id": "main_0004",
+            "srcdir": "generated/formal/candidates/call-0089e9c59cb93aba9f4c46c4/formal/pdr/src",
+            "equiv_top_sha256": "e88e654570da7dd5b6ea127c95468368fcafed0eeced97aa493395b9181da7ce",
+            "golden_sha256": "c840cc7b652ddf3525031da72eb63adb580ca9c63b71de22c7d77474d3c82af2"
+          },
+          {
+            "case_id": "main_0005",
+            "srcdir": "generated/formal/candidates/call-a12c9c920cb5c2f291b52643/formal/pdr/src",
+            "equiv_top_sha256": "e88e654570da7dd5b6ea127c95468368fcafed0eeced97aa493395b9181da7ce",
+            "golden_sha256": "c840cc7b652ddf3525031da72eb63adb580ca9c63b71de22c7d77474d3c82af2"
+          },
+          {
+            "case_id": "main_0006",
+            "srcdir": "generated/formal/candidates/call-255f8bfa092786517046f37c/formal/pdr/src",
+            "equiv_top_sha256": "031c19346392260283936a5afcf8c17f03ce800cba2b09aba166622cc35043c2",
+            "golden_sha256": "2731e82b23a3e4a124e2fee72cc104b46907efb22c4d5710e1202943aeb5fe96"
+          },
+          {
+            "case_id": "main_0007",
+            "srcdir": "generated/formal/candidates/call-2e1979b05533c4dfce5b8f16/formal/pdr/src",
+            "equiv_top_sha256": "031c19346392260283936a5afcf8c17f03ce800cba2b09aba166622cc35043c2",
+            "golden_sha256": "2731e82b23a3e4a124e2fee72cc104b46907efb22c4d5710e1202943aeb5fe96"
+          },
+          {
+            "case_id": "main_0008",
+            "srcdir": "generated/formal/candidates/call-24ab361d0daeeeb0854cb867/formal/pdr/src",
+            "equiv_top_sha256": "a00945e3f25ef47a359a99b7f64b31bd8c6ae6b0edbb08c15fb220184d9fa235",
+            "golden_sha256": "30670e2208baf7a56bdce5bf9ff7fbaa67cc6b017ef5252d82b54f15c077a2e3"
+          },
+          {
+            "case_id": "main_0009",
+            "srcdir": "generated/formal/candidates/call-5aa47f87eb68320c02fb6caa/formal/pdr/src",
+            "equiv_top_sha256": "a00945e3f25ef47a359a99b7f64b31bd8c6ae6b0edbb08c15fb220184d9fa235",
+            "golden_sha256": "30670e2208baf7a56bdce5bf9ff7fbaa67cc6b017ef5252d82b54f15c077a2e3"
+          },
+          {
+            "case_id": "main_0010",
+            "srcdir": "generated/formal/candidates/call-366a87f60843dbf2e5bbc3c1/formal/pdr/src",
+            "equiv_top_sha256": "a00945e3f25ef47a359a99b7f64b31bd8c6ae6b0edbb08c15fb220184d9fa235",
+            "golden_sha256": "30670e2208baf7a56bdce5bf9ff7fbaa67cc6b017ef5252d82b54f15c077a2e3"
+          },
+          {
+            "case_id": "main_0011",
+            "srcdir": "generated/formal/candidates/call-2c41d66b3d1cca138fe7c04d/formal/pdr/src",
+            "equiv_top_sha256": "8ae8a384903bd5895204cb1daf62b4b4396f59fd0d7c804ecb5f0294ec351059",
+            "golden_sha256": "efc554e609e87ca220785dc3d2b6da51861cb49697f31a51c02d65d627cd1f95"
+          },
+          {
+            "case_id": "main_0012",
+            "srcdir": "generated/formal/candidates/call-7717f8ec9fd03972b6b5e3c3/formal/pdr/src",
+            "equiv_top_sha256": "8ae8a384903bd5895204cb1daf62b4b4396f59fd0d7c804ecb5f0294ec351059",
+            "golden_sha256": "efc554e609e87ca220785dc3d2b6da51861cb49697f31a51c02d65d627cd1f95"
+          },
+          {
+            "case_id": "main_0013",
+            "srcdir": "generated/formal/candidates/call-38700fefd2321ae2b21123a9/formal/pdr/src",
+            "equiv_top_sha256": "8ae8a384903bd5895204cb1daf62b4b4396f59fd0d7c804ecb5f0294ec351059",
+            "golden_sha256": "efc554e609e87ca220785dc3d2b6da51861cb49697f31a51c02d65d627cd1f95"
+          },
+          {
+            "case_id": "main_0014",
+            "srcdir": "generated/formal/candidates/call-2ddd201b896988809120429f/formal/pdr/src",
+            "equiv_top_sha256": "1f2e8ced0f5585954fe701a3e878fb99da11b16ace84778f829d436a0adde6bd",
+            "golden_sha256": "35f0e797b4bd8301dcf76c010d27d12b65f9068f4612ae88951810ac6b218682"
+          },
+          {
+            "case_id": "main_0015",
+            "srcdir": "generated/formal/candidates/call-3859481a9f4e9355ebd7a7d4/formal/pdr/src",
+            "equiv_top_sha256": "8070369651cdc4ea0d0d023a28705c0f3ade2fb2f6d84a44729c0a2bdb1f883a",
+            "golden_sha256": "26d9dd3e47a6f29d80afe12337e405da7b466e9b0f248e4f15ab41bf3c9e6eb5"
+          },
+          {
+            "case_id": "main_0017",
+            "srcdir": "generated/formal/candidates/call-1b2e42bec907744408b26d68/formal/pdr/src",
+            "equiv_top_sha256": "23120f07fa1186d47a86b88dc9945914e215bf352e5f0f92bac67e31101b080f",
+            "golden_sha256": "19dae650c9cfd254728bca2063aa325d73603867b49b057e3d843fd8aba10175"
+          },
+          {
+            "case_id": "main_0018",
+            "srcdir": "generated/formal/candidates/call-29955aa393ff5618033481f8/formal/pdr/src",
+            "equiv_top_sha256": "23120f07fa1186d47a86b88dc9945914e215bf352e5f0f92bac67e31101b080f",
+            "golden_sha256": "19dae650c9cfd254728bca2063aa325d73603867b49b057e3d843fd8aba10175"
+          },
+          {
+            "case_id": "main_0019",
+            "srcdir": "generated/formal/candidates/call-41e2d74a6a9e12010f99c0ff/formal/pdr/src",
+            "equiv_top_sha256": "abe4aa4e042a42a624200111edc4bdbaa98d4542b3c7ccd90890b7d6f2f99607",
+            "golden_sha256": "8b51ec25a2521d641025500875a1f669df94080e3e0a481468682bf639b04924"
+          },
+          {
+            "case_id": "main_0020",
+            "srcdir": "generated/formal/candidates/call-4d17873b026ceee54f7142a7/formal/pdr/src",
+            "equiv_top_sha256": "abe4aa4e042a42a624200111edc4bdbaa98d4542b3c7ccd90890b7d6f2f99607",
+            "golden_sha256": "8b51ec25a2521d641025500875a1f669df94080e3e0a481468682bf639b04924"
+          },
+          {
+            "case_id": "main_0023",
+            "srcdir": "generated/formal/candidates/call-7548e6a99e4759330097e860/formal/pdr/src",
+            "equiv_top_sha256": "765be06024d9d4e7b437b2905fe0536accd3f01d3af6c20d642dde181a6bde13",
+            "golden_sha256": "a2c8ec013874d852532d8856951e2ac0eb40cfc58956181b0a2b7796f469dc57"
+          },
+          {
+            "case_id": "main_0024",
+            "srcdir": "generated/formal/candidates/call-0a47e8ca75e7cfb820a56b6e/formal/pdr/src",
+            "equiv_top_sha256": "a7a41201cb7844a7fec838fc533b55d198fbc3b9a0cf5554f5133d87850632cb",
+            "golden_sha256": "dedf937fde2cf19fa001f195d4b6d84d03f5b605f2668fc73914bcd3a1bb1602"
+          },
+          {
+            "case_id": "main_0025",
+            "srcdir": "generated/formal/candidates/call-0219866a69ab01b8d9127566/formal/pdr/src",
+            "equiv_top_sha256": "a7a41201cb7844a7fec838fc533b55d198fbc3b9a0cf5554f5133d87850632cb",
+            "golden_sha256": "dedf937fde2cf19fa001f195d4b6d84d03f5b605f2668fc73914bcd3a1bb1602"
+          },
+          {
+            "case_id": "main_0026",
+            "srcdir": "generated/formal/candidates/call-40e394d7c0c1047d05f35fbc/formal/pdr/src",
+            "equiv_top_sha256": "f12095697ed209e9a4d800bc9b7f77e8198e0e0afbcf57a07bcf62adb9dfb69c",
+            "golden_sha256": "88452d5d191d48e1b235c81c1b399badf5a64967c1bf48893aee0a31854b138c"
+          },
+          {
+            "case_id": "main_0027",
+            "srcdir": "generated/formal/candidates/call-6c6465274d0b478900310dd5/formal/pdr/src",
+            "equiv_top_sha256": "28e7c9ebc28f3c01e05d2d1787147562d1113ce4bea6d9f4cf69f363b146a314",
+            "golden_sha256": "e4ab335da8a95e5fdac73eca8caf8ad575e8e1c8d460b20d2a3f4cb23ea2ac83"
+          },
+          {
+            "case_id": "main_0029",
+            "srcdir": "generated/formal/candidates/call-30268c865842067bbf276b09/formal/pdr/src",
+            "equiv_top_sha256": "031c19346392260283936a5afcf8c17f03ce800cba2b09aba166622cc35043c2",
+            "golden_sha256": "e6b93fb58d1a087c6715f116e88532657a54257c32ca3365857df539d3a01faf"
+          },
+          {
+            "case_id": "main_0030",
+            "srcdir": "generated/formal/candidates/call-5673de864b0674ff350e000e/formal/pdr/src",
+            "equiv_top_sha256": "031c19346392260283936a5afcf8c17f03ce800cba2b09aba166622cc35043c2",
+            "golden_sha256": "e6b93fb58d1a087c6715f116e88532657a54257c32ca3365857df539d3a01faf"
+          },
+          {
+            "case_id": "main_0031",
+            "srcdir": "generated/formal/candidates/call-18c8715c9b247155989db9fd/formal/pdr/src",
+            "equiv_top_sha256": "75caa0f425d579d5840e26a577335db9674ccb30ef0455330e0bcc4c3164e0e5",
+            "golden_sha256": "9ff656e41f8cd57212ba861245ca55e8f6ba20e4ed6e8b0cab17d339c924ebfd"
+          },
+          {
+            "case_id": "main_0032",
+            "srcdir": "generated/formal/candidates/call-193bfe06bed54841ee038b9a/formal/pdr/src",
+            "equiv_top_sha256": "34fea3b91bd6d37757f6c9bacd4b3fa36713491fcc7d1549686c5f365ee27c4a",
+            "golden_sha256": "4b861f2ffffeb903861f85b04cd3f4096c617743dd8e36faf4573d3f1142a435"
+          },
+          {
+            "case_id": "main_0033",
+            "srcdir": "generated/formal/candidates/call-2f52c34f1802dc2eaab4a595/formal/pdr/src",
+            "equiv_top_sha256": "34fea3b91bd6d37757f6c9bacd4b3fa36713491fcc7d1549686c5f365ee27c4a",
+            "golden_sha256": "4b861f2ffffeb903861f85b04cd3f4096c617743dd8e36faf4573d3f1142a435"
+          },
+          {
+            "case_id": "main_0034",
+            "srcdir": "generated/formal/candidates/call-a6ba814d1550d3dcd4571def/formal/pdr/src",
+            "equiv_top_sha256": "0e1611018c6c4e93922bf000e878786b7c881c34f1007c7c29e792b0e432555a",
+            "golden_sha256": "502f2f6adc9ed25d7521ade7707f8117282c9ab31bf6d76b1c567f4a6df98c5f"
+          },
+          {
+            "case_id": "main_0035",
+            "srcdir": "generated/formal/candidates/call-12156b60bcdb3557766a5624/formal/pdr/src",
+            "equiv_top_sha256": "9b4284274d2422bf0aba4ee8da27a67ee518685c0d4ef0cf4c14c13e227769c5",
+            "golden_sha256": "98f214a7ae5aa2f732c0f7235bf50998bfa26ed405d401d1950f2976134b7d80"
+          },
+          {
+            "case_id": "main_0036",
+            "srcdir": "generated/formal/candidates/call-bef2017fb5c4c1725078d275/formal/pdr/src",
+            "equiv_top_sha256": "9b4284274d2422bf0aba4ee8da27a67ee518685c0d4ef0cf4c14c13e227769c5",
+            "golden_sha256": "98f214a7ae5aa2f732c0f7235bf50998bfa26ed405d401d1950f2976134b7d80"
+          },
+          {
+            "case_id": "main_0037",
+            "srcdir": "generated/formal/candidates/call-34bd7414377db738e3fb3054/formal/pdr/src",
+            "equiv_top_sha256": "37e48151b78d967bc7da376ba5f3728483fbd0e4caeaed33e42ed2d71b3b4821",
+            "golden_sha256": "1555675294f651f6ff2687aa1b8a7a037e44a36abd33fe3ac8fb8dde1f1ec617"
+          },
+          {
+            "case_id": "main_0038",
+            "srcdir": "generated/formal/candidates/call-1fa72f69e92918ec9b6c7664/formal/pdr/src",
+            "equiv_top_sha256": "37e48151b78d967bc7da376ba5f3728483fbd0e4caeaed33e42ed2d71b3b4821",
+            "golden_sha256": "1555675294f651f6ff2687aa1b8a7a037e44a36abd33fe3ac8fb8dde1f1ec617"
+          },
+          {
+            "case_id": "main_0039",
+            "srcdir": "generated/formal/candidates/call-52846af157fa4efa0f043c21/formal/pdr/src",
+            "equiv_top_sha256": "93ad0d0a82395a454a7b1c9213070705e40043d24bf6103b21d5906f044f24a9",
+            "golden_sha256": "80880524c07707e4ea3d32f549e7a868ec5b759a43e12d69f75ba203ac4a3449"
+          },
+          {
+            "case_id": "main_0040",
+            "srcdir": "generated/formal/candidates/call-0e7f7053020d1cf2aed8766f/formal/pdr/src",
+            "equiv_top_sha256": "832672d3b446b240cf264900af6924892d3afad3a9b252eb0848ea209065c557",
+            "golden_sha256": "4556e30b0c146a3c6054d78839c4af0abb3349f9263a6fe2829e81adb3cb9890"
+          },
+          {
+            "case_id": "main_0041",
+            "srcdir": "generated/formal/candidates/call-22671f8cf9b3af0863563884/formal/pdr/src",
+            "equiv_top_sha256": "109a5624a68a57495da554a2325ab20d80f033fd629424de4c82e5b31a78f917",
+            "golden_sha256": "a6f8ffd84e6d84581567bff92058d4b2f309d3fffccfd985364e5e6e50359844"
+          },
+          {
+            "case_id": "main_0042",
+            "srcdir": "generated/formal/candidates/call-0ffd7bf3a5a4f27d91718b4f/formal/pdr/src",
+            "equiv_top_sha256": "109a5624a68a57495da554a2325ab20d80f033fd629424de4c82e5b31a78f917",
+            "golden_sha256": "a6f8ffd84e6d84581567bff92058d4b2f309d3fffccfd985364e5e6e50359844"
+          },
+          {
+            "case_id": "main_0043",
+            "srcdir": "generated/formal/candidates/call-0fb3931243bd1052e0e5f6fe/formal/pdr/src",
+            "equiv_top_sha256": "f4dce3e9ba7da434d6700d7ec46e90f74bfe578e3fd61514f738220b43a7b395",
+            "golden_sha256": "a74c9c677fe394e9b0cc52fcfac48d9703b2f81c0b3be622b12c51a7c7171380"
+          },
+          {
+            "case_id": "main_0044",
+            "srcdir": "generated/formal/candidates/call-1b519030c20a7bf2e0931d88/formal/pdr/src",
+            "equiv_top_sha256": "f4dce3e9ba7da434d6700d7ec46e90f74bfe578e3fd61514f738220b43a7b395",
+            "golden_sha256": "a74c9c677fe394e9b0cc52fcfac48d9703b2f81c0b3be622b12c51a7c7171380"
+          },
+          {
+            "case_id": "main_0045",
+            "srcdir": "generated/formal/candidates/call-0de87b82a007e7962f021943/formal/pdr/src",
+            "equiv_top_sha256": "23120f07fa1186d47a86b88dc9945914e215bf352e5f0f92bac67e31101b080f",
+            "golden_sha256": "41b7c5aa9f747e05c3ee371f8429931c1de3c0d4ad4a11b617bc788ed7d3bc4e"
+          },
+          {
+            "case_id": "main_0046",
+            "srcdir": "generated/formal/candidates/call-39f5c9995424bdbe1b68758b/formal/pdr/src",
+            "equiv_top_sha256": "23120f07fa1186d47a86b88dc9945914e215bf352e5f0f92bac67e31101b080f",
+            "golden_sha256": "41b7c5aa9f747e05c3ee371f8429931c1de3c0d4ad4a11b617bc788ed7d3bc4e"
+          },
+          {
+            "case_id": "main_0047",
+            "srcdir": "generated/formal/candidates/call-23128f553933b6ee1d1c72b8/formal/pdr/src",
+            "equiv_top_sha256": "23120f07fa1186d47a86b88dc9945914e215bf352e5f0f92bac67e31101b080f",
+            "golden_sha256": "41b7c5aa9f747e05c3ee371f8429931c1de3c0d4ad4a11b617bc788ed7d3bc4e"
+          },
+          {
+            "case_id": "main_0048",
+            "srcdir": "generated/formal/candidates/call-1f1cccea07becc7cace4597b/formal/pdr/src",
+            "equiv_top_sha256": "23120f07fa1186d47a86b88dc9945914e215bf352e5f0f92bac67e31101b080f",
+            "golden_sha256": "41b7c5aa9f747e05c3ee371f8429931c1de3c0d4ad4a11b617bc788ed7d3bc4e"
+          },
+          {
+            "case_id": "main_0049",
+            "srcdir": "generated/formal/candidates/call-5115613c54dc4387cc56fe4f/formal/pdr/src",
+            "equiv_top_sha256": "f59975ddc7e492394de2a402ced8ec9e51513a58588a16b05cd37ef15f7b8ce9",
+            "golden_sha256": "5df4d0e4759f37540a61996c2e9e249d57a42ab9d1f15d30e5635877892f9176"
+          },
+          {
+            "case_id": "main_0050",
+            "srcdir": "generated/formal/candidates/call-6ca5baf0704803cc3c2ccb7c/formal/pdr/src",
+            "equiv_top_sha256": "954d49cc63f495a54909d903d2e2bf98b5aacdce3b36a9ccada7f0c67564c5fa",
+            "golden_sha256": "b62f9e47408c09f85f554523e6487b6dab1a4218efa9deb8056c9e246e9bbbcd"
+          },
+          {
+            "case_id": "main_0051",
+            "srcdir": "generated/formal/candidates/call-368b2d93814790985ccc6350/formal/pdr/src",
+            "equiv_top_sha256": "954d49cc63f495a54909d903d2e2bf98b5aacdce3b36a9ccada7f0c67564c5fa",
+            "golden_sha256": "b62f9e47408c09f85f554523e6487b6dab1a4218efa9deb8056c9e246e9bbbcd"
+          },
+          {
+            "case_id": "main_0052",
+            "srcdir": "generated/formal/candidates/call-117988cd49422f9b8c9a630d/formal/pdr/src",
+            "equiv_top_sha256": "954d49cc63f495a54909d903d2e2bf98b5aacdce3b36a9ccada7f0c67564c5fa",
+            "golden_sha256": "b62f9e47408c09f85f554523e6487b6dab1a4218efa9deb8056c9e246e9bbbcd"
+          },
+          {
+            "case_id": "main_0057",
+            "srcdir": "generated/formal/candidates/call-1398eaa0082f9bad99b4b246/formal/pdr/src",
+            "equiv_top_sha256": "591440768fe116cd7b65a908a67f6d9c0ede2c81eee85efc058efaac9a97c2df",
+            "golden_sha256": "95bad89265873e92521eac9cd0e7ee4ce46146a58dc95b69286e3d05ae7e025a"
+          },
+          {
+            "case_id": "main_0058",
+            "srcdir": "generated/formal/candidates/call-224849558ba450aecabbf6fe/formal/pdr/src",
+            "equiv_top_sha256": "591440768fe116cd7b65a908a67f6d9c0ede2c81eee85efc058efaac9a97c2df",
+            "golden_sha256": "95bad89265873e92521eac9cd0e7ee4ce46146a58dc95b69286e3d05ae7e025a"
+          },
+          {
+            "case_id": "main_0059",
+            "srcdir": "generated/formal/candidates/call-1512e0ab2188b4e669e10cc5/formal/pdr/src",
+            "equiv_top_sha256": "f8e02d6a1770eb83502ac4cc107ee2b1d52c2b0198736c01229e4a3877167467",
+            "golden_sha256": "778c80301d6ef672146603b7eb9eb7bb725cabc03e03b467545cb38bfd26ba33"
+          },
+          {
+            "case_id": "main_0060",
+            "srcdir": "generated/formal/candidates/call-6604c1778cec4dd8f33e4f2f/formal/pdr/src",
+            "equiv_top_sha256": "f8e02d6a1770eb83502ac4cc107ee2b1d52c2b0198736c01229e4a3877167467",
+            "golden_sha256": "778c80301d6ef672146603b7eb9eb7bb725cabc03e03b467545cb38bfd26ba33"
+          },
+          {
+            "case_id": "main_0062",
+            "srcdir": "generated/formal/candidates/call-3ce5c5382ee92e240b6dfee2/formal/pdr/src",
+            "equiv_top_sha256": "aa2601285ff9b8986f706d7d9732ec75a93a3fb7d8cd0253f15f51e5ee4026af",
+            "golden_sha256": "d380025ca663fead1a7ca630a851eb36bb877d48c09ac2cff614834cfd35892e"
+          },
+          {
+            "case_id": "main_0063",
+            "srcdir": "generated/formal/candidates/call-30878ea927c9ccc3d7d19351/formal/pdr/src",
+            "equiv_top_sha256": "7b441ada79edcb2e5f67305c4e458913afff589a4c8c806e08003de97d7f1e8f",
+            "golden_sha256": "74bbc6975bddce8bf9d6bb9e70c7d1e12e5ce7d6c17a73631f363a84e2e84b81"
+          },
+          {
+            "case_id": "main_0064",
+            "srcdir": "generated/formal/candidates/call-1546ddd2a8256cff13eebd17/formal/pdr/src",
+            "equiv_top_sha256": "7b441ada79edcb2e5f67305c4e458913afff589a4c8c806e08003de97d7f1e8f",
+            "golden_sha256": "74bbc6975bddce8bf9d6bb9e70c7d1e12e5ce7d6c17a73631f363a84e2e84b81"
+          },
+          {
+            "case_id": "main_0065",
+            "srcdir": "generated/formal/candidates/call-31bb27b5e402dcc18e27e49b/formal/pdr/src",
+            "equiv_top_sha256": "f9e3d62f915e6b7af75f0fa06811237d4accf9de97c4c6fad1e9bf7c9af2a5c3",
+            "golden_sha256": "38300c64efa8bf6c7e146e7a176e47fef3b8ccbe7f79c1d129960223a1243dc5"
+          },
+          {
+            "case_id": "main_0066",
+            "srcdir": "generated/formal/candidates/call-195e0287ffcc738249e555d3/formal/pdr/src",
+            "equiv_top_sha256": "f9e3d62f915e6b7af75f0fa06811237d4accf9de97c4c6fad1e9bf7c9af2a5c3",
+            "golden_sha256": "38300c64efa8bf6c7e146e7a176e47fef3b8ccbe7f79c1d129960223a1243dc5"
+          },
+          {
+            "case_id": "main_0067",
+            "srcdir": "generated/formal/candidates/call-241f447fa53cde1465cbb0b0/formal/pdr/src",
+            "equiv_top_sha256": "f9e3d62f915e6b7af75f0fa06811237d4accf9de97c4c6fad1e9bf7c9af2a5c3",
+            "golden_sha256": "38300c64efa8bf6c7e146e7a176e47fef3b8ccbe7f79c1d129960223a1243dc5"
+          },
+          {
+            "case_id": "main_0071",
+            "srcdir": "generated/formal/candidates/call-02ee6bf62eae8ea9481c6dc9/formal/pdr/src",
+            "equiv_top_sha256": "f9e3d62f915e6b7af75f0fa06811237d4accf9de97c4c6fad1e9bf7c9af2a5c3",
+            "golden_sha256": "02e8e8b95d889b71b58bc8b0631df97837421a2ec7844d2ca64c2c266d9ad831"
+          },
+          {
+            "case_id": "main_0072",
+            "srcdir": "generated/formal/candidates/call-2a512ccc47097eabc99906be/formal/pdr/src",
+            "equiv_top_sha256": "f9e3d62f915e6b7af75f0fa06811237d4accf9de97c4c6fad1e9bf7c9af2a5c3",
+            "golden_sha256": "02e8e8b95d889b71b58bc8b0631df97837421a2ec7844d2ca64c2c266d9ad831"
+          },
+          {
+            "case_id": "main_0073",
+            "srcdir": "generated/formal/candidates/call-b06ca925ffd6958cf3cac9e4/formal/pdr/src",
+            "equiv_top_sha256": "f9e3d62f915e6b7af75f0fa06811237d4accf9de97c4c6fad1e9bf7c9af2a5c3",
+            "golden_sha256": "02e8e8b95d889b71b58bc8b0631df97837421a2ec7844d2ca64c2c266d9ad831"
+          },
+          {
+            "case_id": "main_0074",
+            "srcdir": "generated/formal/candidates/call-eb4d15d5a92c3b3f36f71fe2/formal/pdr/src",
+            "equiv_top_sha256": "f9e3d62f915e6b7af75f0fa06811237d4accf9de97c4c6fad1e9bf7c9af2a5c3",
+            "golden_sha256": "02e8e8b95d889b71b58bc8b0631df97837421a2ec7844d2ca64c2c266d9ad831"
+          },
+          {
+            "case_id": "main_0075",
+            "srcdir": "generated/formal/candidates/call-1f88909a12298dab19375cd9/formal/pdr/src",
+            "equiv_top_sha256": "63ee9bc453ccf24b87b865c6318f6162910b88347897d83535b81308897fe1f7",
+            "golden_sha256": "aa88971e82383088b07945cbc9721bb6748439d91379b42f748ee0f7a1142177"
+          },
+          {
+            "case_id": "main_0077",
+            "srcdir": "generated/formal/candidates/call-2df56a9d23c39aa00c54cf32/formal/pdr/src",
+            "equiv_top_sha256": "8bfc2efac88b3114f743706933a522233148146d06a8abeb4a1f815f1981c76f",
+            "golden_sha256": "995fa06d8737c933dcff7dc0163b5c2bc6cfe51ba3c6c2c697353fb3cdfbfd9b"
+          },
+          {
+            "case_id": "main_0078",
+            "srcdir": "generated/formal/candidates/call-1942e4bb04d68c8592d9c1af/formal/pdr/src",
+            "equiv_top_sha256": "8bfc2efac88b3114f743706933a522233148146d06a8abeb4a1f815f1981c76f",
+            "golden_sha256": "995fa06d8737c933dcff7dc0163b5c2bc6cfe51ba3c6c2c697353fb3cdfbfd9b"
+          },
+          {
+            "case_id": "main_0079",
+            "srcdir": "generated/formal/candidates/call-3a54c4677e1a086786736647/formal/pdr/src",
+            "equiv_top_sha256": "954d49cc63f495a54909d903d2e2bf98b5aacdce3b36a9ccada7f0c67564c5fa",
+            "golden_sha256": "71d47c45355f733ac54327c05ff6f71aec6f9f4d32155b9a035976d3c70d96e6"
+          },
+          {
+            "case_id": "main_0080",
+            "srcdir": "generated/formal/candidates/call-407a31f0364e9d244153d23e/formal/pdr/src",
+            "equiv_top_sha256": "954d49cc63f495a54909d903d2e2bf98b5aacdce3b36a9ccada7f0c67564c5fa",
+            "golden_sha256": "71d47c45355f733ac54327c05ff6f71aec6f9f4d32155b9a035976d3c70d96e6"
+          },
+          {
+            "case_id": "main_0081",
+            "srcdir": "generated/formal/candidates/call-7915185d594c3969b721b6e1/formal/pdr/src",
+            "equiv_top_sha256": "954d49cc63f495a54909d903d2e2bf98b5aacdce3b36a9ccada7f0c67564c5fa",
+            "golden_sha256": "71d47c45355f733ac54327c05ff6f71aec6f9f4d32155b9a035976d3c70d96e6"
+          },
+          {
+            "case_id": "main_0082",
+            "srcdir": "generated/formal/candidates/call-7f96b2d87f2ef29a7712e670/formal/pdr/src",
+            "equiv_top_sha256": "313bc5e2f4977a15ad3f5d8b4e99e6e966ea2dd56d8222f771e5ab5a6bf80951",
+            "golden_sha256": "d153f03f4eb35630e629fbc096340c08195a3a9f7bcc9ec1886f0a54fa0f6883"
+          },
+          {
+            "case_id": "main_0083",
+            "srcdir": "generated/formal/candidates/call-67958c1a42d167286d10c3e0/formal/pdr/src",
+            "equiv_top_sha256": "ddf4302af977460c394887f77c681eea852b69e49947e38b2b87f4189eced34e",
+            "golden_sha256": "6dc5a9dabd04ea82e1833508fae8e62bc4d1197bffda43c24a0bb423c551e787"
+          },
+          {
+            "case_id": "main_0084",
+            "srcdir": "generated/formal/candidates/call-217cede5a1717540fced7153/formal/pdr/src",
+            "equiv_top_sha256": "3aa9f680770b75d1cc7b15024e2abebebda11f3aef64ade0af77f3edc29ebf87",
+            "golden_sha256": "037c6f461763c4e58c3d0e03917ac15dc626d644261c39bf3efeb6249f78bd98"
+          }
+        ],
+        "case_harnesses_sha256": "b9f41c90e40da11b2078d591530001bc2b24654b39741540c56e590a325196fb"
+      },
+      "relationship_to_anchor_formal_intersection": {
+        "formal_intersection_count": 68,
+        "formal_intersection_case_ids_sha256": "f23d72278fc1b9174c47eadc41613390bb26d84d4ff49cd4bbba9e51878c6f57",
+        "overlap_count": 52,
+        "identical": false,
+        "curve_only_case_ids": [
+          "main_0017",
+          "main_0018",
+          "main_0026",
+          "main_0033",
+          "main_0043",
+          "main_0045",
+          "main_0046",
+          "main_0047",
+          "main_0049",
+          "main_0052",
+          "main_0064",
+          "main_0071",
+          "main_0072",
+          "main_0073",
+          "main_0074",
+          "main_0081"
+        ],
+        "formal_only_case_ids": [
+          "main_0000",
+          "main_0001",
+          "main_0002",
+          "main_0003",
+          "main_0016",
+          "main_0021",
+          "main_0022",
+          "main_0028",
+          "main_0053",
+          "main_0054",
+          "main_0055",
+          "main_0056",
+          "main_0061",
+          "main_0068",
+          "main_0069",
+          "main_0076"
+        ]
+      }
+    }
+  ],
+  "curve_output": {
+    "models": 5,
+    "sha256": "a1ec9d5f7b3133c410b2fbb49124e80c81093b83b3ab1c1da07d369f2299e053"
+  },
+  "standalone_note": "The hash-bound source rows are retained outside the small standalone tree. A clean recomputation requires those exact files from controlled shared storage."
+}

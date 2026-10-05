@@ -1,0 +1,119 @@
+{
+  "amendment_bound_rows": 170,
+  "amendment_manifest_sha256": "67a961fad36bc60c411b5f7e0ef45ee479bbc4eff91c743b4d4cb47c2b771d52",
+  "amendment_path": "configs/vericodegen/protocol_amendment_2026-07-15.json",
+  "benchmark_source": "data/repairbench_sem85.jsonl",
+  "benchmark_source_sha256": "e98c2bec7cb4325088030bafdab17096c9b0cae204257515ea2b4676cf6a97dc",
+  "calibration_results_sha256": "1f893e7586c1c3f89aad966b560ba3ee464b37c37e431996e38c9cc3eaa3828e",
+  "canonical_manifest": "data/formal/sem85_manifest.json",
+  "canonical_manifest_sha256": "69b64307efaa002472c69090644ca35ae594c2ec13630633da30d55dae6d2a1f",
+  "comparison_case_id_sets_match": true,
+  "composite_policy": {
+    "allowlist": [
+      {
+        "candidate_sha256": "35c79ef6db0aec962710791bc4a3465979d011f1ae883379ea5fdc1d6f2b57c4",
+        "case_id": "main_0059",
+        "cycles_per_seed": 200,
+        "golden_sha256": "1ee2398da6c8170f1d7937eac091a160ec8bb037bc389ae0d66a8d19a5a49716",
+        "mutation": "flip_reset_polarity",
+        "required_formal_status": "UNSUPPORTED",
+        "required_seed_status": "COUNTEREXAMPLE",
+        "requires_post_initialization_concrete_two_state": true,
+        "seed_id": "design_9196b36e82d1ccc1",
+        "seeds": [
+          1001,
+          1002,
+          1003,
+          1004,
+          1005,
+          1006,
+          1007,
+          1008,
+          1009,
+          1010
+        ]
+      }
+    ],
+    "amendment_manifest_sha256": "67a961fad36bc60c411b5f7e0ef45ee479bbc4eff91c743b4d4cb47c2b771d52",
+    "amendment_path": "configs/vericodegen/protocol_amendment_2026-07-15.json",
+    "name": "exact_allowlisted_unsupported_with_frozen_independent_simulation",
+    "protocol_amendment_sha256": "4f9bc41ac9bda24cd31eeb2c9e32cf18915852b0e498eaf46ba166b8d0843371",
+    "version": 1
+  },
+  "distinguishable_mutants": 85,
+  "duplicate_run_ids": [],
+  "expected_cases": 85,
+  "fallback_mutant_counterexamples": 1,
+  "fallback_mutant_evidence": [
+    {
+      "candidate_sha256": "35c79ef6db0aec962710791bc4a3465979d011f1ae883379ea5fdc1d6f2b57c4",
+      "case_id": "main_0059",
+      "counterexample_seed_runs": 10,
+      "cycles_per_seed": 200,
+      "first_post_initialization_concrete": {
+        "concrete_two_state": true,
+        "cycle": 4,
+        "expected": "1",
+        "got": "0",
+        "output": "z",
+        "phase": "post_initialization",
+        "sample_point": "pre_edge",
+        "seed": 1001
+      },
+      "formal_protocol_sha256": "0ca7c6f3b5bcbc07e4a52563a5aea7ddf6fa271ea9b0b9c3270ae20774e2b59e",
+      "formal_status": "UNSUPPORTED",
+      "golden_sha256": "1ee2398da6c8170f1d7937eac091a160ec8bb037bc389ae0d66a8d19a5a49716",
+      "mutation": "flip_reset_polarity",
+      "post_initialization_concrete_count": 237,
+      "protocol_amendment_sha256": "4f9bc41ac9bda24cd31eeb2c9e32cf18915852b0e498eaf46ba166b8d0843371",
+      "qualified": true,
+      "report_path": "generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/independent_simulation.json",
+      "report_sha256": "c1e8ba34b2b6bdf59a43e09615f4db68e636e397a3311187feb8ab5464d7265a",
+      "seed_id": "design_9196b36e82d1ccc1",
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1009,
+        1010
+      ],
+      "simulation_status": "COUNTEREXAMPLE",
+      "validation_errors": []
+    }
+  ],
+  "fallback_validation_errors": [],
+  "formal_protocol_rows_consistent": true,
+  "formal_protocol_sha256": "0ca7c6f3b5bcbc07e4a52563a5aea7ddf6fa271ea9b0b9c3270ae20774e2b59e",
+  "full_day3_gate_passed": true,
+  "gate": "day3_harness_calibration",
+  "golden_vs_golden_completed": 85,
+  "golden_vs_golden_statuses": {
+    "PROVED": 85
+  },
+  "golden_vs_mutant_completed": 85,
+  "golden_vs_mutant_statuses": {
+    "COUNTEREXAMPLE": 84,
+    "UNSUPPORTED": 1
+  },
+  "halted_reason": "",
+  "mutants_incorrectly_proved": [],
+  "passed": true,
+  "protocol_amendment_sha256": "4f9bc41ac9bda24cd31eeb2c9e32cf18915852b0e498eaf46ba166b8d0843371",
+  "protocol_manifest": "data/formal/protocol_manifest.json",
+  "protocol_manifest_sha256": "1bd027de435959fada9b4e96a40172fb2abbf01260bc22e7f5e9ce5bb7db1059",
+  "public_document_sha256": "dbf9880146f5b9c903f2843ed12c279dd1dcdec2708f85ca7fe2dfd62806c1f7",
+  "replayable_mutant_counterexamples": 84,
+  "results_path": "generated/formal/calibration_full_v16_results.jsonl",
+  "schema_version": 3,
+  "scope": "full_sem85",
+  "scope_case_ids": null,
+  "source_gate_manifest_sha256": "a3aa232f9537a12f1baaf637eff7d4c88ea8a8bb9e395331e5a470d0ec037ae4",
+  "toolchain_manifest": "generated/formal/calibration_full_v16/toolchain_manifest.json",
+  "toolchain_manifest_sha256": "7912ff2bcc3f4a116673132c14cc49f62068d146ce1d9479c6e507094473e0fe",
+  "unique_run_ids": true
+}

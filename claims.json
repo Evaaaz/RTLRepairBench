@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "scope": "Numerical, resource, and reproducibility claims in the camera-ready AI for Chip Design poster",
+  "paper_source_of_truth": "paper/paper.tex",
+  "status_vocabulary": {
+    "reproducible_from_snapshot": "The released rows or aggregate snapshot are sufficient to audit the reported value without model calls; this does not imply independent re-scoring of historical candidates.",
+    "rerunnable_with_external_artifacts": "The code path is present, but a clean re-score needs immutable candidate or proof artifacts outside this package.",
+    "incomplete": "At least one provenance, redistribution, producer, or historical-input requirement remains open.",
+    "stale": "A released statement conflicts with newer evidence and must not be used."
+  },
+  "claims": [
+    {
+      "id": "training_dataset_composition_and_release_boundary",
+      "paper_locator": {
+        "path": "paper/paper.tex",
+        "labels": [
+          "abstract",
+          "sec:dataset",
+          "tab:mutations"
+        ]
+      },
+      "claim": "The historical training output contains 5,784 unique rows: 5,403 lint and 381 semantic pairs over 1,895 distinct normalized seed identifiers, none of which overlaps the benchmark's 130 distinct seeds. The released file data/rtlrepairdataset_train.jsonl is the 5,775-row repair bucket of the SFT mixture (5,394 lint and 381 semantic pairs, 1,892 distinct seed modules); against Table 3 it lacks 6 rename_declaration and 3 width_mismatch pairs, and every other operator count matches.",
+      "producer": [
+        "code/datagen/build_dataset.sh",
+        "code/datagen/build_repair_dataset.py",
+        "code/datagen/build_semantic_repair.py"
+      ],
+      "released_inputs": [
+        {
+          "path": "data/rtlrepairdataset_train.jsonl",
+          "sha256": "7c0c2004bfcb23e2e2fb6c7eb414e8d4824813db69d42378b526d487d6cc8150"
+        },
+        {
+          "path": "data/train.sample.jsonl",
+          "sha256": "1f16cd443ed8026664babd89460a5ea30a23e848b2058e42464840cec8bef8e5"
+        }
+      ],
+      "external_evidence": {
+        "logical_name": "repair_train.jsonl",
+        "bytes": 10814575,
+        "rows": 5784,
+        "unique_ids": 5784,
+        "distinct_seed_ids": 1895,
+        "benchmark_distinct_seed_ids": 130,
+        "normalized_seed_id_intersection": 0,
+        "sha256": "73fd32ae2e3a1d419691fc16a67965aa929bc912155edc10c155895eac36518a",
+        "release_state": "not released; the released training file is data/rtlrepairdataset_train.jsonl"
+      },
+      "status": "incomplete",
+      "reason": "The released file is the SFT mixture's repair bucket, not the historical output: it is in chat format and lacks 9 rows, so the historical SHA-256 cannot be checked against it. Per-sample upstream provenance of MG-Verilog code rests on its dataset-card declaration."
+    },
+    {
+      "id": "repairbench_composition_and_mutation_inventory",
+      "paper_locator": {
+        "path": "paper/paper.tex",
+        "labels": [
+          "fig:pipeline",
+          "tab:mutations"
+        ]
+      },
+      "claim": "RTLRepairBench contains 459 held-out cases: 374 lint and 85 semantic cases, with the mutation counts shown in the appendix table.",
+      "released_inputs": [
+        {
+          "path": "data/repairbench_heldout.jsonl",
+          "rows": 459,
+          "sha256": "05c749bb980838a7e2a57a1c34ec16314acc4068b732912d29a18d91af9c8b8f"
+        },
+        {
+          "path": "data/repairbench_lint.jsonl",
+          "rows": 374,
+          "sha256": "51438f5065308c4aada978813d14136471ee85c6a056d3a59b6369c1aa67c9a4"
+        },
+        {
+          "path": "data/repairbench_sem85.jsonl",
+          "rows": 85,
+          "sha256": "e98c2bec7cb4325088030bafdab17096c9b0cae204257515ea2b4676cf6a97dc"
+        }
+      ],
+      "status": "reproducible_from_snapshot",
+      "reason": "Counts, IDs, buckets, mutation labels, and tracked hashes can be checked directly from the released JSONL files."
+    },
+    {
+      "id": "syntactic_behavioral_capability_gap",
+      "paper_locator": {
+        "path": "paper/paper.tex",
+        "section": "RTLRepairDataset, RTLRepairBench, and Evaluation Design"
+      },
+      "claim": "For the six-model subset with syntactic recovery from 87.7% to 100.0%, behavioral recovery ranges from 10.6% to 75.3%.",
+      "frozen_outputs": [
+        {
+          "path": "artifacts/public/capability/split_discrimination.json",
+          "sha256": "1f72773267e1b05e1392a7e5d39a92a7df5f97465b3a691f72942615c670ccc7"
+        }
+      ],
+      "producer": [
+        "code/scripts/ws_split_discrimination.py"
+      ],
+      "status": "reproducible_from_snapshot",
+      "reason": "The released aggregate records the six-model subset, both ranges, and all per-model values."
+    },
+    {
+      "id": "oracle_sign_reversal_and_reset_attribution",
+      "paper_locator": {
+        "path": "paper/paper.tex",
+        "label": "tab:oracle"
+      },
+      "claim": "On the 79 cases with definitive formal verdicts in both arms, Tier S over cycles 0--199 gives 60/79 (75.9%) versus 51/79 (64.6%), a -11.4 pp contrast; skipping only cycle 0 gives 72/79 (91.1%) versus 78/79 (98.7%), a +7.6 pp contrast; reset-aware Tier S and Tier F each give 71/79 (89.9%) versus 78/79 (98.7%), a +8.9 pp contrast. Reset-aware Tier S agrees with Tier F on all 158 candidate-arm verdicts in this cohort, but across all 85 cases it clears 12/12 and 27/30 false divergences respectively.",
+      "frozen_outputs": [
+        {
+          "path": "artifacts/public/capability/frontier_oracle_flip.json",
+          "sha256": "b63f693c7e27028932e8d8b73ae7a6bdc1a6e530b3cca8284875a75817694506"
+        }
+      ],
+      "producer": [
+        "code/scripts/x3_frontier_oracle_flip.py"
+      ],
+      "status": "reproducible_from_snapshot",
+      "reason": "The released aggregate fixes the cohort, all four scoring-contract rows, paired counts, formal coverage, and reset-aware attribution. Re-scoring the historical RTL itself is Level B and needs external retained candidates."
+    },
+    {
+      "id": "mined_failure_cohort",
+      "paper_locator": {
+        "path": "paper/paper.tex",
+        "labels": [
+          "mined",
+          "tab:regen"
+        ]
+      },
+      "claim": "The mined-failure cohort contains 274 cases from 112 source tasks.",
+      "released_inputs": [
+        {
+          "path": "data/repairbench_realbugs.jsonl",
+          "rows": 274,
+          "distinct_task_values": 112,
+          "sha256": "a8cc99355a9ab934558e664cf8fcf33c07b0f8bbce5269406e569f15838a9ae6"
+        }
+      ],
+      "status": "reproducible_from_snapshot",
+      "reason": "Both counts can be recomputed from the released task field."
+    },
+    {
+      "id": "cycle1_regeneration_control",
+      "paper_locator": {
+        "path": "paper/paper.tex",
+        "label": "tab:regen"
+      },
+      "claim": "In the six-model cycle-1 complete-case panel, specification-only minus specification-conditioned recovery ranges from -8.5 to +18.3 percentage points, with model-specific n from 260 to 274.",
+      "frozen_outputs": [
+        {
+          "path": "artifacts/public/realbugs/cycle1_rescore.json",
+          "sha256": "e6102fc7d95198c6b948764fb166d7dfed3d14abc68f9a7bfca1fb75e5581824"
+        }
+      ],
+      "producer": [
+        "code/scripts/x4_realbug_cycle1_rescore.py"
+      ],
+      "status": "reproducible_from_snapshot",
+      "reason": "The released aggregate contains every displayed n, arm rate, and cycle-1 contrast. Historical candidate re-scoring remains a Level-B operation."
+    },
+    {
+      "id": "level_a_release_scope",
+      "paper_locator": {
+        "path": "paper/paper.tex",
+        "sections": [
+          "Abstract",
+          "Limitations and Future Work"
+        ]
+      },
+      "claim": "The released artifact supports Level-A reconstruction from frozen rows and aggregates; it does not independently regenerate model outputs or re-score all historical candidates.",
+      "released_inputs": [
+        "artifact.lock.json",
+        "environment.lock.json",
+        "tools/reproduce.py",
+        "REPRODUCE.md"
+      ],
+      "status": "rerunnable_with_external_artifacts",
+      "reason": "Level A is included and checked offline. Levels B and C require retained candidates, proof trees, model weights, or hosted endpoints that are outside this artifact."
+    },
+    {
+      "id": "sign_reversal_replication",
+      "paper_locator": {
+        "path": "paper/paper.tex",
+        "labels": [
+          "abstract",
+          "tab:oracle"
+        ]
+      },
+      "claim": "Three interleaved temperature-0 draws per model on GPT-5.5 and Claude Opus 4.8 over a 68-case cohort: no draw has Tier S and Tier F disagreeing in sign, and neither leg of the frozen pair recurs. Moving the comparison off cycle 0 raises the specification contrast in all six draws, +3.1 to +12.3 pp (mean +7.3).",
+      "producer": [
+        "code/scripts/x9_sign_reversal_replication.py",
+        "code/scripts/x9b_sign_reversal_score.py"
+      ],
+      "released_inputs": [
+        {
+          "path": "artifacts/public/capability/sign_reversal_replication_scored.json",
+          "sha256": "b5fa07fa49dafccc9542dd4a487fb97cb99a4cbc7bf574a77bc1f71d48ee8352"
+        }
+      ],
+      "external_evidence": {
+        "logical_name": "generated/second_model/runs/*signrep*",
+        "note": "six run trees, both arms, 68 cases each; raw model outputs are not released"
+      },
+      "status": "rerunnable_with_external_artifacts",
+      "reason": "Generation needs a provider account; scoring needs the pinned prover and Icarus. The scored per-draw summary ships."
+    }
+  ]
+}

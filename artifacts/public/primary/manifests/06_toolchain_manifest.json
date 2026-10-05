@@ -1,0 +1,60 @@
+{
+  "container_image": "rtlrepair-formal:20260508",
+  "container_image_id": "sha256:d2065a4fbf254a0b4c0f5d5f4402e501d1372d797b7cd057d7817031cf77d450",
+  "platform": "Linux-6.8.0-117-generic-aarch64-with-glibc2.35",
+  "public_document_sha256": "47fd41a74b7b31a03ad1b7e4665a3286f3ab2168377dd645e130f42633773a59",
+  "python": "3.11.6 (tags/v3.11.6:8b6ee5ba3b, Jan 17 2024, 09:24:51) [GCC 11.4.0]",
+  "schema_version": 1,
+  "toolchain_lock_path": "docker/formal/toolchain.lock.json",
+  "toolchain_lock_sha256": "e7ca99d4352b6ab9f883bf7fc9faae2b75511e3f921fbc7b530b98d250b0301f",
+  "tools": {
+    "abc": {
+      "available": true,
+      "path": "<TOOLCHAIN>/bin/yosys-abc",
+      "probe_returncode": 1,
+      "version": "UC Berkeley, ABC 1.01 (compiled May  8 2026 05:20:40)"
+    },
+    "boolector": {
+      "available": true,
+      "path": "<TOOLCHAIN>/bin/boolector",
+      "probe_returncode": 0,
+      "version": "3.2.4"
+    },
+    "iverilog": {
+      "available": true,
+      "path": "<TOOLCHAIN>/bin/iverilog",
+      "probe_returncode": 0,
+      "version": "Icarus Verilog version 14.0 (devel) (s20251012-184-ge4c424726-dirty)"
+    },
+    "sby": {
+      "available": true,
+      "path": "<TOOLCHAIN>/bin/sby",
+      "probe_returncode": 0,
+      "version": "SBY v0.64-2-gf57802a"
+    },
+    "verilator": {
+      "available": true,
+      "path": "<TOOLCHAIN>/bin/verilator",
+      "probe_returncode": 0,
+      "version": "Verilator 5.049 devel rev v5.048-46-g7c5069c7d (mod)"
+    },
+    "vvp": {
+      "available": true,
+      "path": "<TOOLCHAIN>/bin/vvp",
+      "probe_returncode": 0,
+      "version": "Icarus Verilog runtime version 14.0 (devel) (s20251012-184-ge4c424726-dirty)"
+    },
+    "yosys": {
+      "available": true,
+      "path": "<TOOLCHAIN>/bin/yosys",
+      "probe_returncode": 0,
+      "version": "Yosys 0.64+199 (git sha1 bfc09777e-dirty, aarch64-linux-gnu-g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)"
+    },
+    "z3": {
+      "available": true,
+      "path": "<TOOLCHAIN>/bin/z3",
+      "probe_returncode": 0,
+      "version": "Z3 version 4.15.5 - 64 bit"
+    }
+  }
+}

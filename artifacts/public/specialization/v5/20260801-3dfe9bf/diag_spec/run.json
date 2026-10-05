@@ -1,0 +1,73 @@
+{
+  "model": "v5",
+  "version": "20260801-3dfe9bf",
+  "signal": "diag_spec",
+  "summary": {
+    "model": "tuned",
+    "arm": "diag_spec",
+    "n": 459,
+    "anon": true,
+    "temp": 0.0,
+    "scored_from": "ledger",
+    "oracles": {
+      "lint": "verilator --lint-only -Wall -sv",
+      "semantic": "tier_s: golden-vs-candidate diff sim, 200 cycles, iverilog"
+    },
+    "by_bucket": {
+      "lint": {
+        "n": 374,
+        "recovered": 310,
+        "recovery_rate": 0.8289,
+        "used_llm_rate": 1.0,
+        "spec_rate": 1.0,
+        "parsed_rate": 0.9947
+      },
+      "semantic": {
+        "n": 85,
+        "recovered": 38,
+        "recovery_rate": 0.4471,
+        "used_llm_rate": 1.0,
+        "spec_rate": 1.0,
+        "parsed_rate": 1.0
+      }
+    }
+  },
+  "n_records": 459,
+  "scored": true,
+  "ledger": {
+    "file": "candidates.jsonl",
+    "sha256": "e1b857191e734a3cc12f5b48387095d012128250025c6d2726246c8009c26ede",
+    "bytes": 852808,
+    "n_candidates": 459,
+    "n_parsed": 457,
+    "n_errors": 0
+  },
+  "raw": [],
+  "arm": "diag_spec",
+  "generation": {
+    "endpoint": "https://provider-b.invalid/qwen-v5-vllm-serve/v1",
+    "requested_model": "tuned",
+    "temp": 0.0,
+    "max_tokens": 1024,
+    "n": 1,
+    "workers": 8,
+    "prompt_grammar": "build_turn(default)",
+    "extractor": "repair_agent._split_explanation_and_code+bench_common.extract_rtl",
+    "cases": "data/repairbench_heldout.jsonl",
+    "n_cases": 459,
+    "anon": true,
+    "prompt_style": "default",
+    "by_bucket": {
+      "lint": 374,
+      "semantic": 85
+    }
+  },
+  "scoring": {
+    "scorer": "score_ledger.py",
+    "oracles": {
+      "lint": "verilator --lint-only -Wall -sv",
+      "semantic": "tier_s: golden-vs-candidate diff sim, 200 cycles, iverilog"
+    },
+    "workers": 8
+  }
+}

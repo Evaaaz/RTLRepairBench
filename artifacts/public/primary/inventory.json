@@ -1,0 +1,267 @@
+{
+  "analysis_coverage": {
+    "distribution_shift": {
+      "arm_a": "spec0_loc0",
+      "arm_b": "spec1_loc0",
+      "complete_case_effect_reported": false,
+      "decision_timing": "POST_OUTPUT_CONSERVATIVE_DECISION",
+      "definitive_calls": 86,
+      "definitive_coverage": 0.86,
+      "estimand": "full_frozen_50_task_shift_set",
+      "expected_calls": 100,
+      "expected_cases": 50,
+      "fully_definitive_pair_count": 42,
+      "multiplicity_adjusted": false,
+      "observed_calls": 100,
+      "per_arm": {
+        "spec0_loc0": {
+          "definitive_calls": 44,
+          "definitive_coverage": 0.88,
+          "expected_calls": 50,
+          "observed_calls": 50,
+          "reason_counts": {
+            "candidate has no parseable ANSI module/interface": 3,
+            "no reset and no pre-registered public-input synchronization contract": 3
+          },
+          "status_counts": {
+            "formal_unsupported__simulation_unsupported": 6
+          },
+          "unresolved_calls": 6
+        },
+        "spec1_loc0": {
+          "definitive_calls": 42,
+          "definitive_coverage": 0.84,
+          "expected_calls": 50,
+          "observed_calls": 50,
+          "reason_counts": {
+            "candidate has no parseable ANSI module/interface": 3,
+            "no reset and no pre-registered public-input synchronization contract": 4,
+            "sequential module does not have one consistent recognized clock edge": 1
+          },
+          "status_counts": {
+            "formal_unsupported__simulation_unsupported": 8
+          },
+          "unresolved_calls": 8
+        }
+      },
+      "reason": "post_output_validator_indeterminacy_precludes_complete_case_effect_estimation",
+      "reason_counts": {
+        "candidate has no parseable ANSI module/interface": 6,
+        "no reset and no pre-registered public-input synchronization contract": 7,
+        "sequential module does not have one consistent recognized clock edge": 1
+      },
+      "secondary": true,
+      "status": "NO_ESTIMATE",
+      "status_counts": {
+        "formal_unsupported__simulation_unsupported": 14
+      },
+      "unresolved_calls": 14,
+      "unresolved_imputed": false
+    }
+  },
+  "exporter_version": "vericodegen-anonymous-supplement-v1",
+  "gates": {
+    "composite_calibration_passed": true,
+    "formal_calibration_counterexamples": 84,
+    "formal_primary_passed": false,
+    "formal_reporting_mode": "formal_where_supported_plus_independent_simulation_fallback",
+    "simulation_calibration_fallbacks": 1,
+    "strict_all_formal_calibration_passed": false
+  },
+  "historical_protocol": {
+    "anonymized_snapshot_fingerprint_sha256": "f109f4b0ea53d934e3820a4c92e4e85c7bef866c000e074b6584148bcf08f388",
+    "current_hardened_verifier_recheck_completed": false,
+    "embedded_formal_protocol_sha256": "0ca7c6f3b5bcbc07e4a52563a5aea7ddf6fa271ea9b0b9c3270ae20774e2b59e",
+    "snapshot_path": "artifacts/formal/historical_protocol_0ca7c6f3",
+    "status": "anonymized_noncanonical_historical_snapshot"
+  },
+  "kind": "vericodegen_anonymous_supplement_inventory",
+  "ledger": {
+    "events": 1762,
+    "responses": 463,
+    "verdicts": 413
+  },
+  "privacy": {
+    "absolute_paths_removed": true,
+    "candidate_sha256_preserved": true,
+    "candidate_text_in_public_ledger": false,
+    "environment_credentials_read": false,
+    "git_configuration_read": false,
+    "internal_task_ids_pseudonymized": true,
+    "project_namespace_neutralized": true,
+    "raw_response_bodies_included": false
+  },
+  "schema_version": 1,
+  "source_artifacts": [
+    {
+      "logical_name": "historical_formal_protocol:README.md",
+      "public_path": "artifacts/formal/historical_protocol_0ca7c6f3/README.md",
+      "public_sha256": "550648825a5d273dae08031f607e6260a7f4eff8bf48a89b693823541074228c",
+      "source_sha256": "550648825a5d273dae08031f607e6260a7f4eff8bf48a89b693823541074228c"
+    },
+    {
+      "logical_name": "historical_formal_protocol:fingerprint_manifest.json",
+      "public_path": "artifacts/formal/historical_protocol_0ca7c6f3/fingerprint_manifest.json",
+      "public_sha256": "eb776a1f4624b2df4d1d8913d4fd52ad340b4353a9f70962e23ec9fec47e41e6",
+      "source_sha256": "eb776a1f4624b2df4d1d8913d4fd52ad340b4353a9f70962e23ec9fec47e41e6"
+    },
+    {
+      "logical_name": "historical_formal_protocol:formal_protocol.py",
+      "public_path": "artifacts/formal/historical_protocol_0ca7c6f3/formal_protocol.py",
+      "public_sha256": "bd0e04d4b1bde74b1b9e21586475b3621fccce480b2ea62692151faf532867c1",
+      "source_sha256": "bd0e04d4b1bde74b1b9e21586475b3621fccce480b2ea62692151faf532867c1"
+    },
+    {
+      "logical_name": "historical_formal_protocol:formal_verify.py",
+      "public_path": "artifacts/formal/historical_protocol_0ca7c6f3/formal_verify.py",
+      "public_sha256": "c290ec1b2ccfd62ea636227b6a1560097d85de72eafccfcbd5c55732d0dd3e43",
+      "source_sha256": "534a76eaabd7ca1dc6180a062034fdcac76515018b5cf5b93a9d23ee1bd56fd9"
+    },
+    {
+      "logical_name": "historical_formal_protocol:verify_fingerprint.py",
+      "public_path": "artifacts/formal/historical_protocol_0ca7c6f3/verify_fingerprint.py",
+      "public_sha256": "3c5700211f267948e6988dbb62c40e2df1296adfa5adda9f11ec12fbdca5570d",
+      "source_sha256": "3c5700211f267948e6988dbb62c40e2df1296adfa5adda9f11ec12fbdca5570d"
+    },
+    {
+      "logical_name": "clean75_rows",
+      "public_path": "analysis/clean75_rows.jsonl",
+      "public_sha256": "82df99c00c38bed543518893cd681820ad5885602bb2989102788386c3cfc841",
+      "source_sha256": "182f21a4b2a722a399f426ce483eb0093085eb3fcdd161e77ee7097e98782f66"
+    },
+    {
+      "logical_name": "clean75_stats",
+      "public_path": "analysis/clean75_stats.json",
+      "public_sha256": "2951f84609def97a7ec41d27875d5067eeca5a6f892157c8df57ec3914786658",
+      "source_sha256": "bb74ff2c9ec75eb34bf74bfa313909f675b03aa0f17c629d21b404ee806cc813"
+    },
+    {
+      "logical_name": "full85_rows",
+      "public_path": "analysis/full85_rows.jsonl",
+      "public_sha256": "82df99c00c38bed543518893cd681820ad5885602bb2989102788386c3cfc841",
+      "source_sha256": "182f21a4b2a722a399f426ce483eb0093085eb3fcdd161e77ee7097e98782f66"
+    },
+    {
+      "logical_name": "full85_stats",
+      "public_path": "analysis/full85_stats.json",
+      "public_sha256": "9a7126c70eccfa94defcc80bde4315ebdd7723202bfd0b5b2e62c6c67a0b165a",
+      "source_sha256": "96a11da8006e8b60ec9adaba1a473723b7ae8bc8f420dcc8f2efdccb425f16c0"
+    },
+    {
+      "logical_name": "additional:data_helpers:vericodegen_data.py",
+      "public_path": "artifacts/data_helpers/vericodegen_data.py",
+      "public_sha256": "b27ac20ec7389bca7e86b71ed728a706ee18d7aa224c7857f52f4bd79fe204ea",
+      "source_sha256": "b27ac20ec7389bca7e86b71ed728a706ee18d7aa224c7857f52f4bd79fe204ea"
+    },
+    {
+      "logical_name": "additional:stats:vericodegen_stats.py",
+      "public_path": "artifacts/stats/vericodegen_stats.py",
+      "public_sha256": "8dfb8a7be6fd81dc82b8e23add9fcbc8d6c9cad9cb4585ade862c8f121e22968",
+      "source_sha256": "8dfb8a7be6fd81dc82b8e23add9fcbc8d6c9cad9cb4585ade862c8f121e22968"
+    },
+    {
+      "logical_name": "study_config",
+      "public_path": "config/study_config.json",
+      "public_sha256": "4d2941136484786ebb9f7006547d967be602d5572200e1dde11949b35d586b5a",
+      "source_sha256": "5289f09c2b79aafbb5f4d3c3a06a7aebd83d7521f7792ea9ad4bc606deb59283"
+    },
+    {
+      "logical_name": "calibration_fallback_simulation",
+      "public_path": "formal/calibration_fallback_simulation.json",
+      "public_sha256": "d4cf297fc3fd80b82cf867463deac32e793c4ade3f44b5dc103946e770a15290",
+      "source_sha256": "c1e8ba34b2b6bdf59a43e09615f4db68e636e397a3311187feb8ab5464d7265a"
+    },
+    {
+      "logical_name": "calibration_gate",
+      "public_path": "formal/calibration_gate.json",
+      "public_sha256": "2987ad49f5044ec014742fe3f3ec95023fce0f47067162325848724c791f81b8",
+      "source_sha256": "2ec1699b84c0efda1d6009d8af149c696b82ad79cbdeca17c6588cb89ad7fc20"
+    },
+    {
+      "logical_name": "calibration_results",
+      "public_path": "formal/calibration_results.jsonl",
+      "public_sha256": "053ad3201b6ed2ec4e0fce53298f04ed2239fdb2fb430385e17e1748085086d9",
+      "source_sha256": "1f893e7586c1c3f89aad966b560ba3ee464b37c37e431996e38c9cc3eaa3828e"
+    },
+    {
+      "logical_name": "formal_primary_gate",
+      "public_path": "formal/formal_primary_gate.json",
+      "public_sha256": "54b6c88506b0f37e9c608ead940fc3e3ce85d029a7dda1e217eece14939d9702",
+      "source_sha256": "9fc96fdfb02e3812b43148d3f81680ee84d1200ef5c5f7c6278d0ecb10a0cf9a"
+    },
+    {
+      "logical_name": "validation_results",
+      "public_path": "formal/validation_results.jsonl",
+      "public_sha256": "6706455e738e5f94ce25207bb4cca96297695cb2b8b76651ea5530d9ff79127c",
+      "source_sha256": "1e66d08e7093dc2433754698cd286dc7c05f0b744a986f77312b1e7786725979"
+    },
+    {
+      "logical_name": "experiment_ledger",
+      "public_path": "ledger/public_events.jsonl",
+      "public_sha256": "6a1ee9bc3f1006919d49d88f9fa0fa781dbf812161948675bf0698858e736bbb",
+      "source_sha256": "e52ad2f1fd99b7a41e1bde357358e9b9ec85b4d2fe2835520eed85ede9fa1f62"
+    },
+    {
+      "logical_name": "manifest:main85_inputs.manifest.json",
+      "public_path": "manifests/00_main85_inputs.manifest.json",
+      "public_sha256": "f87597fa309a233e48d133f9324f2634be1d076a4561b14ef8ee8f407f4212a0",
+      "source_sha256": "eb61f5d69af2e388f64c87ba4c02e954b8b5e8aaa7b88677fd1a8df26008d7a3"
+    },
+    {
+      "logical_name": "manifest:clean75_manifest.json",
+      "public_path": "manifests/01_clean75_manifest.json",
+      "public_sha256": "bc32bcb223177f6f585080ede26ee68ac292150d209ade3607f37500dfa58330",
+      "source_sha256": "5b1488e37cd9e0e306684533d81a4746a1e60c963f53a1066397704522b75ec5"
+    },
+    {
+      "logical_name": "manifest:shift50_manifest.json",
+      "public_path": "manifests/02_shift50_manifest.json",
+      "public_sha256": "18f3347361ac396f93bd5f95911cfc1b6690f3188a015563a39a228083f2a2fe",
+      "source_sha256": "89f6c455432b0c1715da2e78d6973b52385b529b245cff5b446d5126dd2259c4"
+    },
+    {
+      "logical_name": "manifest:shift50_inputs.manifest.json",
+      "public_path": "manifests/03_shift50_inputs.manifest.json",
+      "public_sha256": "48845e25f585fba5660e8b729c105980369ee92c5cb113b128a564eeaead5079",
+      "source_sha256": "386d25dca7f00a99fd24a53cf81e506afcf66ade4c480bab8231811fd0bf0414"
+    },
+    {
+      "logical_name": "manifest:sem85_manifest.json",
+      "public_path": "manifests/04_sem85_manifest.json",
+      "public_sha256": "882e9b429bbd51bce16b33ab23350edbde69126ad1d03d984e512933c9728584",
+      "source_sha256": "69b64307efaa002472c69090644ca35ae594c2ec13630633da30d55dae6d2a1f"
+    },
+    {
+      "logical_name": "manifest:protocol_manifest.json",
+      "public_path": "manifests/05_protocol_manifest.json",
+      "public_sha256": "c802a6fdc52336afba6231d245f519075da1bcb7e405d60323eaf41ec865838a",
+      "source_sha256": "1bd027de435959fada9b4e96a40172fb2abbf01260bc22e7f5e9ce5bb7db1059"
+    },
+    {
+      "logical_name": "manifest:toolchain_manifest.json",
+      "public_path": "manifests/06_toolchain_manifest.json",
+      "public_sha256": "50fcaa42e9400363e9452c0cf2bb5764761f3c2d33fe2214e541d24e9b2cb4f7",
+      "source_sha256": "7912ff2bcc3f4a116673132c14cc49f62068d146ce1d9479c6e507094473e0fe"
+    },
+    {
+      "logical_name": "manifest:toolchain.lock.json",
+      "public_path": "manifests/07_toolchain.lock.json",
+      "public_sha256": "a1fc01502027e85a9626c3b5027f0d5fdfbc0e62fec58ec65556c49bf716c6de",
+      "source_sha256": "e7ca99d4352b6ab9f883bf7fc9faae2b75511e3f921fbc7b530b98d250b0301f"
+    },
+    {
+      "logical_name": "pre_output_protocol_amendment",
+      "public_path": "protocol/pre_output_amendment.json",
+      "public_sha256": "6618700f944092f53a2f38ad365d555c92bc09c89269ba5ae165c3f95b0b81ac",
+      "source_sha256": "4f9bc41ac9bda24cd31eeb2c9e32cf18915852b0e498eaf46ba166b8d0843371"
+    },
+    {
+      "logical_name": "redaction_cancellation",
+      "public_path": "protocol/redaction_cancellation.json",
+      "public_sha256": "4852d546d6088a60d0988db8704d9378ae83659a982dc34f3754f62d13e5ece1",
+      "source_sha256": "9728c13d3c266ce35e3d1a8007ddd64635328188147d4b330950c50213e6e83f"
+    }
+  ],
+  "strict_final_export": true,
+  "study_id": "vericodegen-2026-verifier-guided-rtl-repair"
+}

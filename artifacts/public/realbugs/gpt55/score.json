@@ -1,0 +1,29 @@
+{
+  "tag": "gpt55",
+  "n": 274,
+  "nospec": {
+    "pct": 46.7,
+    "recovered": 128,
+    "n": 274
+  },
+  "spec": {
+    "pct": 69.7,
+    "recovered": 191,
+    "n": 274
+  },
+  "speconly": {
+    "pct": 68.2,
+    "recovered": 187,
+    "n": 274
+  },
+  "intent_effect": {
+    "fixed": 73,
+    "lost": 10,
+    "mcnemar_p": 5.800664942039543e-13
+  },
+  "regen_vs_repair": {
+    "speconly_fixes_spec_misses": 17,
+    "spec_fixes_speconly_misses": 21,
+    "mcnemar_p": 0.6271025701571489
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "case_count": 50,
+  "case_index": [
+    {
+      "anonymous_id": "shift_0000",
+      "case_id": "shift_0000",
+      "materialized_case_sha256": "86817e9074f6e9d884663f675e24cb7a6dd274117dbd0f11f924f9565d208632"
+    },
+    {
+      "anonymous_id": "shift_0001",
+      "case_id": "shift_0001",
+      "materialized_case_sha256": "2010bd3ba8494f2df22e32a4b0fab676c6597e46adf0bb1c95101ca77e4c1177"
+    },
+    {
+      "anonymous_id": "shift_0002",
+      "case_id": "shift_0002",
+      "materialized_case_sha256": "92ecde105b047b7d999e27b37d18da425982f5944f7dfe99e4188e358c6416f4"
+    },
+    {
+      "anonymous_id": "shift_0003",
+      "case_id": "shift_0003",
+      "materialized_case_sha256": "e65b63828564f1c02fec4d32b45b19d3c1c2360075f7568aefa475d2647b80b8"
+    },
+    {
+      "anonymous_id": "shift_0004",
+      "case_id": "shift_0004",
+      "materialized_case_sha256": "5b54413d681f99fc1ded260545d1f5a2fcefdd9d798cf75124d422e5cdd9e139"
+    },
+    {
+      "anonymous_id": "shift_0005",
+      "case_id": "shift_0005",
+      "materialized_case_sha256": "907eb7fe78a76ed805359aa2332bfae6b25f3cafb5a7a6b716b94c35005409db"
+    },
+    {
+      "anonymous_id": "shift_0006",
+      "case_id": "shift_0006",
+      "materialized_case_sha256": "82fbea2571f502d2b73adeb7ee729f0251d36bd4bbcb682e21c01a295bb61769"
+    },
+    {
+      "anonymous_id": "shift_0007",
+      "case_id": "shift_0007",
+      "materialized_case_sha256": "138153ddfb2807f80f9e1759855642ebba50a2c1a7edf5a4aabb5bfaee7e6b99"
+    },
+    {
+      "anonymous_id": "shift_0008",
+      "case_id": "shift_0008",
+      "materialized_case_sha256": "da01e9b8649823bfb812c97778770d2b4a6fde33293ec86825fddcb3223483c6"
+    },
+    {
+      "anonymous_id": "shift_0009",
+      "case_id": "shift_0009",
+      "materialized_case_sha256": "baee7dd5d889645da227acef5f2368dbb5ea39130d22e170b9473801f57a8747"
+    },
+    {
+      "anonymous_id": "shift_0010",
+      "case_id": "shift_0010",
+      "materialized_case_sha256": "8be7c0585845a4867ae5c0419edee15ecdc05de06c0eaf5df458e75a3f200c72"
+    },
+    {
+      "anonymous_id": "shift_0011",
+      "case_id": "shift_0011",
+      "materialized_case_sha256": "85a199c9cb355bfeb09121d2af9387d084717ef196498531a3662caf633fc50d"
+    },
+    {
+      "anonymous_id": "shift_0012",
+      "case_id": "shift_0012",
+      "materialized_case_sha256": "bf2bf3ff4b656866efd163e9fd52001253513b634075d316f1bdca98eea4eb44"
+    },
+    {
+      "anonymous_id": "shift_0013",
+      "case_id": "shift_0013",
+      "materialized_case_sha256": "9b748250eb20d5e7f9dfef3f12f84827d7924cf4e4b0533a3ba85154a1b05bc5"
+    },
+    {
+      "anonymous_id": "shift_0014",
+      "case_id": "shift_0014",
+      "materialized_case_sha256": "9ebdf91a93710934c1f32c50e01cf2fb30a6eb40eae8606fe404d389be1c0d4e"
+    },
+    {
+      "anonymous_id": "shift_0015",
+      "case_id": "shift_0015",
+      "materialized_case_sha256": "406e0f4126b97b18c89acd6397beb8b68cddc9457196d48a77506fbda3dbb8e7"
+    },
+    {
+      "anonymous_id": "shift_0016",
+      "case_id": "shift_0016",
+      "materialized_case_sha256": "68ed6a0c72babf1be6d43ba4349e3cc5c1aba082ac96fde2bd59d8fda2c1f99e"
+    },
+    {
+      "anonymous_id": "shift_0017",
+      "case_id": "shift_0017",
+      "materialized_case_sha256": "4c14f25921da7366414479ff6eb4c1de6ff0b067a7861445922538fc06da0e39"
+    },
+    {
+      "anonymous_id": "shift_0018",
+      "case_id": "shift_0018",
+      "materialized_case_sha256": "19e48673d5df2d0b5dbf0b07813d21299357ab570a37e647d8eb40014ce0d1d6"
+    },
+    {
+      "anonymous_id": "shift_0019",
+      "case_id": "shift_0019",
+      "materialized_case_sha256": "e498f006e658cfc00278591dcb41a36f76e6e32d71b56fac5da7ab1c4154a945"
+    },
+    {
+      "anonymous_id": "shift_0020",
+      "case_id": "shift_0020",
+      "materialized_case_sha256": "406f0f1e723f929312b2ba67fc2d7036524cef09db562b08280ba417e5d67a32"
+    },
+    {
+      "anonymous_id": "shift_0021",
+      "case_id": "shift_0021",
+      "materialized_case_sha256": "c718206065b7ae0a0db77d035a83b4990d2c5edb3f9894a0971e5e3be4f85247"
+    },
+    {
+      "anonymous_id": "shift_0022",
+      "case_id": "shift_0022",
+      "materialized_case_sha256": "88e37c34ecd5c6e234c54f8cada5aff27a77ecf932e82c3906a9bb83af975192"
+    },
+    {
+      "anonymous_id": "shift_0023",
+      "case_id": "shift_0023",
+      "materialized_case_sha256": "c20655d90b82f7fa28f14597603f9f8bb519e8c217ebc28d6d5725bff19cb6ab"
+    },
+    {
+      "anonymous_id": "shift_0024",
+      "case_id": "shift_0024",
+      "materialized_case_sha256": "5b57737d35f78a169c5ab8c67410bc540309be002f71215db2d5b551ef4f09b6"
+    },
+    {
+      "anonymous_id": "shift_0025",
+      "case_id": "shift_0025",
+      "materialized_case_sha256": "9c04c471afe0ada77f81a1609c29e95bc4e34a8d23acc57ff8e6edf6393450db"
+    },
+    {
+      "anonymous_id": "shift_0026",
+      "case_id": "shift_0026",
+      "materialized_case_sha256": "798ccf85d800417241327e887e0b15f700ddef1fe81d01c6ed653aec98a0b710"
+    },
+    {
+      "anonymous_id": "shift_0027",
+      "case_id": "shift_0027",
+      "materialized_case_sha256": "56669efc371ff7e8b7f40f0e6369c8fe32ba048f571944e8ab14c51c28700377"
+    },
+    {
+      "anonymous_id": "shift_0028",
+      "case_id": "shift_0028",
+      "materialized_case_sha256": "1ab86ef8696fe3600b00e456bcc10599b71f28ac7b14299064ff46b5352af112"
+    },
+    {
+      "anonymous_id": "shift_0029",
+      "case_id": "shift_0029",
+      "materialized_case_sha256": "c0fbd473680cb465f2bea9493d069e85f1d7f22c727d2988e9ed23777eea0d09"
+    },
+    {
+      "anonymous_id": "shift_0030",
+      "case_id": "shift_0030",
+      "materialized_case_sha256": "274982504e4ce62cd3d1bdfc690e8b4aaed698ba52403e0eb272cf4b45095343"
+    },
+    {
+      "anonymous_id": "shift_0031",
+      "case_id": "shift_0031",
+      "materialized_case_sha256": "2a2458bf5724dad2436b1ecc72ddc271b3f21b800a86dbb1fae39e0b834ef431"
+    },
+    {
+      "anonymous_id": "shift_0032",
+      "case_id": "shift_0032",
+      "materialized_case_sha256": "02cb227cedaca6378100a8ad192eec8823c79b0bf91f6647ee39f88588933931"
+    },
+    {
+      "anonymous_id": "shift_0033",
+      "case_id": "shift_0033",
+      "materialized_case_sha256": "faafdf9f294be206903409f2d9dd8fd8e863527348487d40fc09f3933580cd15"
+    },
+    {
+      "anonymous_id": "shift_0034",
+      "case_id": "shift_0034",
+      "materialized_case_sha256": "86e6dd377913be9785483cae7f595511ac8a58cdff3c7c4fc7bf5a7032455bae"
+    },
+    {
+      "anonymous_id": "shift_0035",
+      "case_id": "shift_0035",
+      "materialized_case_sha256": "8a7d44f84d3d956085e3cf6ab0ade80e22619439ac57b5f297fdcad4c1e632d7"
+    },
+    {
+      "anonymous_id": "shift_0036",
+      "case_id": "shift_0036",
+      "materialized_case_sha256": "e70c3b29fdb3eb01e457546d79bb84ee41e76ff43ce40d7a870097f0011d9373"
+    },
+    {
+      "anonymous_id": "shift_0037",
+      "case_id": "shift_0037",
+      "materialized_case_sha256": "0fb37e962e1656ef6ec622a3f12d3246e33b8cf28f9f7bb3d3beda3ecb8d371b"
+    },
+    {
+      "anonymous_id": "shift_0038",
+      "case_id": "shift_0038",
+      "materialized_case_sha256": "250dd20f5099fb87140cd7c3dc459ba64f5c102478a267580092a47feb417c9a"
+    },
+    {
+      "anonymous_id": "shift_0039",
+      "case_id": "shift_0039",
+      "materialized_case_sha256": "d5c083d9e155fa102a4f1e2c7cf6e1a12734bc734f0798a90d425fa5460f3755"
+    },
+    {
+      "anonymous_id": "shift_0040",
+      "case_id": "shift_0040",
+      "materialized_case_sha256": "a93e69b076048a2d3388650836e9bcfc3ce2da75d049c195e6c120eb406926ef"
+    },
+    {
+      "anonymous_id": "shift_0041",
+      "case_id": "shift_0041",
+      "materialized_case_sha256": "579f2207c906244629600aac53f5a064659b863fcf59533b714ed5426a40b4f1"
+    },
+    {
+      "anonymous_id": "shift_0042",
+      "case_id": "shift_0042",
+      "materialized_case_sha256": "848a0ddf8699c5cb97305bf02049ffe6d57368776641c3d1e1b24e022234fa8d"
+    },
+    {
+      "anonymous_id": "shift_0043",
+      "case_id": "shift_0043",
+      "materialized_case_sha256": "a12f858ad02afef9ff2e85485cf2b370bdf46dfd5fd7ff1dc54090fdce7ca0a5"
+    },
+    {
+      "anonymous_id": "shift_0044",
+      "case_id": "shift_0044",
+      "materialized_case_sha256": "18e755cf5ac2109dec30a599f59d1fe9c74ce002764753a56223acefb3f37a09"
+    },
+    {
+      "anonymous_id": "shift_0045",
+      "case_id": "shift_0045",
+      "materialized_case_sha256": "beb4c976167570bc28224e16a250212c203d530fe27bf7c14f7bf1b5bf1e1ef1"
+    },
+    {
+      "anonymous_id": "shift_0046",
+      "case_id": "shift_0046",
+      "materialized_case_sha256": "71977883b7a56f373c8b800ca4121bbe54aa434cadbdd7eacb9ef85cdcc8ed42"
+    },
+    {
+      "anonymous_id": "shift_0047",
+      "case_id": "shift_0047",
+      "materialized_case_sha256": "e9552c165a9a37fe7f2c95da7d890734d70f4e8a22492a65aff28fc8ea32b0a6"
+    },
+    {
+      "anonymous_id": "shift_0048",
+      "case_id": "shift_0048",
+      "materialized_case_sha256": "e8acbbdaa2eef7b3a3557e90ca4ef8ab4b4ab1b6fc01cae40b54db5cf1dcfb4c"
+    },
+    {
+      "anonymous_id": "shift_0049",
+      "case_id": "shift_0049",
+      "materialized_case_sha256": "c90a4fb1efb356af2aa6561cedfb79aa92a283f572ae1274104fcc0619453978"
+    }
+  ],
+  "contains_golden_rtl": false,
+  "jsonl": {
+    "path": "configs/vericodegen/shift50_inputs.jsonl",
+    "sha256": "c91f9aae320e7aa9d7f4bf45f92c320d7c4e75c203e1dc808093f379f49356f4"
+  },
+  "kind": "vericodegen_shift50_materialized_inputs",
+  "public_document_sha256": "d19209e4a53ad79754fbb96c1643e02feba6754f081748383a99118595898ad3",
+  "schema_version": 1,
+  "source_manifest_sha256": "ed09f36b88617be598ca7e5b49925b6fa4c85830bb387d4e02317bf063d61e39",
+  "sources": {
+    "failure_pool": {
+      "path": "data/repairbench_realbugs.jsonl",
+      "sha256": "a8cc99355a9ab934558e664cf8fcf33c07b0f8bbce5269406e569f15838a9ae6"
+    },
+    "selection_manifest": {
+      "path": "configs/vericodegen/shift50_manifest.json",
+      "sha256": "89f6c455432b0c1715da2e78d6973b52385b529b245cff5b446d5126dd2259c4"
+    }
+  }
+}

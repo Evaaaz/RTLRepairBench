@@ -1,0 +1,35 @@
+# Python dependencies for the lint-vs-semantic apparatus (datagen + benchmarks).
+#
+# Nothing here is needed for the core of either lane:
+#   * dataset creation (steps 2-5: mutate, lint-gate, differential-sim-gate,
+#     decontaminate) is pure standard library — bring your own directory of
+#     clean .sv seeds (SEEDS=/path bash build_dataset.sh) and you need only the
+#     system tools below.
+#   * the eval scoring/analysis core (evaluate_outputs, scoring gates, stats,
+#     analyze) is likewise pure standard library.
+
+# datagen, step 1 only (export_mg_verilog_seeds.py -> mg_verilog_to_prime_sft.py):
+# loads the MG-Verilog corpus via datasets.load_from_disk.
+datasets>=2.14
+
+# benchmarks: a client library for whichever inference backend you actually use.
+#   openai      — served models (base / v5 / OriGen_Fix via a vLLM or other
+#                 OpenAI-compatible endpoint at $RTLREPAIR_LLM_URL)
+#   anthropic   — the Claude arm (--backend claude, reads $ANTHROPIC_API_KEY)
+openai>=1.0
+anthropic>=0.40
+
+# benchmarks/storage: sync banked results + raw completions to the HF dataset
+# repo (see benchmarks/WHERE_TO_STORE_LLM_RESULTS.md). Only the `push`/`pull`
+# half needs this — banking to the local tree is pure standard library.
+huggingface_hub>=0.23
+
+# ---------------------------------------------------------------------------
+# System tools (NOT pip-installable — install separately, must be on PATH).
+# Used by both the dataset gates and the eval re-validation:
+#   * verilator        — the lint-class gate          (e.g. brew install verilator)
+#   * iverilog + vvp   — the semantic differential-sim gate
+#                                                     (e.g. brew install icarus-verilog)
+# Python 3.9+ is assumed (uses `X | None` and PEP 585 generics under
+# `from __future__ import annotations`).
+# ---------------------------------------------------------------------------

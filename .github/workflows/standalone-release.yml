@@ -1,0 +1,35 @@
+name: standalone-release
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  release-policy:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9.6", "3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Verify source release policy
+        run: python tools/export_standalone.py --check
+      - name: Run standalone tests
+        run: PYTHONPATH="code:code/benchmarks" python tools/run_public_tests.py
+      - name: Reconstruct public analyses offline
+        run: python tools/reproduce.py offline --output "${RUNNER_TEMP}/reproduced"
+      - name: Verify frozen byte-exact analysis runtime
+        if: matrix.python-version == '3.9.6'
+        run: python tools/reproduce.py offline --strict --output "${RUNNER_TEMP}/reproduced-strict"
+      - name: Exercise a fresh temporary export
+        run: python tools/export_standalone.py --smoke
+      - name: Ensure checks do not dirty the clone
+        run: test -z "$(git status --porcelain)"

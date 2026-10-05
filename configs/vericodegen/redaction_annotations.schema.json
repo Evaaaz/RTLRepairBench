@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/vericodegen/redaction_annotations.schema.json",
+  "title": "VeriCodeGen two-annotator spec redaction document",
+  "type": "object",
+  "required": ["schema_version", "kind", "status", "cases"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "kind": {"const": "vericodegen_spec_redaction_annotations"},
+    "status": {"type": "string"},
+    "cases": {
+      "type": "array",
+      "minItems": 85,
+      "maxItems": 85,
+      "items": {
+        "type": "object",
+        "required": [
+          "case_id",
+          "seed_id",
+          "eval_id",
+          "full_spec",
+          "full_spec_sha256",
+          "mutation_target",
+          "mutation_target_sha256",
+          "annotations",
+          "adjudication"
+        ],
+        "properties": {
+          "case_id": {"type": "string", "minLength": 1},
+          "seed_id": {"type": "string", "minLength": 1},
+          "eval_id": {"type": "string", "minLength": 1},
+          "full_spec": {"type": "string", "minLength": 1},
+          "full_spec_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "mutation_target": {
+            "type": "object",
+            "required": [
+              "broken_line_number",
+              "broken_line",
+              "canonical_line_number",
+              "canonical_line"
+            ],
+            "properties": {
+              "broken_line_number": {"type": "integer", "minimum": 1},
+              "broken_line": {"type": "string"},
+              "canonical_line_number": {"type": "integer", "minimum": 1},
+              "canonical_line": {"type": "string"}
+            },
+            "additionalProperties": false
+          },
+          "mutation_target_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "annotations": {
+            "type": "object",
+            "required": ["annotator_a", "annotator_b"],
+            "properties": {
+              "annotator_a": {"$ref": "#/$defs/annotation"},
+              "annotator_b": {"$ref": "#/$defs/annotation"}
+            },
+            "additionalProperties": false
+          },
+          "adjudication": {"$ref": "#/$defs/annotation"}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "$defs": {
+    "annotation": {
+      "type": "object",
+      "required": [
+        "annotator_id",
+        "intent_label",
+        "redactable_without_hint",
+        "minimal_removed_clause",
+        "redacted_spec",
+        "notes"
+      ],
+      "properties": {
+        "annotator_id": {"type": ["string", "null"]},
+        "intent_label": {
+          "type": ["string", "null"],
+          "enum": ["explicit", "derivable", "absent", null]
+        },
+        "redactable_without_hint": {"type": ["boolean", "null"]},
+        "minimal_removed_clause": {"type": ["string", "null"]},
+        "redacted_spec": {"type": ["string", "null"]},
+        "notes": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}

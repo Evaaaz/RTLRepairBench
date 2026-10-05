@@ -1,0 +1,16 @@
+{
+  "model": "azure/anthropic/claude-opus-4-8",
+  "n_cases": 68,
+  "baseline_pct": 75.0,
+  "what_pp": 11.0,
+  "what_ci": [
+    -0.9,
+    24.1
+  ],
+  "where_pp": 6.8,
+  "where_ci": [
+    1.4,
+    12.2
+  ],
+  "scored_by": "differential_simulation"
+}

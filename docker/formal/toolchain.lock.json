@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "base_image": {
+    "name": "ubuntu",
+    "tag": "24.04",
+    "digest": "sha256:4fbb8e6a8395de5a7550b33509421a2bafbc0aab6c06ba2cef9ebffbc7092d90"
+  },
+  "oss_cad_suite": {
+    "publisher": "YosysHQ/oss-cad-suite-build",
+    "release": "2026-05-08",
+    "release_id": "20260508",
+    "assets": {
+      "linux-arm64": {
+        "filename": "oss-cad-suite-linux-arm64-20260508.tgz",
+        "sha256": "4b056c3e999c4289db22decb9e2be06178e9c66d6f56e48d8f1c9c85d1452f72"
+      },
+      "linux-x64": {
+        "filename": "oss-cad-suite-linux-x64-20260508.tgz",
+        "sha256": "c71735b02df363e2ad8e9f129e477e4f31b18d6532e9bed92eb8ad296101cb6f"
+      }
+    },
+    "required_tools": [
+      "yosys",
+      "sby",
+      "abc",
+      "z3",
+      "boolector",
+      "iverilog",
+      "vvp",
+      "verilator"
+    ]
+  }
+}

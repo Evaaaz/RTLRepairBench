@@ -1,0 +1,29 @@
+{
+  "tag": "gpt41",
+  "n": 274,
+  "nospec": {
+    "pct": 25.9,
+    "recovered": 71,
+    "n": 274
+  },
+  "spec": {
+    "pct": 42.3,
+    "recovered": 116,
+    "n": 274
+  },
+  "speconly": {
+    "pct": 36.5,
+    "recovered": 100,
+    "n": 274
+  },
+  "intent_effect": {
+    "fixed": 65,
+    "lost": 20,
+    "mcnemar_p": 1.029887431251981e-06
+  },
+  "regen_vs_repair": {
+    "speconly_fixes_spec_misses": 37,
+    "spec_fixes_speconly_misses": 53,
+    "mcnemar_p": 0.11334435404342065
+  }
+}

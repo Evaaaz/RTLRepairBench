@@ -1,0 +1,101 @@
+{
+  "design": "Supplementary D.3 item 3: interleaved paired replicates, temperature 0",
+  "draws": [
+    {
+      "draw": "signrep1",
+      "formal_contrast_pp": 2.2,
+      "formal_n": 45,
+      "guard_shift_pp": 6.3,
+      "model": "azure/anthropic/claude-opus-4-8",
+      "signs_disagree": false,
+      "sim_cycle0_contrast_pp": 15.6,
+      "sim_cycle0_n": 64,
+      "sim_cycle1_contrast_pp": 21.9,
+      "sim_cycle1_n": 64
+    },
+    {
+      "draw": "signrep2",
+      "formal_contrast_pp": 0.0,
+      "formal_n": 47,
+      "guard_shift_pp": 3.1,
+      "model": "azure/anthropic/claude-opus-4-8",
+      "signs_disagree": null,
+      "sim_cycle0_contrast_pp": 9.2,
+      "sim_cycle0_n": 65,
+      "sim_cycle1_contrast_pp": 12.3,
+      "sim_cycle1_n": 65
+    },
+    {
+      "draw": "signrep3",
+      "formal_contrast_pp": 2.2,
+      "formal_n": 45,
+      "guard_shift_pp": 6.3,
+      "model": "azure/anthropic/claude-opus-4-8",
+      "signs_disagree": false,
+      "sim_cycle0_contrast_pp": 15.6,
+      "sim_cycle0_n": 64,
+      "sim_cycle1_contrast_pp": 21.9,
+      "sim_cycle1_n": 64
+    },
+    {
+      "draw": "signrep1",
+      "formal_contrast_pp": 0.0,
+      "formal_n": 59,
+      "guard_shift_pp": 12.3,
+      "model": "azure/openai/gpt-5.5",
+      "signs_disagree": null,
+      "sim_cycle0_contrast_pp": 0.0,
+      "sim_cycle0_n": 65,
+      "sim_cycle1_contrast_pp": 12.3,
+      "sim_cycle1_n": 65
+    },
+    {
+      "draw": "signrep2",
+      "formal_contrast_pp": 0.0,
+      "formal_n": 57,
+      "guard_shift_pp": 7.9,
+      "model": "azure/openai/gpt-5.5",
+      "signs_disagree": null,
+      "sim_cycle0_contrast_pp": -1.6,
+      "sim_cycle0_n": 63,
+      "sim_cycle1_contrast_pp": 6.3,
+      "sim_cycle1_n": 63
+    },
+    {
+      "draw": "signrep3",
+      "formal_contrast_pp": 0.0,
+      "formal_n": 59,
+      "guard_shift_pp": 8.1,
+      "model": "azure/openai/gpt-5.5",
+      "signs_disagree": null,
+      "sim_cycle0_contrast_pp": 0.0,
+      "sim_cycle0_n": 62,
+      "sim_cycle1_contrast_pp": 8.1,
+      "sim_cycle1_n": 62
+    }
+  ],
+  "generated_by": "code/scripts/x9b_sign_reversal_score.py",
+  "summary": {
+    "draws_scored": 6,
+    "draws_where_tiers_disagree_in_sign": 0,
+    "draws_with_both_signs_nonzero": 2,
+    "guard_shift_pp": {
+      "all_positive": true,
+      "mean": 7.3,
+      "per_draw": [
+        6.3,
+        3.1,
+        6.3,
+        12.3,
+        7.9,
+        8.1
+      ],
+      "range": [
+        3.1,
+        12.3
+      ]
+    },
+    "note": "Two readings. The sign reversal did not replicate: no draw shows the two tiers disagreeing in sign, and the frozen probe's -11.4/+8.9 pair does not reproduce on either leg. What does replicate is the guard shift -- moving the comparison off cycle 0 raises the specification contrast in every draw -- which is the mechanism rather than the effect size. Temperature 0 did not make the draws identical: across draws 1 and 3, 40 of 133 shared gpt-5.5 candidates and 79 of 136 Claude candidates are byte-identical, so these are six replicates of a nondeterministic endpoint.",
+    "rate": 0.0
+  }
+}

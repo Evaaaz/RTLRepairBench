@@ -1,0 +1,29 @@
+{
+  "tag": "gpt54mini",
+  "n": 274,
+  "nospec": {
+    "pct": 27.7,
+    "recovered": 76,
+    "n": 274
+  },
+  "spec": {
+    "pct": 46.7,
+    "recovered": 128,
+    "n": 274
+  },
+  "speconly": {
+    "pct": 52.2,
+    "recovered": 143,
+    "n": 274
+  },
+  "intent_effect": {
+    "fixed": 66,
+    "lost": 14,
+    "mcnemar_p": 3.1365426901467503e-09
+  },
+  "regen_vs_repair": {
+    "speconly_fixes_spec_misses": 32,
+    "spec_fixes_speconly_misses": 17,
+    "mcnemar_p": 0.04438416098714981
+  }
+}

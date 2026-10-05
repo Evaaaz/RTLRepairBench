@@ -1,0 +1,154 @@
+{
+  "generated_by": "code/scripts/x5_openweight_tierf_rescore.py",
+  "models": {
+    "base": {
+      "diag": {
+        "n_both_tiers_definitive": 75,
+        "n_definitive": 75,
+        "n_scored": 85,
+        "proved": 18,
+        "recovery_pct_of_all": 21.2,
+        "recovery_pct_of_definitive": 24.0,
+        "sim_false_diverged": 18,
+        "sim_over_credited": 0,
+        "tier_s_pass_same_candidates": 0,
+        "tier_s_pct_of_all": 0.0,
+        "verdict_distribution": {
+          "COMPILE_FAIL": 1,
+          "COUNTEREXAMPLE": 57,
+          "PROVED": 18,
+          "UNSUPPORTED": 9
+        }
+      },
+      "diag_spec": {
+        "n_both_tiers_definitive": 72,
+        "n_definitive": 72,
+        "n_scored": 85,
+        "proved": 24,
+        "recovery_pct_of_all": 28.2,
+        "recovery_pct_of_definitive": 33.3,
+        "sim_false_diverged": 24,
+        "sim_over_credited": 0,
+        "tier_s_pass_same_candidates": 0,
+        "tier_s_pct_of_all": 0.0,
+        "verdict_distribution": {
+          "COMPILE_FAIL": 2,
+          "COUNTEREXAMPLE": 48,
+          "PROVED": 24,
+          "UNSUPPORTED": 11
+        }
+      }
+    },
+    "v5": {
+      "diag": {
+        "n_both_tiers_definitive": 81,
+        "n_definitive": 81,
+        "n_scored": 85,
+        "proved": 22,
+        "recovery_pct_of_all": 25.9,
+        "recovery_pct_of_definitive": 27.2,
+        "sim_false_diverged": 22,
+        "sim_over_credited": 0,
+        "tier_s_pass_same_candidates": 0,
+        "tier_s_pct_of_all": 0.0,
+        "verdict_distribution": {
+          "COUNTEREXAMPLE": 59,
+          "PROVED": 22,
+          "UNSUPPORTED": 4
+        }
+      },
+      "diag_spec": {
+        "n_both_tiers_definitive": 83,
+        "n_definitive": 83,
+        "n_scored": 85,
+        "proved": 37,
+        "recovery_pct_of_all": 43.5,
+        "recovery_pct_of_definitive": 44.6,
+        "sim_false_diverged": 37,
+        "sim_over_credited": 0,
+        "tier_s_pass_same_candidates": 0,
+        "tier_s_pct_of_all": 0.0,
+        "verdict_distribution": {
+          "COUNTEREXAMPLE": 46,
+          "PROVED": 37,
+          "UNSUPPORTED": 2
+        }
+      }
+    },
+    "verireason": {
+      "diag": {
+        "n_both_tiers_definitive": 75,
+        "n_definitive": 75,
+        "n_scored": 85,
+        "proved": 11,
+        "recovery_pct_of_all": 12.9,
+        "recovery_pct_of_definitive": 14.7,
+        "sim_false_diverged": 11,
+        "sim_over_credited": 0,
+        "tier_s_pass_same_candidates": 0,
+        "tier_s_pct_of_all": 0.0,
+        "verdict_distribution": {
+          "COMPILE_FAIL": 1,
+          "COUNTEREXAMPLE": 64,
+          "PROVED": 11,
+          "UNSUPPORTED": 9
+        }
+      },
+      "diag_spec": {
+        "n_both_tiers_definitive": 71,
+        "n_definitive": 71,
+        "n_scored": 85,
+        "proved": 15,
+        "recovery_pct_of_all": 17.6,
+        "recovery_pct_of_definitive": 21.1,
+        "sim_false_diverged": 15,
+        "sim_over_credited": 0,
+        "tier_s_pass_same_candidates": 0,
+        "tier_s_pct_of_all": 0.0,
+        "verdict_distribution": {
+          "COUNTEREXAMPLE": 56,
+          "PROVED": 15,
+          "UNSUPPORTED": 14
+        }
+      }
+    },
+    "vrqwen": {
+      "diag": {
+        "n_both_tiers_definitive": 80,
+        "n_definitive": 80,
+        "n_scored": 85,
+        "proved": 9,
+        "recovery_pct_of_all": 10.6,
+        "recovery_pct_of_definitive": 11.2,
+        "sim_false_diverged": 9,
+        "sim_over_credited": 0,
+        "tier_s_pass_same_candidates": 0,
+        "tier_s_pct_of_all": 0.0,
+        "verdict_distribution": {
+          "COMPILE_FAIL": 1,
+          "COUNTEREXAMPLE": 71,
+          "PROVED": 9,
+          "UNSUPPORTED": 4
+        }
+      },
+      "diag_spec": {
+        "n_both_tiers_definitive": 76,
+        "n_definitive": 76,
+        "n_scored": 85,
+        "proved": 26,
+        "recovery_pct_of_all": 30.6,
+        "recovery_pct_of_definitive": 34.2,
+        "sim_false_diverged": 26,
+        "sim_over_credited": 0,
+        "tier_s_pass_same_candidates": 0,
+        "tier_s_pct_of_all": 0.0,
+        "verdict_distribution": {
+          "COUNTEREXAMPLE": 50,
+          "PROVED": 26,
+          "UNSUPPORTED": 9
+        }
+      }
+    }
+  },
+  "note": "Tier F on the retained open-weight semantic candidates. Recovery is PROVED / definitive, so cells the prover cannot decide are reported as coverage loss instead of being scored as failed repairs."
+}

@@ -1,0 +1,43 @@
+{
+  "model": "verireason",
+  "version": "20260801-e6dddd8",
+  "signal": "diag",
+  "summary": {
+    "model": "verireason",
+    "backend": "rtlrepair",
+    "n": 459,
+    "anon": true,
+    "spec": false,
+    "locate": false,
+    "temp": 0.0,
+    "by_bucket": {
+      "lint": {
+        "n": 374,
+        "recovered": 220,
+        "recovery_rate": 0.5882,
+        "used_llm_rate": 1.0,
+        "spec_rate": 0.0
+      },
+      "semantic": {
+        "n": 85,
+        "recovered": 13,
+        "recovery_rate": 0.1529,
+        "used_llm_rate": 1.0,
+        "spec_rate": 0.0
+      }
+    }
+  },
+  "n_records": 459,
+  "raw": [],
+  "arm": "verireason_diag",
+  "config": {
+    "backend": "rtlrepair",
+    "anon": true,
+    "temp": 0.0,
+    "prompt_style": "verireason",
+    "name": "verireason_diag",
+    "model": "verireason",
+    "signal": [],
+    "endpoint_env": "VERIREASON_LLM_URL"
+  }
+}

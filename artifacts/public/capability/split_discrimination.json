@@ -1,0 +1,84 @@
+{
+  "clustered_on_lint": {
+    "lint_range": [
+      87.7,
+      100.0
+    ],
+    "lint_span_pp": 12.3,
+    "models": [
+      "Claude Opus 4.8",
+      "OriGen_Fix",
+      "Qwen2.5-Coder-7B",
+      "VR-Qwen2.5-7B",
+      "gpt-5.5",
+      "v5"
+    ],
+    "n": 6,
+    "semantic_range": [
+      10.6,
+      75.3
+    ],
+    "semantic_span_pp": 64.7
+  },
+  "generated_by": "code/scripts/ws_split_discrimination.py",
+  "n_models": 7,
+  "per_model": {
+    "Claude Opus 4.8": {
+      "lint_pct": 100.0,
+      "semantic_pct": 63.5
+    },
+    "OriGen_Fix": {
+      "lint_pct": 90.6,
+      "semantic_pct": 31.8
+    },
+    "Qwen2.5-Coder-7B": {
+      "lint_pct": 94.1,
+      "semantic_pct": 25.9
+    },
+    "VR-Qwen2.5-7B": {
+      "lint_pct": 93.3,
+      "semantic_pct": 10.6
+    },
+    "VeriReason-CodeLlama-7B": {
+      "lint_pct": 58.6,
+      "semantic_pct": 15.3
+    },
+    "gpt-5.5": {
+      "lint_pct": 100.0,
+      "semantic_pct": 75.3
+    },
+    "v5": {
+      "lint_pct": 87.7,
+      "semantic_pct": 28.2
+    }
+  },
+  "rank_by_lint": [
+    "gpt-5.5",
+    "Claude Opus 4.8",
+    "Qwen2.5-Coder-7B",
+    "VR-Qwen2.5-7B",
+    "OriGen_Fix",
+    "v5",
+    "VeriReason-CodeLlama-7B"
+  ],
+  "rank_by_semantic": [
+    "gpt-5.5",
+    "Claude Opus 4.8",
+    "OriGen_Fix",
+    "v5",
+    "Qwen2.5-Coder-7B",
+    "VeriReason-CodeLlama-7B",
+    "VR-Qwen2.5-7B"
+  ],
+  "rank_correlation": {
+    "all_models": 0.59,
+    "excluding_saturated_lint": -0.1,
+    "n_excluding_saturated": 5,
+    "note": "descriptive Spearman on few points; not a test",
+    "saturated_lint_models": [
+      "Claude Opus 4.8",
+      "gpt-5.5"
+    ]
+  },
+  "source": "paper/paper.tex, the tool-diagnostic rows of the recovery table"
+}

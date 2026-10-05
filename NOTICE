@@ -1,0 +1,211 @@
+NOTICE
+======
+
+This repository is licensed under the Apache License, Version 2.0 (see LICENSE).
+That grant covers the code, the mutation and evaluation pipeline, the analysis
+scripts, and the result artifacts authored here.
+
+It redistributes material derived from third-party corpora whose licenses
+require that their copyright and permission notices travel with any substantial
+portion of the work. Those notices are reproduced verbatim below, as required.
+
+Per-source license findings, including what exactly is redistributed from each
+upstream and what remains open, are recorded in `docs/UPSTREAM_LICENSES.md`.
+Upstream license text was read directly from each project on 2026-08-16 and
+re-verified on 2026-08-16 against the GitHub license API and the raw `LICENSE`
+blobs on each project's default branch.
+
+-------------------------------------------------------------------------------
+1. VerilogEval  --  https://github.com/NVlabs/verilog-eval
+-------------------------------------------------------------------------------
+
+What we redistribute from it (verified by reading the shipped files):
+
+  * data/eval_tasks.jsonl                  155 rows; `instruction` is the
+                                           verbatim upstream spec-to-RTL prompt
+                                           and `meta.testbench` is the verbatim
+                                           upstream testbench source (155 of 155
+                                           rows carry a testbench).
+  * data/eval_tasks_clean.jsonl            137-row decontaminated subset of the
+                                           above.
+  * data/formal/canonical_goldens/*.sv     52 upstream reference modules, under
+                                           their upstream filenames.
+  * data/repairbench_heldout.jsonl and the
+    lint / lint40 / sem85 / subset125
+    subsets                                459 mutants; all 459 rows carry a
+                                           `ProbNNN_*_ref` VerilogEval golden as
+                                           their `seed_id`. Mutants are
+                                           Derivative Works of those goldens.
+  * data/repairbench_realbugs*.jsonl       274 mined-failure cases; all 274 ids
+                                           are of the form `realbug:ProbNNN_*`
+                                           and each row embeds the upstream
+                                           golden RTL.
+
+Upstream ships two copyright blocks in a single LICENSE file. Both are
+reproduced.
+
+--- VerilogEval LICENSE, block 1 of 2 ---
+
+MIT License
+
+Copyright (c) 2023-2024 NVIDIA Research Projects
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--- VerilogEval LICENSE, block 2 of 2 ---
+
+This project contains code from human-eval (https://github.com/openai/human-eval/).
+
+The MIT License
+
+Copyright (c) OpenAI (https://openai.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+--- end VerilogEval LICENSE ---
+
+Inherited upstream risk, disclosed rather than absorbed: the VerilogEval v1
+README credits its problems to the HDLBits instructional website
+(hdlbits.01xz.net). We located no copyright notice, license, or terms-of-use
+page on that site (Main_Page and Project:About were checked; a permission
+statement could exist elsewhere), and the v2 README drops the attribution. The
+MIT grant above covers upstream's harness and text conversions; it is not
+evidence that the underlying problem set was separately licensed to upstream.
+
+-------------------------------------------------------------------------------
+2. MG-Verilog  --  https://github.com/GATECH-EIC/MG-Verilog
+-------------------------------------------------------------------------------
+
+What we redistribute from it: 68 derived supervised-fine-tuning rows --
+44 rows in data/train.sample.jsonl and 24 rows in data/val.jsonl, each carrying
+`meta.source == "mg-verilog"`. These are derived instruction/response pairs, not
+raw upstream modules, but they are derived from MG-Verilog content.
+
+It also redistributes data/rtlrepairdataset_train.jsonl: 5,775 repair pairs
+whose seed modules come from MG-Verilog (per the Fairchild SFT mixture's dataset
+card). Each row contains a mutated copy of an MG-Verilog module and the unified
+diff that restores it.
+
+--- MG-Verilog LICENSE ---
+
+MIT License
+
+Copyright (c) 2023 Yongan Zhang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--- end MG-Verilog LICENSE ---
+
+Open item, disclosed rather than assumed: the HuggingFace dataset card for
+`GaTech-EIC/MG-Verilog` tags `license: mit` at `main`, but an earlier revision
+(`270b33fc83ec02df637e1dc194bb4714356a0366`) tagged `license: cc-by-nc-sa-4.0`.
+The pipeline consumes a local `load_from_disk` snapshot whose upstream revision
+is recorded nowhere in this tree, so which of the two licenses actually governs
+the 68 derived rows is undetermined. This is tracked in
+`docs/RELEASE_CHECKLIST.md` and `docs/UPSTREAM_LICENSES.md`. The dataset card
+also states that per-sample licensing "cannot be verified" because the corpus
+was assembled from BigQuery-scraped sources.
+
+-------------------------------------------------------------------------------
+3. Resyn27k  --  https://github.com/hkust-zhiyao/RTL-Coder
+-------------------------------------------------------------------------------
+
+NO ATTRIBUTION NOTICE IS REPRODUCED HERE BECAUSE THERE IS NO UPSTREAM LICENSE
+TO REPRODUCE. This section is a disclosure, not a compliance claim.
+
+`hkust-zhiyao/RTL-Coder` ships no LICENSE file. Verified 2026-08-16 by the
+GitHub license API, which returns `"license": null` for the repository. With no
+license grant, the default position is all rights reserved: redistribution of
+`dataset/Resyn27k.json` or of derivatives of it is not affirmatively permitted
+by any grant we can point to.
+
+We nevertheless redistribute 12 derived supervised-fine-tuning rows -- 6 rows in
+data/train.sample.jsonl and 6 rows in data/val.jsonl, each carrying
+`meta.source == "resyn27k"`, and each containing a derived instruction and a
+complete Verilog module. This was a deliberate decision, taken because the
+corpus is load-bearing for a claim the paper makes: 18 of the 155 evaluation
+specifications share a paraphrase of at least 12 consecutive words with a
+Resyn27k *training* record, and dropping those 18 is the entire reason the
+137-task clean subset exists. Removing the rows would leave the paper asserting
+a decontamination result against a corpus the artifact never shows.
+
+These 12 rows are NOT covered by the Apache-2.0 grant in LICENSE. They are
+included for research inspection and reproducibility only. No reuse right over
+them is granted or implied by this repository, and downstream users should treat
+them as all-rights-reserved upstream material. Upstream additionally states that
+the corpus was generated by GPT-3.5-turbo and that its authors adhere to
+OpenAI's terms; those terms are not superseded here.
+
+-------------------------------------------------------------------------------
+4. RTLLM  --  https://github.com/hkust-zhiyao/RTLLM
+-------------------------------------------------------------------------------
+
+MIT (verified 2026-08-16; GitHub reports `spdx_id: MIT`). We redistribute
+nothing from RTLLM -- it was a dropped pilot, and no RTLLM module, prompt, or
+testbench is present in this tree. No notice is therefore required, and none is
+reproduced. RTLLM is cited in `paper/references.tex`. If the larger-design pilot
+is ever revived and its designs vendored, MIT's notice condition applies and
+this file must be extended.
+
+-------------------------------------------------------------------------------
+5. Third-party hosted model generations
+-------------------------------------------------------------------------------
+
+`data/repairbench_realbugs.jsonl` and `data/repairbench_realbugs_fmt.jsonl`
+contain generations produced by third-party hosted models, redistributed here
+for evaluation and reproducibility. The terms of the originating model providers
+apply to those outputs and are not superseded by LICENSE or by this file. Those
+provider terms have not been individually reviewed; that item is open in
+`docs/RELEASE_CHECKLIST.md`.
+
+-------------------------------------------------------------------------------
+
+This file is a good-faith engineering record, not legal advice.

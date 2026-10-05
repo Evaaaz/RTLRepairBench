@@ -1,0 +1,49 @@
+{
+  "all_truncated_cells_used_full_output_budget": true,
+  "arms": {
+    "spec0_loc0": {
+      "n": 85,
+      "truncations": 7
+    },
+    "spec0_loc1": {
+      "n": 85,
+      "truncations": 6
+    },
+    "spec1_loc0": {
+      "n": 85,
+      "truncations": 6
+    },
+    "spec1_loc1": {
+      "n": 85,
+      "truncations": 2
+    }
+  },
+  "baseline_to_joint_truncation_reduction": 5,
+  "budget_tokens": 4096,
+  "minimum_reasoning_tokens_in_truncated_cell": 4093,
+  "n_cases": 85,
+  "paired_reasoning_sign_tests_vs_spec0_loc0": {
+    "spec0_loc1": {
+      "decreases": 62,
+      "increases": 15,
+      "ties": 8,
+      "two_sided_p": 6.083249930070788e-08
+    },
+    "spec1_loc0": {
+      "decreases": 55,
+      "increases": 22,
+      "ties": 8,
+      "two_sided_p": 0.00021680385841747665
+    },
+    "spec1_loc1": {
+      "decreases": 58,
+      "increases": 21,
+      "ties": 6,
+      "two_sided_p": 3.761512780416608e-05
+    }
+  },
+  "schema_version": 1,
+  "source": "artifacts/public/primary/ledger/public_events.jsonl",
+  "truncated_cells": 21,
+  "upper_bound_flipped_truncations": 5
+}

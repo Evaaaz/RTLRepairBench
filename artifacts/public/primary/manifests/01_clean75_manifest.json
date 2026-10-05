@@ -1,0 +1,451 @@
+{
+  "cases": [
+    {
+      "case_id": "main_0000",
+      "eval_id": "verilogeval:design_00e0d72ecf2a77d4",
+      "seed_id": "design_00e0d72ecf2a77d4"
+    },
+    {
+      "case_id": "main_0001",
+      "eval_id": "verilogeval:design_f6e838f88901f46a",
+      "seed_id": "design_f6e838f88901f46a"
+    },
+    {
+      "case_id": "main_0002",
+      "eval_id": "verilogeval:design_12a2b3de08299fff",
+      "seed_id": "design_12a2b3de08299fff"
+    },
+    {
+      "case_id": "main_0003",
+      "eval_id": "verilogeval:design_12a2b3de08299fff",
+      "seed_id": "design_12a2b3de08299fff"
+    },
+    {
+      "case_id": "main_0004",
+      "eval_id": "verilogeval:design_0217fd81284a5a06",
+      "seed_id": "design_0217fd81284a5a06"
+    },
+    {
+      "case_id": "main_0005",
+      "eval_id": "verilogeval:design_0217fd81284a5a06",
+      "seed_id": "design_0217fd81284a5a06"
+    },
+    {
+      "case_id": "main_0008",
+      "eval_id": "verilogeval:design_c0e27a81f279ff34",
+      "seed_id": "design_c0e27a81f279ff34"
+    },
+    {
+      "case_id": "main_0009",
+      "eval_id": "verilogeval:design_c0e27a81f279ff34",
+      "seed_id": "design_c0e27a81f279ff34"
+    },
+    {
+      "case_id": "main_0010",
+      "eval_id": "verilogeval:design_c0e27a81f279ff34",
+      "seed_id": "design_c0e27a81f279ff34"
+    },
+    {
+      "case_id": "main_0011",
+      "eval_id": "verilogeval:design_1e33e8f34cf4ef81",
+      "seed_id": "design_1e33e8f34cf4ef81"
+    },
+    {
+      "case_id": "main_0012",
+      "eval_id": "verilogeval:design_1e33e8f34cf4ef81",
+      "seed_id": "design_1e33e8f34cf4ef81"
+    },
+    {
+      "case_id": "main_0013",
+      "eval_id": "verilogeval:design_1e33e8f34cf4ef81",
+      "seed_id": "design_1e33e8f34cf4ef81"
+    },
+    {
+      "case_id": "main_0014",
+      "eval_id": "verilogeval:design_b1f4ef18d378eee6",
+      "seed_id": "design_b1f4ef18d378eee6"
+    },
+    {
+      "case_id": "main_0015",
+      "eval_id": "verilogeval:design_f3e30c8f11f2563e",
+      "seed_id": "design_f3e30c8f11f2563e"
+    },
+    {
+      "case_id": "main_0016",
+      "eval_id": "verilogeval:design_a6e6602453c90630",
+      "seed_id": "design_a6e6602453c90630"
+    },
+    {
+      "case_id": "main_0017",
+      "eval_id": "verilogeval:design_7722706c4e47f9f1",
+      "seed_id": "design_7722706c4e47f9f1"
+    },
+    {
+      "case_id": "main_0018",
+      "eval_id": "verilogeval:design_7722706c4e47f9f1",
+      "seed_id": "design_7722706c4e47f9f1"
+    },
+    {
+      "case_id": "main_0019",
+      "eval_id": "verilogeval:design_d037a119c4d1213a",
+      "seed_id": "design_d037a119c4d1213a"
+    },
+    {
+      "case_id": "main_0020",
+      "eval_id": "verilogeval:design_d037a119c4d1213a",
+      "seed_id": "design_d037a119c4d1213a"
+    },
+    {
+      "case_id": "main_0021",
+      "eval_id": "verilogeval:design_b5d5716ab73d15b5",
+      "seed_id": "design_b5d5716ab73d15b5"
+    },
+    {
+      "case_id": "main_0023",
+      "eval_id": "verilogeval:design_e096205a1c061af6",
+      "seed_id": "design_e096205a1c061af6"
+    },
+    {
+      "case_id": "main_0024",
+      "eval_id": "verilogeval:design_0feca2ef4dcaf0a3",
+      "seed_id": "design_0feca2ef4dcaf0a3"
+    },
+    {
+      "case_id": "main_0025",
+      "eval_id": "verilogeval:design_0feca2ef4dcaf0a3",
+      "seed_id": "design_0feca2ef4dcaf0a3"
+    },
+    {
+      "case_id": "main_0026",
+      "eval_id": "verilogeval:design_9ee0af29d4a99e28",
+      "seed_id": "design_9ee0af29d4a99e28"
+    },
+    {
+      "case_id": "main_0027",
+      "eval_id": "verilogeval:design_14699c834a92ed3c",
+      "seed_id": "design_14699c834a92ed3c"
+    },
+    {
+      "case_id": "main_0028",
+      "eval_id": "verilogeval:design_d4a8e7d2ab853376",
+      "seed_id": "design_d4a8e7d2ab853376"
+    },
+    {
+      "case_id": "main_0031",
+      "eval_id": "verilogeval:design_bf8ecada5adb2eec",
+      "seed_id": "design_bf8ecada5adb2eec"
+    },
+    {
+      "case_id": "main_0032",
+      "eval_id": "verilogeval:design_b2dbacf98af62027",
+      "seed_id": "design_b2dbacf98af62027"
+    },
+    {
+      "case_id": "main_0033",
+      "eval_id": "verilogeval:design_b2dbacf98af62027",
+      "seed_id": "design_b2dbacf98af62027"
+    },
+    {
+      "case_id": "main_0034",
+      "eval_id": "verilogeval:design_7984136fc198f5b9",
+      "seed_id": "design_7984136fc198f5b9"
+    },
+    {
+      "case_id": "main_0039",
+      "eval_id": "verilogeval:design_944643ebf8257883",
+      "seed_id": "design_944643ebf8257883"
+    },
+    {
+      "case_id": "main_0040",
+      "eval_id": "verilogeval:design_18d4856a787ef672",
+      "seed_id": "design_18d4856a787ef672"
+    },
+    {
+      "case_id": "main_0041",
+      "eval_id": "verilogeval:design_c0d19a46e1f9a0c8",
+      "seed_id": "design_c0d19a46e1f9a0c8"
+    },
+    {
+      "case_id": "main_0042",
+      "eval_id": "verilogeval:design_c0d19a46e1f9a0c8",
+      "seed_id": "design_c0d19a46e1f9a0c8"
+    },
+    {
+      "case_id": "main_0043",
+      "eval_id": "verilogeval:design_1829a64a03d5a5cc",
+      "seed_id": "design_1829a64a03d5a5cc"
+    },
+    {
+      "case_id": "main_0044",
+      "eval_id": "verilogeval:design_1829a64a03d5a5cc",
+      "seed_id": "design_1829a64a03d5a5cc"
+    },
+    {
+      "case_id": "main_0045",
+      "eval_id": "verilogeval:design_fc48291d1209a074",
+      "seed_id": "design_fc48291d1209a074"
+    },
+    {
+      "case_id": "main_0046",
+      "eval_id": "verilogeval:design_fc48291d1209a074",
+      "seed_id": "design_fc48291d1209a074"
+    },
+    {
+      "case_id": "main_0047",
+      "eval_id": "verilogeval:design_fc48291d1209a074",
+      "seed_id": "design_fc48291d1209a074"
+    },
+    {
+      "case_id": "main_0048",
+      "eval_id": "verilogeval:design_fc48291d1209a074",
+      "seed_id": "design_fc48291d1209a074"
+    },
+    {
+      "case_id": "main_0049",
+      "eval_id": "verilogeval:design_8ff3c139161ee219",
+      "seed_id": "design_8ff3c139161ee219"
+    },
+    {
+      "case_id": "main_0050",
+      "eval_id": "verilogeval:design_e5a4494260bc3861",
+      "seed_id": "design_e5a4494260bc3861"
+    },
+    {
+      "case_id": "main_0051",
+      "eval_id": "verilogeval:design_e5a4494260bc3861",
+      "seed_id": "design_e5a4494260bc3861"
+    },
+    {
+      "case_id": "main_0052",
+      "eval_id": "verilogeval:design_e5a4494260bc3861",
+      "seed_id": "design_e5a4494260bc3861"
+    },
+    {
+      "case_id": "main_0053",
+      "eval_id": "verilogeval:design_2fa46733d98fb61c",
+      "seed_id": "design_2fa46733d98fb61c"
+    },
+    {
+      "case_id": "main_0054",
+      "eval_id": "verilogeval:design_64442f0e9833bf57",
+      "seed_id": "design_64442f0e9833bf57"
+    },
+    {
+      "case_id": "main_0055",
+      "eval_id": "verilogeval:design_e39e5d97f963155d",
+      "seed_id": "design_e39e5d97f963155d"
+    },
+    {
+      "case_id": "main_0056",
+      "eval_id": "verilogeval:design_e39e5d97f963155d",
+      "seed_id": "design_e39e5d97f963155d"
+    },
+    {
+      "case_id": "main_0057",
+      "eval_id": "verilogeval:design_a908f18e14fdd014",
+      "seed_id": "design_a908f18e14fdd014"
+    },
+    {
+      "case_id": "main_0058",
+      "eval_id": "verilogeval:design_a908f18e14fdd014",
+      "seed_id": "design_a908f18e14fdd014"
+    },
+    {
+      "case_id": "main_0059",
+      "eval_id": "verilogeval:design_9196b36e82d1ccc1",
+      "seed_id": "design_9196b36e82d1ccc1"
+    },
+    {
+      "case_id": "main_0060",
+      "eval_id": "verilogeval:design_9196b36e82d1ccc1",
+      "seed_id": "design_9196b36e82d1ccc1"
+    },
+    {
+      "case_id": "main_0061",
+      "eval_id": "verilogeval:design_0f649ee0e048bde7",
+      "seed_id": "design_0f649ee0e048bde7"
+    },
+    {
+      "case_id": "main_0062",
+      "eval_id": "verilogeval:design_a96ad84d354548e3",
+      "seed_id": "design_a96ad84d354548e3"
+    },
+    {
+      "case_id": "main_0063",
+      "eval_id": "verilogeval:design_89a2e93674a89dc3",
+      "seed_id": "design_89a2e93674a89dc3"
+    },
+    {
+      "case_id": "main_0064",
+      "eval_id": "verilogeval:design_89a2e93674a89dc3",
+      "seed_id": "design_89a2e93674a89dc3"
+    },
+    {
+      "case_id": "main_0065",
+      "eval_id": "verilogeval:design_2fe3449d4d0745b6",
+      "seed_id": "design_2fe3449d4d0745b6"
+    },
+    {
+      "case_id": "main_0066",
+      "eval_id": "verilogeval:design_2fe3449d4d0745b6",
+      "seed_id": "design_2fe3449d4d0745b6"
+    },
+    {
+      "case_id": "main_0067",
+      "eval_id": "verilogeval:design_2fe3449d4d0745b6",
+      "seed_id": "design_2fe3449d4d0745b6"
+    },
+    {
+      "case_id": "main_0068",
+      "eval_id": "verilogeval:design_414d0c3b6dc86d1b",
+      "seed_id": "design_414d0c3b6dc86d1b"
+    },
+    {
+      "case_id": "main_0069",
+      "eval_id": "verilogeval:design_87d7c9c66e306926",
+      "seed_id": "design_87d7c9c66e306926"
+    },
+    {
+      "case_id": "main_0070",
+      "eval_id": "verilogeval:design_0e0f3bbecafc42dc",
+      "seed_id": "design_0e0f3bbecafc42dc"
+    },
+    {
+      "case_id": "main_0071",
+      "eval_id": "verilogeval:design_197f80746530cb91",
+      "seed_id": "design_197f80746530cb91"
+    },
+    {
+      "case_id": "main_0072",
+      "eval_id": "verilogeval:design_197f80746530cb91",
+      "seed_id": "design_197f80746530cb91"
+    },
+    {
+      "case_id": "main_0073",
+      "eval_id": "verilogeval:design_197f80746530cb91",
+      "seed_id": "design_197f80746530cb91"
+    },
+    {
+      "case_id": "main_0074",
+      "eval_id": "verilogeval:design_197f80746530cb91",
+      "seed_id": "design_197f80746530cb91"
+    },
+    {
+      "case_id": "main_0075",
+      "eval_id": "verilogeval:design_914b9099f977943d",
+      "seed_id": "design_914b9099f977943d"
+    },
+    {
+      "case_id": "main_0076",
+      "eval_id": "verilogeval:design_6a416d9b40892bcb",
+      "seed_id": "design_6a416d9b40892bcb"
+    },
+    {
+      "case_id": "main_0077",
+      "eval_id": "verilogeval:design_95ec73263eda9d50",
+      "seed_id": "design_95ec73263eda9d50"
+    },
+    {
+      "case_id": "main_0078",
+      "eval_id": "verilogeval:design_95ec73263eda9d50",
+      "seed_id": "design_95ec73263eda9d50"
+    },
+    {
+      "case_id": "main_0079",
+      "eval_id": "verilogeval:design_4d795a52cb7a3f3a",
+      "seed_id": "design_4d795a52cb7a3f3a"
+    },
+    {
+      "case_id": "main_0080",
+      "eval_id": "verilogeval:design_4d795a52cb7a3f3a",
+      "seed_id": "design_4d795a52cb7a3f3a"
+    },
+    {
+      "case_id": "main_0081",
+      "eval_id": "verilogeval:design_4d795a52cb7a3f3a",
+      "seed_id": "design_4d795a52cb7a3f3a"
+    },
+    {
+      "case_id": "main_0082",
+      "eval_id": "verilogeval:design_d87893cf1d9d466b",
+      "seed_id": "design_d87893cf1d9d466b"
+    },
+    {
+      "case_id": "main_0083",
+      "eval_id": "verilogeval:design_d495dee6ad709e8a",
+      "seed_id": "design_d495dee6ad709e8a"
+    }
+  ],
+  "clean_case_count": 75,
+  "clean_seed_count": 46,
+  "derivation": "intersection with the pre-existing audited eval_tasks_clean KEEP set",
+  "excluded": [
+    {
+      "case_id": "main_0006",
+      "eval_id": "verilogeval:design_c325390017357d45",
+      "seed_id": "design_c325390017357d45"
+    },
+    {
+      "case_id": "main_0007",
+      "eval_id": "verilogeval:design_c325390017357d45",
+      "seed_id": "design_c325390017357d45"
+    },
+    {
+      "case_id": "main_0022",
+      "eval_id": "verilogeval:design_b4f72b90d50d57c2",
+      "seed_id": "design_b4f72b90d50d57c2"
+    },
+    {
+      "case_id": "main_0029",
+      "eval_id": "verilogeval:design_d5a5e91f2c604629",
+      "seed_id": "design_d5a5e91f2c604629"
+    },
+    {
+      "case_id": "main_0030",
+      "eval_id": "verilogeval:design_d5a5e91f2c604629",
+      "seed_id": "design_d5a5e91f2c604629"
+    },
+    {
+      "case_id": "main_0035",
+      "eval_id": "verilogeval:design_ad7c460ba408d660",
+      "seed_id": "design_ad7c460ba408d660"
+    },
+    {
+      "case_id": "main_0036",
+      "eval_id": "verilogeval:design_ad7c460ba408d660",
+      "seed_id": "design_ad7c460ba408d660"
+    },
+    {
+      "case_id": "main_0037",
+      "eval_id": "verilogeval:design_34831a8d2fd9efdf",
+      "seed_id": "design_34831a8d2fd9efdf"
+    },
+    {
+      "case_id": "main_0038",
+      "eval_id": "verilogeval:design_34831a8d2fd9efdf",
+      "seed_id": "design_34831a8d2fd9efdf"
+    },
+    {
+      "case_id": "main_0084",
+      "eval_id": "verilogeval:design_2fd7778bca3d0347",
+      "seed_id": "design_2fd7778bca3d0347"
+    }
+  ],
+  "excluded_case_count": 10,
+  "excluded_seed_count": 6,
+  "full_case_count": 85,
+  "kind": "vericodegen_clean75_allowlist",
+  "public_document_sha256": "16b241561a34a18f8de9602de9de2d23de4072b285ba4267c593b70f4363759e",
+  "schema_version": 1,
+  "source_manifest_sha256": "aa9a699a1df56091537ad27c35458abd35211316abcd5dfc562bf0bf677e0d6c",
+  "sources": {
+    "audited_keep_set": {
+      "path": "data/eval_tasks_clean.jsonl",
+      "sha256": "e7ed468db0e9a90603dba52e69e92a9b2ddf1eda26cc2c6db03b57975606f340"
+    },
+    "sem85": {
+      "path": "data/repairbench_sem85.jsonl",
+      "sha256": "e98c2bec7cb4325088030bafdab17096c9b0cae204257515ea2b4676cf6a97dc"
+    }
+  }
+}

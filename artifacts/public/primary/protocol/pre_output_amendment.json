@@ -1,0 +1,139 @@
+{
+  "amendments": [
+    {
+      "allowlist": [
+        {
+          "candidate_sha256": "35c79ef6db0aec962710791bc4a3465979d011f1ae883379ea5fdc1d6f2b57c4",
+          "case_id": "main_0059",
+          "cycles_per_seed": 200,
+          "golden_sha256": "1ee2398da6c8170f1d7937eac091a160ec8bb037bc389ae0d66a8d19a5a49716",
+          "mutation": "flip_reset_polarity",
+          "require_concrete_post_initialization_counterexample": true,
+          "required_counterexample_runs": 10,
+          "required_formal_status": "UNSUPPORTED",
+          "required_status_per_seed": "COUNTEREXAMPLE",
+          "seed_id": "design_9196b36e82d1ccc1",
+          "simulation_seeds": [
+            1001,
+            1002,
+            1003,
+            1004,
+            1005,
+            1006,
+            1007,
+            1008,
+            1009,
+            1010
+          ]
+        }
+      ],
+      "calibration_success_definition": {
+        "distinguishable_known_mutants": 85,
+        "false_mutant_proofs": 0,
+        "formal_replayable_mutant_counterexamples": 84,
+        "golden_self_proofs": 85,
+        "independent_simulation_fallback_mutant_counterexamples": 1
+      },
+      "forbid_any_other_fallback_case": true,
+      "forbid_timeout_or_compile_fail_fallback": true,
+      "id": "DAY3_EXACT_COMPOSITE_CALIBRATION_EXCEPTION",
+      "reason": "The one legal compile-clean mutant creates a Yosys async-reset logic loop while remaining executable in Icarus."
+    },
+    {
+      "annotations_performed": false,
+      "decision_basis": "NO_INDEPENDENT_HUMAN_ANNOTATORS",
+      "eligible_case_count": 0,
+      "forbid_synthetic_or_model_generated_annotations": true,
+      "id": "DROP_REDACTED_ARM_NO_INDEPENDENT_HUMAN_ANNOTATORS",
+      "reason": "Two independent human annotators and an adjudicator are unavailable.",
+      "successful_call_count": 0
+    }
+  ],
+  "authorization": "[REDACTED]",
+  "bindings": {
+    "benchmark_source": {
+      "path": "data/repairbench_sem85.jsonl",
+      "sha256": "e98c2bec7cb4325088030bafdab17096c9b0cae204257515ea2b4676cf6a97dc"
+    },
+    "main_input_manifest": {
+      "manifest_sha256": "9011b7f6e156861579c45f1cee54da4fd8a976b7582df60a7915b8b41c984242",
+      "path": "configs/vericodegen/main85_inputs.manifest.json",
+      "sha256": "eb61f5d69af2e388f64c87ba4c02e954b8b5e8aaa7b88677fd1a8df26008d7a3"
+    },
+    "redaction_decision": {
+      "manifest_sha256": "2c4b616beb321611e85dc3d14df6010756a9743e9fed6bda05d554b5b3a0e2fc",
+      "path": "configs/vericodegen/redaction_manifest.json",
+      "sha256": "9728c13d3c266ce35e3d1a8007ddd64635328188147d4b330950c50213e6e83f"
+    },
+    "redaction_template": {
+      "manifest_sha256": "f2e0d4950c98ea3c436fab62b3cda90811f1cc10207c02920aaf9b2af1114c58",
+      "path": "configs/vericodegen/redaction_annotations.template.json",
+      "sha256": "a0b8c2a70c042311f9f854ee0431bcb680b481a4b9b5e21be5416c5e262433a6"
+    },
+    "strict_v15_results": {
+      "path": "generated/formal/calibration_full_v15_results.jsonl",
+      "sha256": "7892e293daa45695c9aa215208cf089127dee26d3486a78f5525031fec6b8fa1"
+    },
+    "v15_fallback_simulation_report": {
+      "path": "generated/formal/calibration_full_v15/main_0059/independent_simulation_v3/independent_simulation.json",
+      "purpose": "PRE_AMENDMENT_DIAGNOSTIC_ONLY",
+      "qualifies_for_composite_gate": false,
+      "sha256": "a8d10dd21ecb7746afd0294ebc2371a0e0cc91a040fdb1718a2be9e55e8ce350"
+    }
+  },
+  "decision_timing": "BEFORE_ANY_MODEL_OUTPUT",
+  "effective_call_budget": {
+    "effective_maximum_wire_attempts_under_scheduled_cap": 715,
+    "maximum_revision_calls": 170,
+    "maximum_successful_calls": 623,
+    "maximum_transport_retry_attempts": 92,
+    "maximum_wire_attempts": 800,
+    "successful_calls_before_revision": 453
+  },
+  "effective_date": "2026-07-15",
+  "kind": "vericodegen_pre_output_protocol_amendment",
+  "model_outputs_seen_before_freeze": false,
+  "pre_amendment_state": {
+    "attempt_count": 0,
+    "config_path": "configs/vericodegen2026.json",
+    "config_sha256": "c2298c393ac3733cf44387ce2850ac487aebb2a72df2d990c455f53e28005e81",
+    "ledger_existed": false,
+    "ledger_path": "generated/logs/vericodegen2026_events.jsonl",
+    "response_count": 0,
+    "strict_v15_formal_mutant_counterexamples": 84,
+    "strict_v15_gate_manifest_sha256": "04d3e616fbaed2a70022ab1eb010b634efc8d022546becf1135e677fff4858e6",
+    "strict_v15_gate_path": "generated/formal/calibration_full_v15_gate.json",
+    "strict_v15_gate_sha256": "bcb6482b384d0740ce5a528eccb42fe1aa136014c26e1ac35357f1247377011c",
+    "strict_v15_passed": false,
+    "strict_v15_self_proved": 85,
+    "strict_v15_unsupported_mutants": 1
+  },
+  "primary_statistics": {
+    "bootstrap_replicates": 10000,
+    "multiplicity_adjustment": "Holm",
+    "ordered_contrast_definitions": [
+      [
+        "what_full_spec",
+        "main",
+        "spec0_loc0",
+        "spec1_loc0"
+      ],
+      [
+        "where_oracle_location",
+        "main",
+        "spec0_loc0",
+        "spec0_loc1"
+      ],
+      [
+        "counterexample_revision",
+        "feedback",
+        "generic_failure",
+        "concrete_counterexample"
+      ]
+    ]
+  },
+  "public_document_sha256": "335ae64f3a1a61bc5b7b33dda623a1e900b692a1e4fa693bde3594c36269bb99",
+  "schema_version": 1,
+  "source_manifest_sha256": "67a961fad36bc60c411b5f7e0ef45ee479bbc4eff91c743b4d4cb47c2b771d52",
+  "status": "FROZEN"
+}

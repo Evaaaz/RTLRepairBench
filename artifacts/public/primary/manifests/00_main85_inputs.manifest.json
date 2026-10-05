@@ -1,0 +1,453 @@
+{
+  "case_count": 85,
+  "case_index": [
+    {
+      "anonymous_id": "main_0000",
+      "case_id": "main_0000",
+      "materialized_case_sha256": "7d69c7d8ec61905551d0754cf33db84efd3d6b5d017b3aa013fda2515408e984"
+    },
+    {
+      "anonymous_id": "main_0001",
+      "case_id": "main_0001",
+      "materialized_case_sha256": "2bac1fcecdb4a50b4cfbd7625cfc183de7808df5efd05bbe49fa171222eefd52"
+    },
+    {
+      "anonymous_id": "main_0002",
+      "case_id": "main_0002",
+      "materialized_case_sha256": "31c84d96fa79526f05c7b2fb843bb9c5fa170725450c4cfbb230af4583d2be66"
+    },
+    {
+      "anonymous_id": "main_0003",
+      "case_id": "main_0003",
+      "materialized_case_sha256": "ee4deb527843a559f234b9a23b0c130b0fbe2b9d573871a5348ca806e621ffb4"
+    },
+    {
+      "anonymous_id": "main_0004",
+      "case_id": "main_0004",
+      "materialized_case_sha256": "50d03e0524ec759e9b33e4378ad51694051cb79b1e8e03143ff53ab2a70ee8be"
+    },
+    {
+      "anonymous_id": "main_0005",
+      "case_id": "main_0005",
+      "materialized_case_sha256": "1a0b3fc2bf730c890ad8b9e3bf77e2410339a8a30263001c6f7cbb16e3e60f75"
+    },
+    {
+      "anonymous_id": "main_0006",
+      "case_id": "main_0006",
+      "materialized_case_sha256": "35f1789f878a10e1501b2cfd6d42edfcd8ea4050bc6970036aa851441bc055aa"
+    },
+    {
+      "anonymous_id": "main_0007",
+      "case_id": "main_0007",
+      "materialized_case_sha256": "637b073cb92a553dd4055730302ee6e724e715207806850a255bf8044386aa70"
+    },
+    {
+      "anonymous_id": "main_0008",
+      "case_id": "main_0008",
+      "materialized_case_sha256": "8fad67a144a8541d377f8b50ba1eb75507d89d7f74d0603f2ed44cf5f2f54be9"
+    },
+    {
+      "anonymous_id": "main_0009",
+      "case_id": "main_0009",
+      "materialized_case_sha256": "779e374626d62c65581c8360893cd64ff10ccf3003cfebd391d6c0de224c257f"
+    },
+    {
+      "anonymous_id": "main_0010",
+      "case_id": "main_0010",
+      "materialized_case_sha256": "eea32e830876358c2eef980602d460c30a72905d57f55a91b8bcaaffc2b6bdb5"
+    },
+    {
+      "anonymous_id": "main_0011",
+      "case_id": "main_0011",
+      "materialized_case_sha256": "4f594e0e2fe1aba2e6e2a146701e2f4909de8da7fb8d66d3a34e4354a2a25ab4"
+    },
+    {
+      "anonymous_id": "main_0012",
+      "case_id": "main_0012",
+      "materialized_case_sha256": "4b7729c54e463bddfefd71ec8daf7f470e8dceb225b5478f9661aeefc329f6ca"
+    },
+    {
+      "anonymous_id": "main_0013",
+      "case_id": "main_0013",
+      "materialized_case_sha256": "9a16c85bbd6e4fd5acb71f3bccc3e68ba211e1f974b526a727cf2af9fe5ec894"
+    },
+    {
+      "anonymous_id": "main_0014",
+      "case_id": "main_0014",
+      "materialized_case_sha256": "ba050b8e051a821b7bae47ea3a1823363e88d20ef8aade502a071d0506fb7bcb"
+    },
+    {
+      "anonymous_id": "main_0015",
+      "case_id": "main_0015",
+      "materialized_case_sha256": "c328a76e52e34618f5cee079b9bc7daf7e9f8f4fc354b579c5588b1533390190"
+    },
+    {
+      "anonymous_id": "main_0016",
+      "case_id": "main_0016",
+      "materialized_case_sha256": "df01f9ffee85a53388b979bc8158cc703203901680142d4c1060128714ce3120"
+    },
+    {
+      "anonymous_id": "main_0017",
+      "case_id": "main_0017",
+      "materialized_case_sha256": "613a4b3c59e2f6bb4a6f3c491834b62b823505369f37d7a6efe5e6a67eccda9a"
+    },
+    {
+      "anonymous_id": "main_0018",
+      "case_id": "main_0018",
+      "materialized_case_sha256": "dcddc0751766e8cdf35c5792cfc1822fe243a8c5837c8a593d6ea941f7761e6e"
+    },
+    {
+      "anonymous_id": "main_0019",
+      "case_id": "main_0019",
+      "materialized_case_sha256": "48eaf42866da5838263272934cd14bb882f7c8c56a8ad851c4e6cd3ea782fce2"
+    },
+    {
+      "anonymous_id": "main_0020",
+      "case_id": "main_0020",
+      "materialized_case_sha256": "9220e78a91561dd0b3147719bef3342e645bd2c35a981b925e74898e050f991d"
+    },
+    {
+      "anonymous_id": "main_0021",
+      "case_id": "main_0021",
+      "materialized_case_sha256": "780051ad317b1f2a44b79b61e97a92a22f348b5a5a3670d3d69d549efec16f9e"
+    },
+    {
+      "anonymous_id": "main_0022",
+      "case_id": "main_0022",
+      "materialized_case_sha256": "45e65c8be8ccdf385bfbd6a356cdcc2ed4b3f8e1d31ddf2921d01735d48ab003"
+    },
+    {
+      "anonymous_id": "main_0023",
+      "case_id": "main_0023",
+      "materialized_case_sha256": "d2ebb4e5a85d9b1467cdc062a6fae1fc6f5bf7def1ae18cc526e371310fdf277"
+    },
+    {
+      "anonymous_id": "main_0024",
+      "case_id": "main_0024",
+      "materialized_case_sha256": "9fdc6f21bc0c6fecbf339290d703370dc90cfd3abf1ceede054fa03dbda7883c"
+    },
+    {
+      "anonymous_id": "main_0025",
+      "case_id": "main_0025",
+      "materialized_case_sha256": "f9bf532e454ca1abffea93bd05f764d71d87beb895d03522103b93eadb7d6633"
+    },
+    {
+      "anonymous_id": "main_0026",
+      "case_id": "main_0026",
+      "materialized_case_sha256": "f97602ca853f1a11988233e3de9be85b5a2ca9c86c56fcad0692c3099ee95b98"
+    },
+    {
+      "anonymous_id": "main_0027",
+      "case_id": "main_0027",
+      "materialized_case_sha256": "dca9dd2119e8949893993fc23c4aacd2404695e3fad38b0824bf05cbe9da3234"
+    },
+    {
+      "anonymous_id": "main_0028",
+      "case_id": "main_0028",
+      "materialized_case_sha256": "289ce8143ff488b86f746da6e534a3e8205eb7044cdeccc579c183d6c7be2bd3"
+    },
+    {
+      "anonymous_id": "main_0029",
+      "case_id": "main_0029",
+      "materialized_case_sha256": "305043df11da71269b4a74a82a84ed21becdd08e52b126f14322774e79ccaf5d"
+    },
+    {
+      "anonymous_id": "main_0030",
+      "case_id": "main_0030",
+      "materialized_case_sha256": "56f0de6c2f113fd4b2da750ad2bbf275a51b247b76b2816060805a673484c9dd"
+    },
+    {
+      "anonymous_id": "main_0031",
+      "case_id": "main_0031",
+      "materialized_case_sha256": "74772dd16b19076e8d7e4f7c22360910ca8a9606c245d1cde3004d1d7a03c4ce"
+    },
+    {
+      "anonymous_id": "main_0032",
+      "case_id": "main_0032",
+      "materialized_case_sha256": "2a4a66677a7f54482d93bb29a133fc3c82f4ec8a7e9cd56094536cc1951c62b5"
+    },
+    {
+      "anonymous_id": "main_0033",
+      "case_id": "main_0033",
+      "materialized_case_sha256": "9c47e38485405afea39b1490a2a869b16113efeaeb3129f13523d1d13e66c973"
+    },
+    {
+      "anonymous_id": "main_0034",
+      "case_id": "main_0034",
+      "materialized_case_sha256": "842816d0038d70aa9eba0fb86d7a572f0250c8ef53a7ca0e228a75f10af3d463"
+    },
+    {
+      "anonymous_id": "main_0035",
+      "case_id": "main_0035",
+      "materialized_case_sha256": "ffb1d469bf835b1e3794c6a819d50940e7816ddddff815d410f3b71ecd46ed1d"
+    },
+    {
+      "anonymous_id": "main_0036",
+      "case_id": "main_0036",
+      "materialized_case_sha256": "f10bb2f8dd6bba6b5d1f526e2210c2ee682bfa0a8d440e5ba8a27b98a667d397"
+    },
+    {
+      "anonymous_id": "main_0037",
+      "case_id": "main_0037",
+      "materialized_case_sha256": "a3a77dff9bb3cc9d95d7be5dfa5fdb69b982faef2eab1f520db8c0dab851522c"
+    },
+    {
+      "anonymous_id": "main_0038",
+      "case_id": "main_0038",
+      "materialized_case_sha256": "b35ca85034061f21471b79556aa8d920d87fe753fea552981bbd03802fe27b49"
+    },
+    {
+      "anonymous_id": "main_0039",
+      "case_id": "main_0039",
+      "materialized_case_sha256": "a670b528957373ff962b5f84b687a27ec48c2c75558bd662e47329245f7cfca8"
+    },
+    {
+      "anonymous_id": "main_0040",
+      "case_id": "main_0040",
+      "materialized_case_sha256": "9c7d9b8074ee48b31d482e715517b5f734de9737dfcf5634a321ebf4ab5e144d"
+    },
+    {
+      "anonymous_id": "main_0041",
+      "case_id": "main_0041",
+      "materialized_case_sha256": "6ca23cab83ab86b1215977a653721f0025200636ad3079cbff8dc0a916b8c869"
+    },
+    {
+      "anonymous_id": "main_0042",
+      "case_id": "main_0042",
+      "materialized_case_sha256": "ec2b2eb043bfac3616ac70140d98193ca798d1fca6f53bf7155f636cbb8f0d7f"
+    },
+    {
+      "anonymous_id": "main_0043",
+      "case_id": "main_0043",
+      "materialized_case_sha256": "b114ecc0a2cbb0ce103c8b4e298c94d8964fb656232f5e7a0b2b89ab8eb20e36"
+    },
+    {
+      "anonymous_id": "main_0044",
+      "case_id": "main_0044",
+      "materialized_case_sha256": "2a561ca612bc751d9d49e11ab90d8d76d7d88b90e8f18cd55412aabaf9e83c19"
+    },
+    {
+      "anonymous_id": "main_0045",
+      "case_id": "main_0045",
+      "materialized_case_sha256": "910af953ec86f6a402fd89c61acbfe78d36c2fea1a4c31536eaffdf3faabf0f4"
+    },
+    {
+      "anonymous_id": "main_0046",
+      "case_id": "main_0046",
+      "materialized_case_sha256": "a8fbddde18c89a91e88b21f6de605cb6a98b224f5ec8b47fcb5afbe1d7c2329e"
+    },
+    {
+      "anonymous_id": "main_0047",
+      "case_id": "main_0047",
+      "materialized_case_sha256": "395216d7a020b89eccb595a40cdd4833a704e4ad73b770da4ff1a8c124aad907"
+    },
+    {
+      "anonymous_id": "main_0048",
+      "case_id": "main_0048",
+      "materialized_case_sha256": "aaf88451659f9135a77fa387e6e0179f7c6943eef9b8a503abd4a5bc3aec675b"
+    },
+    {
+      "anonymous_id": "main_0049",
+      "case_id": "main_0049",
+      "materialized_case_sha256": "9bb6b735a994f121826e829a608fb70415fc4babd021fad9b02092615893cac3"
+    },
+    {
+      "anonymous_id": "main_0050",
+      "case_id": "main_0050",
+      "materialized_case_sha256": "120afd73da49208249aaa7c4b1c9f85b6161a696eb81cf76347216890f44170a"
+    },
+    {
+      "anonymous_id": "main_0051",
+      "case_id": "main_0051",
+      "materialized_case_sha256": "e3a28190993a7bb6368077bf49f0e2de1fd52b0164ad3c2fee25819b6eb3cea9"
+    },
+    {
+      "anonymous_id": "main_0052",
+      "case_id": "main_0052",
+      "materialized_case_sha256": "8b90aaabebcb0681381b5f61c84a36acedfbbfa37453a405420d41381c4cd1bd"
+    },
+    {
+      "anonymous_id": "main_0053",
+      "case_id": "main_0053",
+      "materialized_case_sha256": "02b9fb1d40103fc3e1732d0d9f39241e75723034c6ff7d917efecf176e1af1d3"
+    },
+    {
+      "anonymous_id": "main_0054",
+      "case_id": "main_0054",
+      "materialized_case_sha256": "2e5460c7e79f16aedbb0597cbc75ceda62ee6fd6bc68bacef6aa0346d115bd3c"
+    },
+    {
+      "anonymous_id": "main_0055",
+      "case_id": "main_0055",
+      "materialized_case_sha256": "730299cdd5cdae77d4e25af6873c48286f4a943489ca253e4669628d609c1ed9"
+    },
+    {
+      "anonymous_id": "main_0056",
+      "case_id": "main_0056",
+      "materialized_case_sha256": "08270f006f873c35778a3430f0323b855b90e40ced1190097e747eedcc2745ed"
+    },
+    {
+      "anonymous_id": "main_0057",
+      "case_id": "main_0057",
+      "materialized_case_sha256": "6a2f4a412058ce22144dce803d30b909671aa536e62c3efd1322ffc017f929d9"
+    },
+    {
+      "anonymous_id": "main_0058",
+      "case_id": "main_0058",
+      "materialized_case_sha256": "81d888968202262f3cbc26045b6ec94236a832f54b84f35f65e9d8f584671793"
+    },
+    {
+      "anonymous_id": "main_0059",
+      "case_id": "main_0059",
+      "materialized_case_sha256": "ca41fef5beb43925e39045e10e0a2a7a34b5ec48deadd0dea368d26aaac59400"
+    },
+    {
+      "anonymous_id": "main_0060",
+      "case_id": "main_0060",
+      "materialized_case_sha256": "502b2529ca31a7c1168f2e43b48f8dae02c5b20ab0c75a28ea8244f47eff592d"
+    },
+    {
+      "anonymous_id": "main_0061",
+      "case_id": "main_0061",
+      "materialized_case_sha256": "9ada956d58782896a9c7012e2236cb4b74f4d6e14bb7b51f0688bf2354a8c845"
+    },
+    {
+      "anonymous_id": "main_0062",
+      "case_id": "main_0062",
+      "materialized_case_sha256": "f316a17a566fb25a23278bc4e19e8365dc948351c2d814575f4005c90a6802c3"
+    },
+    {
+      "anonymous_id": "main_0063",
+      "case_id": "main_0063",
+      "materialized_case_sha256": "cfab4ce4b7449ffd7c1c1e57e03ca15f558ad9136919821042b3b6813a749817"
+    },
+    {
+      "anonymous_id": "main_0064",
+      "case_id": "main_0064",
+      "materialized_case_sha256": "0020d4a55f89da56134573fd9bc51636e8eef6cfd65f2202a9f06331cd4149eb"
+    },
+    {
+      "anonymous_id": "main_0065",
+      "case_id": "main_0065",
+      "materialized_case_sha256": "54d3695ffef457a38404d07cc9e8e53b8aac677baf63a75ac2171aaedcbaec68"
+    },
+    {
+      "anonymous_id": "main_0066",
+      "case_id": "main_0066",
+      "materialized_case_sha256": "dbebca4488d3b4ce563d925b90703893945b61a8d48ce63cb3fd3081cbfa7bd5"
+    },
+    {
+      "anonymous_id": "main_0067",
+      "case_id": "main_0067",
+      "materialized_case_sha256": "ec29ff1c5b04957517335243e14d1993aa70860f5ca9ca808c97882b365a880a"
+    },
+    {
+      "anonymous_id": "main_0068",
+      "case_id": "main_0068",
+      "materialized_case_sha256": "12268e378c1fd437152eeda050b775f86ae5c1a47125537cb21becfec86fc740"
+    },
+    {
+      "anonymous_id": "main_0069",
+      "case_id": "main_0069",
+      "materialized_case_sha256": "f7075189d744758d8fe809c0a9e833c6d807d14ae418227d9f501247c010b40f"
+    },
+    {
+      "anonymous_id": "main_0070",
+      "case_id": "main_0070",
+      "materialized_case_sha256": "b31f435786f92f4298de810dd32ed7e0c2ac459473b607cf61a8e5c5c423f8a9"
+    },
+    {
+      "anonymous_id": "main_0071",
+      "case_id": "main_0071",
+      "materialized_case_sha256": "0d05889db0de476efaaa18cf4460b222dbdf98a401aa53c4aedb26acb5806d45"
+    },
+    {
+      "anonymous_id": "main_0072",
+      "case_id": "main_0072",
+      "materialized_case_sha256": "43c04511471dcab357b435ddb1068f963dc2f1dcfa9823a34ffba613f413ad39"
+    },
+    {
+      "anonymous_id": "main_0073",
+      "case_id": "main_0073",
+      "materialized_case_sha256": "c351ff9fc910da1fe6b4160b0bc7d360dd7b4b42ab4bd7d0f5f77fb718cd4501"
+    },
+    {
+      "anonymous_id": "main_0074",
+      "case_id": "main_0074",
+      "materialized_case_sha256": "63019c2220b37724a762dc73e89de9f8a222b876ce46f28f68d2255cf648744a"
+    },
+    {
+      "anonymous_id": "main_0075",
+      "case_id": "main_0075",
+      "materialized_case_sha256": "52e03c1344d0d13fe176738973cf56b2c83f976a1791a70be2dd9813c8af58a5"
+    },
+    {
+      "anonymous_id": "main_0076",
+      "case_id": "main_0076",
+      "materialized_case_sha256": "7ca862c478855e0247387907369cae99e1303386223bd90963e9551631a85eee"
+    },
+    {
+      "anonymous_id": "main_0077",
+      "case_id": "main_0077",
+      "materialized_case_sha256": "e4727a9045acb3aec949840480bd8e08380de3a6fd2898bc7e2d80ff36ab289b"
+    },
+    {
+      "anonymous_id": "main_0078",
+      "case_id": "main_0078",
+      "materialized_case_sha256": "350409473f1f677d8f637d33dcd2db54637e134a17fb977aecd7d060e39ebdff"
+    },
+    {
+      "anonymous_id": "main_0079",
+      "case_id": "main_0079",
+      "materialized_case_sha256": "7dba527a34d690b8a6aebe9468a2bc52b45b1df26a880fa7462f5418dbea381b"
+    },
+    {
+      "anonymous_id": "main_0080",
+      "case_id": "main_0080",
+      "materialized_case_sha256": "1d39fa6469d48ef1f098bae1e94e144e02bb50398b52d35b5569f55389e1c61c"
+    },
+    {
+      "anonymous_id": "main_0081",
+      "case_id": "main_0081",
+      "materialized_case_sha256": "d2c93fdaaaff4af4c13b4bf7e3258bec4bcf89261c4cdf42446b59ec787721f8"
+    },
+    {
+      "anonymous_id": "main_0082",
+      "case_id": "main_0082",
+      "materialized_case_sha256": "0dd63cf9e8d8a860ebd081c3abc26766ec1be370a7ba95dfd76dcbf1cebe38de"
+    },
+    {
+      "anonymous_id": "main_0083",
+      "case_id": "main_0083",
+      "materialized_case_sha256": "310398641b573984f009985cd329b8416c820b35b955e5664640264ca1267969"
+    },
+    {
+      "anonymous_id": "main_0084",
+      "case_id": "main_0084",
+      "materialized_case_sha256": "143b5749c4c214e45664bb089cb5f31fd80f9368a13771ce8096dcce6c2adca7"
+    }
+  ],
+  "contains_golden_rtl": false,
+  "jsonl": {
+    "path": "configs/vericodegen/main85_inputs.jsonl",
+    "sha256": "a452a42de01faf1add6c8d190b1a82eb8dcb3e8b7c8105a6b8eb4a61aa76e72a"
+  },
+  "kind": "vericodegen_main85_materialized_inputs",
+  "public_document_sha256": "38f145f2b22397b43702c0a7030caf416195e4fa96086e00560df69347599f12",
+  "schema_version": 1,
+  "source_manifest_sha256": "9011b7f6e156861579c45f1cee54da4fd8a976b7582df60a7915b8b41c984242",
+  "sources": {
+    "clean75_manifest": {
+      "path": "configs/vericodegen/clean75_manifest.json",
+      "sha256": "5b1488e37cd9e0e306684533d81a4746a1e60c963f53a1066397704522b75ec5"
+    },
+    "eval_specs": {
+      "path": "data/eval_tasks.jsonl",
+      "sha256": "35256f910b598512e8c951bff273c9b18d8f0dc57e89af8048098b5abc02c370"
+    },
+    "sem85": {
+      "path": "data/repairbench_sem85.jsonl",
+      "sha256": "e98c2bec7cb4325088030bafdab17096c9b0cae204257515ea2b4676cf6a97dc"
+    }
+  }
+}

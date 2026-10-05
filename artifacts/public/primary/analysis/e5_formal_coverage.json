@@ -1,0 +1,121 @@
+{
+  "generated_by": "e5_formal_coverage.py",
+  "cohorts": {
+    "primary_four_arm_formal_intersection": {
+      "manifest": "configs/vericodegen/anchor_formal68_manifest.json",
+      "count": 68,
+      "case_ids_sha256": "f23d72278fc1b9174c47eadc41613390bb26d84d4ff49cd4bbba9e51878c6f57"
+    },
+    "capability_curve_scheduled_cohort": {
+      "manifest": "configs/vericodegen/curve68_manifest.json",
+      "selection": "retained historical equivalence-harness availability",
+      "count": 68,
+      "case_ids_sha256": "7db08fda17e8a5cd0aeecca6e040faed37da9816ad2e048c02c13cf72ac2b65e"
+    },
+    "relationship": {
+      "overlap_count": 52,
+      "identical": false
+    }
+  },
+  "models": {
+    "gpt-5.5 (frozen primary)": {
+      "source": "generated/reports/vericodegen_full85_rows.jsonl",
+      "per_arm_definitive": {
+        "spec0_loc0": 76,
+        "spec1_loc0": 78,
+        "spec0_loc1": 79,
+        "spec1_loc1": 83
+      },
+      "own_4arm_intersection": 68,
+      "verdict_distribution": {
+        "PROVED": 306,
+        "COUNTEREXAMPLE": 10,
+        "None": 21,
+        "TIMEOUT": 2,
+        "UNSUPPORTED": 1
+      },
+      "prover_errors_scored_as_failure": 0,
+      "compile_fails_scored_as_failure": 0
+    },
+    "llama-3.3-70b": {
+      "source": "generated/second_model",
+      "per_arm_definitive": {
+        "spec0_loc0": 67,
+        "spec1_loc0": 68,
+        "spec0_loc1": 67,
+        "spec1_loc1": 68
+      },
+      "own_4arm_intersection": 67,
+      "verdict_distribution": {
+        "COUNTEREXAMPLE": 139,
+        "PROVED": 131,
+        "ERROR": 2
+      },
+      "prover_errors_scored_as_failure": 2,
+      "compile_fails_scored_as_failure": 0
+    },
+    "gpt-4.1": {
+      "source": "generated/second_model/runs/azure__openai__gpt-4.1",
+      "per_arm_definitive": {
+        "spec0_loc0": 67,
+        "spec1_loc0": 68,
+        "spec0_loc1": 67,
+        "spec1_loc1": 68
+      },
+      "own_4arm_intersection": 67,
+      "verdict_distribution": {
+        "PROVED": 167,
+        "COUNTEREXAMPLE": 103,
+        "ERROR": 2
+      },
+      "prover_errors_scored_as_failure": 2,
+      "compile_fails_scored_as_failure": 0
+    },
+    "gpt-4o-mini": {
+      "source": "generated/second_model/runs/openai__openai__gpt-4o-mini",
+      "per_arm_definitive": {
+        "spec0_loc0": 67,
+        "spec1_loc0": 68,
+        "spec0_loc1": 68,
+        "spec1_loc1": 68
+      },
+      "own_4arm_intersection": 67,
+      "verdict_distribution": {
+        "PROVED": 136,
+        "COUNTEREXAMPLE": 135,
+        "ERROR": 1
+      },
+      "prover_errors_scored_as_failure": 1,
+      "compile_fails_scored_as_failure": 0
+    },
+    "OriGen_Fix": {
+      "source": "generated/second_model/runs/origen_fix",
+      "per_arm_definitive": {
+        "spec0_loc0": 67,
+        "spec1_loc0": 68,
+        "spec0_loc1": 67,
+        "spec1_loc1": 67
+      },
+      "own_4arm_intersection": 66,
+      "verdict_distribution": {
+        "PROVED": 124,
+        "COUNTEREXAMPLE": 145,
+        "ERROR": 3
+      },
+      "prover_errors_scored_as_failure": 3,
+      "compile_fails_scored_as_failure": 0
+    }
+  },
+  "intersections": {
+    "per_model": {
+      "gpt-5.5 (frozen primary)": 68,
+      "llama-3.3-70b": 67,
+      "gpt-4.1": 67,
+      "gpt-4o-mini": 67,
+      "OriGen_Fix": 66
+    },
+    "primary_four_arm_formal_intersection": 68,
+    "common_definitive_cases_across_four_later_models": 66,
+    "note": "The frozen primary four-arm formal intersection and the capability-curve retained-harness cohort both contain 68 cases but are different sets: they overlap on 52. The four later models ran only on the retained-harness cohort and each has 1-3 non-definitive cells, conservatively scored as failures."
+  }
+}

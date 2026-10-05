@@ -1,0 +1,46 @@
+{
+  "formal_validation": {
+    "container_lock": "docker/formal/toolchain.lock.json",
+    "container_lock_sha256": "e7ca99d4352b6ab9f883bf7fc9faae2b75511e3f921fbc7b530b98d250b0301f",
+    "note": "The container separately pins Ubuntu and the YosysHQ OSS CAD Suite. Its embedded Python version is not the offline statistical-analysis runtime."
+  },
+  "model_reruns": {
+    "byte_reproducible": false,
+    "reason": "Provider-side model revisions and every historical endpoint revision were not fully frozen. Reruns must be recorded as new runs and cannot overwrite the released snapshots."
+  },
+  "offline_analysis": {
+    "clean75_expected_stats": {
+      "path": "artifacts/public/primary/analysis/vericodegen_clean75_stats.json",
+      "sha256": "bb74ff2c9ec75eb34bf74bfa313909f675b03aa0f17c629d21b404ee806cc813"
+    },
+    "clean75_manifest": {
+      "path": "configs/vericodegen/clean75_manifest.json",
+      "sha256": "5b1488e37cd9e0e306684533d81a4746a1e60c963f53a1066397704522b75ec5"
+    },
+    "clean75_normalized_rows": {
+      "path": "artifacts/public/primary/analysis/vericodegen_clean75_rows.jsonl",
+      "sha256": "182f21a4b2a722a399f426ce483eb0093085eb3fcdd161e77ee7097e98782f66"
+    },
+    "expected_stats": {
+      "path": "artifacts/public/primary/analysis/vericodegen_full85_stats.json",
+      "sha256": "96a11da8006e8b60ec9adaba1a473723b7ae8bc8f420dcc8f2efdccb425f16c0"
+    },
+    "implementation": "CPython",
+    "main85_inputs_manifest": {
+      "path": "configs/vericodegen/main85_inputs.manifest.json",
+      "sha256": "eb61f5d69af2e388f64c87ba4c02e954b8b5e8aaa7b88677fd1a8df26008d7a3"
+    },
+    "normalized_rows": {
+      "path": "artifacts/public/primary/analysis/vericodegen_full85_rows.jsonl",
+      "sha256": "182f21a4b2a722a399f426ce483eb0093085eb3fcdd161e77ee7097e98782f66"
+    },
+    "reason": "The frozen 10000-draw cluster bootstrap is byte-identical under this runtime. Other CPython versions preserve the estimands but can differ in finite Monte Carlo draws and float serialization.",
+    "shift50_manifest": {
+      "path": "artifacts/public/primary/manifests/02_shift50_manifest.json",
+      "sha256": "18f3347361ac396f93bd5f95911cfc1b6690f3188a015563a39a228083f2a2fe"
+    },
+    "third_party_packages": [],
+    "version": "3.9.6"
+  },
+  "schema_version": 1
+}

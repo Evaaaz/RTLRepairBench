@@ -1,0 +1,80 @@
+{
+  "arms": {
+    "base__diag": {
+      "counterexample": 57,
+      "definitive": 75,
+      "delta_pp": -1.9,
+      "n": 85,
+      "proved": 18,
+      "tier_f_pct": 24.0,
+      "tier_s_pct": 25.9
+    },
+    "base__diag_spec": {
+      "counterexample": 48,
+      "definitive": 72,
+      "delta_pp": -5.5,
+      "n": 85,
+      "proved": 24,
+      "tier_f_pct": 33.3,
+      "tier_s_pct": 38.8
+    },
+    "v5__diag": {
+      "counterexample": 59,
+      "definitive": 81,
+      "delta_pp": -1.1,
+      "n": 85,
+      "proved": 22,
+      "tier_f_pct": 27.2,
+      "tier_s_pct": 28.2
+    },
+    "v5__diag_spec": {
+      "counterexample": 46,
+      "definitive": 83,
+      "delta_pp": -0.1,
+      "n": 85,
+      "proved": 37,
+      "tier_f_pct": 44.6,
+      "tier_s_pct": 44.7
+    },
+    "verireason__diag": {
+      "counterexample": 64,
+      "definitive": 75,
+      "delta_pp": -0.6,
+      "n": 85,
+      "proved": 11,
+      "tier_f_pct": 14.7,
+      "tier_s_pct": 15.3
+    },
+    "verireason__diag_spec": {
+      "counterexample": 56,
+      "definitive": 71,
+      "delta_pp": -7.1,
+      "n": 85,
+      "proved": 15,
+      "tier_f_pct": 21.1,
+      "tier_s_pct": 28.2
+    },
+    "vrqwen__diag": {
+      "counterexample": 71,
+      "definitive": 80,
+      "delta_pp": 0.7,
+      "n": 85,
+      "proved": 9,
+      "tier_f_pct": 11.2,
+      "tier_s_pct": 10.6
+    },
+    "vrqwen__diag_spec": {
+      "counterexample": 50,
+      "definitive": 76,
+      "delta_pp": 1.3,
+      "n": 85,
+      "proved": 26,
+      "tier_f_pct": 34.2,
+      "tier_s_pct": 32.9
+    }
+  },
+  "generated_by": "formal_verify validate-batch over the banked open-weight candidates",
+  "mean_delta_diag_pp": -0.7,
+  "mean_delta_spec_pp": -2.9,
+  "note": "Tier F on the same candidate RTL the Tier S rows score; definitive = PROVED + COUNTEREXAMPLE."
+}

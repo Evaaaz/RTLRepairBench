@@ -1,0 +1,38 @@
+# Local environments and credentials
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Python/tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# LaTeX intermediates; the released paper/paper.pdf remains tracked
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+
+# Local builds and private/full-run outputs
+build/
+dist/
+generated/
+artifacts/private/
+code/benchmarks/results/raw/
+
+# Platform/editor noise
+.DS_Store
+._*
+*.swp
+*~

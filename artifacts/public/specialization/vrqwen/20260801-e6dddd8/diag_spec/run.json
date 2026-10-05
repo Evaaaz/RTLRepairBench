@@ -1,0 +1,46 @@
+{
+  "model": "vrqwen",
+  "version": "20260801-e6dddd8",
+  "signal": "diag_spec",
+  "summary": {
+    "model": "vrqwen",
+    "backend": "rtlrepair",
+    "n": 459,
+    "anon": true,
+    "spec": true,
+    "locate": false,
+    "temp": 0.0,
+    "by_bucket": {
+      "lint": {
+        "n": 374,
+        "recovered": 337,
+        "recovery_rate": 0.9011,
+        "used_llm_rate": 1.0,
+        "spec_rate": 1.0
+      },
+      "semantic": {
+        "n": 85,
+        "recovered": 27,
+        "recovery_rate": 0.3176,
+        "used_llm_rate": 1.0,
+        "spec_rate": 1.0
+      }
+    }
+  },
+  "n_records": 459,
+  "raw": [],
+  "arm": "vrqwen_diag_spec",
+  "config": {
+    "backend": "rtlrepair",
+    "anon": true,
+    "temp": 0.0,
+    "prompt_style": "verireason",
+    "name": "vrqwen_diag_spec",
+    "model": "vrqwen",
+    "signal": [
+      "spec"
+    ],
+    "endpoint_env": "VRQWEN_LLM_URL"
+  },
+  "note": "raw/vr_raw_vrqwen.jsonl deleted: an append-mode dump with no case key, holding both vrqwen arms fused (918 = 2x459) and unsplittable. Recoverable from git 642cb1d if ever needed. This arm will be regenerated with a candidate ledger."
+}

@@ -1,0 +1,75 @@
+{
+  "attainable_ceiling_pp": 11.9,
+  "baseline": {
+    "arm": "spec0_loc0",
+    "failed": 13,
+    "failure_evidence": {
+      "http_200_model_failure": 7,
+      "independent_simulation_fallback_after_unsupported": 1,
+      "replayable_formal_counterexample": 5
+    },
+    "passed": 72,
+    "silent": 7
+  },
+  "contrasts": {
+    "what_full_spec": {
+      "arm_b": "spec1_loc0",
+      "complete_case_n": 75,
+      "complete_case_pp": 6.1,
+      "discordant_both_arms_emitted": 7,
+      "discordant_involving_empty_response": 7,
+      "discordant_pairs": 14,
+      "risk_diff_pp": 5.1,
+      "silent_cells": {
+        "spec0_loc0": 7,
+        "spec1_loc0": 6
+      }
+    },
+    "where_oracle_location": {
+      "arm_b": "spec0_loc1",
+      "complete_case_n": 73,
+      "complete_case_pp": 0.0,
+      "discordant_both_arms_emitted": 0,
+      "discordant_involving_empty_response": 7,
+      "discordant_pairs": 7,
+      "risk_diff_pp": -0.3,
+      "silent_cells": {
+        "spec0_loc0": 7,
+        "spec0_loc1": 6
+      }
+    }
+  },
+  "generated_by": "code/scripts/ws_primary_informativeness.py",
+  "joint_cell": {
+    "arm": "spec1_loc1",
+    "baseline_failures_fixed": 12,
+    "baseline_successes_broken": 1,
+    "ci95": [
+      3.8,
+      19.1
+    ],
+    "passed": 83,
+    "prespecified": false,
+    "seed_macro_pp": 10.9,
+    "share_of_ceiling_pct": 92
+  },
+  "materiality_bar_pp": 10.0,
+  "n_cases": 85,
+  "n_seed_clusters": 52,
+  "note": "An empty response is scored as a failed repair, per the preregistration. These counts separate that from a repair the oracle refuted.",
+  "share_of_ceiling_ci95_pct": {
+    "what_full_spec": [
+      -39,
+      130
+    ],
+    "where_oracle_location": [
+      -50,
+      41
+    ]
+  },
+  "share_of_ceiling_pct": {
+    "what_full_spec": 43,
+    "where_oracle_location": -3
+  },
+  "source": "artifacts/public/primary/analysis/full85_rows.jsonl"
+}

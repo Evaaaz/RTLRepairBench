@@ -1,0 +1,601 @@
+{
+  "source": "workshop/lint-vs-semantic/code/scripts/e0_coverage_audit.py",
+  "note": "Regenerate with the script on the machine holding generated/. Consumed by E1-E3.",
+  "summary": {
+    "cells_total": 38,
+    "cells_to_run": 19
+  },
+  "checklist": [
+    {
+      "model": "base",
+      "label": "Qwen2.5-Coder-7B (base)",
+      "exhibit": "table3_lint",
+      "have": 374,
+      "target": 374,
+      "status": "HAVE",
+      "owner": "E1",
+      "serving": "modal",
+      "sources": [
+        "generated/rb_base_anon.json",
+        "generated/rb_base_anon_spec.json",
+        "generated/rb_base_leaked.json",
+        "generated/repairbench_base.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/rb_base.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/batched/rb_base_diag.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/batched/rb_base_diag_spec.json"
+      ]
+    },
+    {
+      "model": "base",
+      "label": "Qwen2.5-Coder-7B (base)",
+      "exhibit": "table3_semantic",
+      "have": 85,
+      "target": 85,
+      "status": "HAVE",
+      "owner": "E1",
+      "serving": "modal",
+      "note": "",
+      "sources": [
+        "generated/rb_base_anon.json",
+        "generated/rb_base_anon_spec.json",
+        "generated/rb_base_leaked.json",
+        "generated/repairbench_base.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/rb_base.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/batched/rb_base_diag.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/batched/rb_base_diag_spec.json"
+      ]
+    },
+    {
+      "model": "base",
+      "label": "Qwen2.5-Coder-7B (base)",
+      "exhibit": "fig1_2x2",
+      "have": 0,
+      "arms_missing": [
+        "spec0_loc0",
+        "spec1_loc0",
+        "spec0_loc1",
+        "spec1_loc1"
+      ],
+      "status": "NEED",
+      "owner": "E1",
+      "serving": "modal",
+      "formal_scored": 0,
+      "artifacts_complete": false,
+      "candidates_retained": false,
+      "note": "",
+      "sources": []
+    },
+    {
+      "model": "base",
+      "label": "Qwen2.5-Coder-7B (base)",
+      "exhibit": "table6_realbug",
+      "have": 0,
+      "arms_missing": [
+        "nospec",
+        "spec",
+        "speconly"
+      ],
+      "status": "NEED",
+      "owner": "E1",
+      "serving": "modal",
+      "scored": false,
+      "sources": []
+    },
+    {
+      "model": "v5",
+      "label": "v5 (repair LoRA)",
+      "exhibit": "table3_lint",
+      "have": 374,
+      "target": 374,
+      "status": "HAVE",
+      "owner": "E1",
+      "serving": "modal",
+      "sources": [
+        "generated/rb_v5_anon.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/batched/rb_v5_diag.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/batched/rb_v5_diag_spec.json"
+      ]
+    },
+    {
+      "model": "v5",
+      "label": "v5 (repair LoRA)",
+      "exhibit": "table3_semantic",
+      "have": 85,
+      "target": 85,
+      "status": "HAVE",
+      "owner": "E1",
+      "serving": "modal",
+      "note": "",
+      "sources": [
+        "generated/rb_v5_anon.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/batched/rb_v5_diag.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/batched/rb_v5_diag_spec.json"
+      ]
+    },
+    {
+      "model": "v5",
+      "label": "v5 (repair LoRA)",
+      "exhibit": "fig1_2x2",
+      "have": 0,
+      "arms_missing": [
+        "spec0_loc0",
+        "spec1_loc0",
+        "spec0_loc1",
+        "spec1_loc1"
+      ],
+      "status": "NEED",
+      "owner": "E1",
+      "serving": "modal",
+      "formal_scored": 0,
+      "artifacts_complete": false,
+      "candidates_retained": false,
+      "note": "",
+      "sources": []
+    },
+    {
+      "model": "verireason",
+      "label": "VeriReason-CodeLlama-7B",
+      "exhibit": "table3_lint",
+      "have": 374,
+      "target": 374,
+      "status": "HAVE",
+      "owner": "E1",
+      "serving": "modal",
+      "sources": [
+        "workshop/lint-vs-semantic/code/benchmarks/results/rb_verireason_anon_verireason.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/rb_verireason_diag.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/rb_verireason_diag_spec.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/batched/rb_verireason_diag.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/batched/rb_verireason_diag_spec.json"
+      ]
+    },
+    {
+      "model": "verireason",
+      "label": "VeriReason-CodeLlama-7B",
+      "exhibit": "table3_semantic",
+      "have": 85,
+      "target": 85,
+      "status": "HAVE",
+      "owner": "E1",
+      "serving": "modal",
+      "note": "",
+      "sources": [
+        "workshop/lint-vs-semantic/code/benchmarks/results/rb_verireason_anon_verireason.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/rb_verireason_diag.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/rb_verireason_diag_spec.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/batched/rb_verireason_diag.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/batched/rb_verireason_diag_spec.json"
+      ]
+    },
+    {
+      "model": "verireason",
+      "label": "VeriReason-CodeLlama-7B",
+      "exhibit": "fig1_2x2",
+      "have": 0,
+      "arms_missing": [
+        "spec0_loc0",
+        "spec1_loc0",
+        "spec0_loc1",
+        "spec1_loc1"
+      ],
+      "status": "NEED",
+      "owner": "E1",
+      "serving": "modal",
+      "formal_scored": 0,
+      "artifacts_complete": false,
+      "candidates_retained": false,
+      "note": "",
+      "sources": []
+    },
+    {
+      "model": "verireason",
+      "label": "VeriReason-CodeLlama-7B",
+      "exhibit": "table6_realbug",
+      "have": 0,
+      "arms_missing": [
+        "nospec",
+        "spec",
+        "speconly"
+      ],
+      "status": "NEED",
+      "owner": "E1",
+      "serving": "modal",
+      "scored": false,
+      "sources": []
+    },
+    {
+      "model": "vrqwen",
+      "label": "VR-Qwen2.5-7B",
+      "exhibit": "table3_lint",
+      "have": 374,
+      "target": 374,
+      "status": "HAVE",
+      "owner": "E1",
+      "serving": "modal",
+      "sources": [
+        "workshop/lint-vs-semantic/code/benchmarks/results/batched/rb_vrqwen_diag.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/batched/rb_vrqwen_diag_spec.json"
+      ]
+    },
+    {
+      "model": "vrqwen",
+      "label": "VR-Qwen2.5-7B",
+      "exhibit": "table3_semantic",
+      "have": 85,
+      "target": 85,
+      "status": "HAVE",
+      "owner": "E1",
+      "serving": "modal",
+      "note": "",
+      "sources": [
+        "workshop/lint-vs-semantic/code/benchmarks/results/batched/rb_vrqwen_diag.json",
+        "workshop/lint-vs-semantic/code/benchmarks/results/batched/rb_vrqwen_diag_spec.json"
+      ]
+    },
+    {
+      "model": "vrqwen",
+      "label": "VR-Qwen2.5-7B",
+      "exhibit": "fig1_2x2",
+      "have": 0,
+      "arms_missing": [
+        "spec0_loc0",
+        "spec1_loc0",
+        "spec0_loc1",
+        "spec1_loc1"
+      ],
+      "status": "NEED",
+      "owner": "E1",
+      "serving": "modal",
+      "formal_scored": 0,
+      "artifacts_complete": false,
+      "candidates_retained": false,
+      "note": "",
+      "sources": []
+    },
+    {
+      "model": "vrqwen",
+      "label": "VR-Qwen2.5-7B",
+      "exhibit": "table6_realbug",
+      "have": 0,
+      "arms_missing": [
+        "nospec",
+        "spec",
+        "speconly"
+      ],
+      "status": "NEED",
+      "owner": "E1",
+      "serving": "modal",
+      "scored": false,
+      "sources": []
+    },
+    {
+      "model": "origen_fix",
+      "label": "OriGen_Fix",
+      "exhibit": "table3_lint",
+      "have": 0,
+      "target": 374,
+      "status": "NEED",
+      "owner": "E1",
+      "serving": "modal",
+      "sources": []
+    },
+    {
+      "model": "origen_fix",
+      "label": "OriGen_Fix",
+      "exhibit": "table3_semantic",
+      "have": 68,
+      "target": 85,
+      "status": "PARTIAL",
+      "owner": "E4",
+      "serving": "modal",
+      "note": "derived from banked spec0_loc0 arm (no new inference)",
+      "sources": []
+    },
+    {
+      "model": "origen_fix",
+      "label": "OriGen_Fix",
+      "exhibit": "fig1_2x2",
+      "have": 272,
+      "arms_missing": [],
+      "status": "HAVE",
+      "owner": "E1",
+      "serving": "modal",
+      "formal_scored": 124,
+      "artifacts_complete": true,
+      "candidates_retained": true,
+      "note": "",
+      "sources": [
+        "generated/second_model/runs/origen_fix"
+      ]
+    },
+    {
+      "model": "llama-3.3-70b",
+      "label": "llama-3.3-70b",
+      "exhibit": "table3_lint",
+      "have": 0,
+      "target": 374,
+      "status": "NEED",
+      "owner": "E1",
+      "serving": "modal",
+      "sources": []
+    },
+    {
+      "model": "llama-3.3-70b",
+      "label": "llama-3.3-70b",
+      "exhibit": "table3_semantic",
+      "have": 68,
+      "target": 85,
+      "status": "PARTIAL",
+      "owner": "E4",
+      "serving": "modal",
+      "note": "derived from banked spec0_loc0 arm (no new inference)",
+      "sources": []
+    },
+    {
+      "model": "llama-3.3-70b",
+      "label": "llama-3.3-70b",
+      "exhibit": "fig1_2x2",
+      "have": 272,
+      "arms_missing": [],
+      "status": "HAVE",
+      "owner": "E1",
+      "serving": "modal",
+      "formal_scored": 130,
+      "artifacts_complete": true,
+      "candidates_retained": true,
+      "note": "",
+      "sources": [
+        "generated/second_model/runs/nvcf__meta__llama-3.3-70b-instruct__msf1",
+        "generated/second_model/runs/nvcf__meta__llama-3.3-70b-instruct__msf2",
+        "generated/second_model/runs/nvcf__meta__llama-3.3-70b-instruct__msf3",
+        "generated/second_model/runs/nvcf__meta__llama-3.3-70b-instruct__msf4",
+        "generated/second_model/runs/nvcf__meta__llama-3.3-70b-instruct__msf5",
+        "generated/second_model/runs/nvcf__meta__llama-3.3-70b-instruct__redacted",
+        "generated/second_model/runs/nvcf__meta__llama-3.3-70b-instruct__temp07_s1",
+        "generated/second_model/runs/nvcf__meta__llama-3.3-70b-instruct__temp07_s2",
+        "generated/second_model/runs/nvcf__meta__llama-3.3-70b-instruct__temp07_s3",
+        "generated/second_model/runs/nvcf__meta__llama-3.3-70b-instruct__temp07_s4"
+      ]
+    },
+    {
+      "model": "llama-3.3-70b",
+      "label": "llama-3.3-70b",
+      "exhibit": "table6_realbug",
+      "have": 0,
+      "arms_missing": [
+        "nospec",
+        "spec",
+        "speconly"
+      ],
+      "status": "NEED",
+      "owner": "E1",
+      "serving": "modal",
+      "scored": false,
+      "sources": []
+    },
+    {
+      "model": "gpt-4o-mini",
+      "label": "gpt-4o-mini",
+      "exhibit": "table3_lint",
+      "have": 0,
+      "target": 40,
+      "status": "NEED",
+      "owner": "E2",
+      "serving": "openai",
+      "sources": []
+    },
+    {
+      "model": "gpt-4o-mini",
+      "label": "gpt-4o-mini",
+      "exhibit": "table3_semantic",
+      "have": 68,
+      "target": 85,
+      "status": "PARTIAL",
+      "owner": "E4",
+      "serving": "openai",
+      "note": "derived from banked spec0_loc0 arm (no new inference)",
+      "sources": []
+    },
+    {
+      "model": "gpt-4o-mini",
+      "label": "gpt-4o-mini",
+      "exhibit": "fig1_2x2",
+      "have": 272,
+      "arms_missing": [],
+      "status": "HAVE",
+      "owner": "E2",
+      "serving": "openai",
+      "formal_scored": 136,
+      "artifacts_complete": true,
+      "candidates_retained": true,
+      "note": "",
+      "sources": [
+        "generated/second_model/runs/openai__openai__gpt-4o-mini"
+      ]
+    },
+    {
+      "model": "gpt-4o-mini",
+      "label": "gpt-4o-mini",
+      "exhibit": "table6_realbug",
+      "have": 0,
+      "arms_missing": [
+        "nospec",
+        "spec",
+        "speconly"
+      ],
+      "status": "NEED",
+      "owner": "E2",
+      "serving": "openai",
+      "scored": false,
+      "sources": []
+    },
+    {
+      "model": "gpt-4.1",
+      "label": "gpt-4.1",
+      "exhibit": "table3_lint",
+      "have": 0,
+      "target": 40,
+      "status": "NEED",
+      "owner": "E2",
+      "serving": "openai",
+      "sources": []
+    },
+    {
+      "model": "gpt-4.1",
+      "label": "gpt-4.1",
+      "exhibit": "table3_semantic",
+      "have": 68,
+      "target": 85,
+      "status": "PARTIAL",
+      "owner": "E4",
+      "serving": "openai",
+      "note": "derived from banked spec0_loc0 arm (no new inference)",
+      "sources": []
+    },
+    {
+      "model": "gpt-4.1",
+      "label": "gpt-4.1",
+      "exhibit": "fig1_2x2",
+      "have": 272,
+      "arms_missing": [],
+      "status": "HAVE",
+      "owner": "E2",
+      "serving": "openai",
+      "formal_scored": 167,
+      "artifacts_complete": true,
+      "candidates_retained": true,
+      "note": "",
+      "sources": [
+        "generated/second_model/runs/azure__openai__gpt-4.1"
+      ]
+    },
+    {
+      "model": "gpt-4.1",
+      "label": "gpt-4.1",
+      "exhibit": "table6_realbug",
+      "have": 0,
+      "arms_missing": [
+        "nospec",
+        "spec",
+        "speconly"
+      ],
+      "status": "NEED",
+      "owner": "E2",
+      "serving": "openai",
+      "scored": false,
+      "sources": []
+    },
+    {
+      "model": "gpt-5.5",
+      "label": "gpt-5.5 (frozen anchor)",
+      "exhibit": "table3_lint",
+      "have": 0,
+      "target": 40,
+      "status": "NEED",
+      "owner": "E2",
+      "serving": "openai",
+      "sources": []
+    },
+    {
+      "model": "gpt-5.5",
+      "label": "gpt-5.5 (frozen anchor)",
+      "exhibit": "table3_semantic",
+      "have": 85,
+      "target": 85,
+      "status": "HAVE",
+      "owner": "E4",
+      "serving": "openai",
+      "note": "derived from banked spec0_loc0 arm (no new inference)",
+      "sources": []
+    },
+    {
+      "model": "gpt-5.5",
+      "label": "gpt-5.5 (frozen anchor)",
+      "exhibit": "fig1_2x2",
+      "have": 340,
+      "arms_missing": [],
+      "status": "HAVE",
+      "owner": "E2",
+      "serving": "openai",
+      "formal_scored": 316,
+      "artifacts_complete": true,
+      "candidates_retained": true,
+      "note": "FROZEN preregistered primary -- must not be re-scored or re-run; 88 of 340 srcdirs absent, matching the documented 62 non-retained proof sources",
+      "sources": [
+        "generated/reports/vericodegen_full85_rows.jsonl"
+      ]
+    },
+    {
+      "model": "gpt-5.5",
+      "label": "gpt-5.5 (frozen anchor)",
+      "exhibit": "table6_realbug",
+      "have": 805,
+      "arms_missing": [],
+      "status": "HAVE",
+      "owner": "E2",
+      "serving": "openai",
+      "scored": true,
+      "sources": [
+        "generated/realbug_frontier/gpt55"
+      ]
+    },
+    {
+      "model": "claude-opus-4-8",
+      "label": "Claude Opus 4.8 (anchor)",
+      "exhibit": "table3_lint",
+      "have": 40,
+      "target": 40,
+      "status": "HAVE",
+      "owner": "E3",
+      "serving": "anthropic",
+      "sources": [
+        "generated/rb_claude_opus_anon.json"
+      ]
+    },
+    {
+      "model": "claude-opus-4-8",
+      "label": "Claude Opus 4.8 (anchor)",
+      "exhibit": "table3_semantic",
+      "have": 85,
+      "target": 85,
+      "status": "HAVE",
+      "owner": "E3",
+      "serving": "anthropic",
+      "note": "",
+      "sources": [
+        "generated/rb_claude_opus_anon.json"
+      ]
+    },
+    {
+      "model": "claude-opus-4-8",
+      "label": "Claude Opus 4.8 (anchor)",
+      "exhibit": "fig1_2x2",
+      "have": 272,
+      "arms_missing": [],
+      "status": "HAVE",
+      "owner": "E3",
+      "serving": "anthropic",
+      "formal_scored": 0,
+      "artifacts_complete": false,
+      "candidates_retained": false,
+      "note": "summary only: decomp_second_anchor.py writes decomp.json and discards the generated RTL, so Tier F scoring of this arm requires re-running all 272 generations -- the plan's roster entry 'candidates exist, need formal scoring' does not hold",
+      "sources": [
+        "generated/second_anchor/claude_opus_4_8_decomp"
+      ]
+    },
+    {
+      "model": "claude-opus-4-8",
+      "label": "Claude Opus 4.8 (anchor)",
+      "exhibit": "table6_realbug",
+      "have": 819,
+      "arms_missing": [],
+      "status": "HAVE",
+      "owner": "E3",
+      "serving": "anthropic",
+      "scored": true,
+      "sources": [
+        "generated/realbug_frontier/claude_opus_4_8"
+      ]
+    }
+  ]
+}

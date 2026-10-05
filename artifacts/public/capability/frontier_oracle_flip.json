@@ -1,0 +1,167 @@
+{
+  "arms": {
+    "diag": {
+      "false_divergences": 12,
+      "formal_verdicts_all_85": {
+        "COUNTEREXAMPLE": 8,
+        "PROVED": 72,
+        "TIMEOUT": 1,
+        "UNSUPPORTED": 4
+      },
+      "over_credits": 1,
+      "tier_f_hits": 71,
+      "tier_f_pct": 89.9,
+      "tier_s_hits": 60,
+      "tier_s_pct": 75.9
+    },
+    "spec": {
+      "false_divergences": 27,
+      "formal_verdicts_all_85": {
+        "COUNTEREXAMPLE": 1,
+        "PROVED": 83,
+        "TIMEOUT": 1
+      },
+      "over_credits": 0,
+      "tier_f_hits": 78,
+      "tier_f_pct": 98.7,
+      "tier_s_hits": 51,
+      "tier_s_pct": 64.6
+    }
+  },
+  "budget_tokens": 4096,
+  "contract_rescore_checks": {
+    "cycle1_vs_cycle0": {
+      "fail_to_pass": {
+        "diag": 12,
+        "spec": 27
+      },
+      "pass_to_fail": {
+        "diag": 0,
+        "spec": 0
+      }
+    },
+    "cycle1_vs_reset_aware": {
+      "diag_disagreements": 1,
+      "spec_disagreements": 0
+    },
+    "reset_aware_vs_tier_f": {
+      "matching_cells": 158,
+      "total_cells": 158
+    }
+  },
+  "contract_rescores": {
+    "tier_f": {
+      "arms": {
+        "diag": {
+          "hits": 71,
+          "pct": 89.9
+        },
+        "spec": {
+          "hits": 78,
+          "pct": 98.7
+        }
+      },
+      "n": 79,
+      "paired": {
+        "both_fail": 0,
+        "both_pass": 70,
+        "diag_only_wins": 1,
+        "mcnemar_p": 0.0390625,
+        "spec_minus_diag_pp": 8.9,
+        "spec_only_wins": 8
+      }
+    },
+    "tier_s_cycle0": {
+      "arms": {
+        "diag": {
+          "hits": 60,
+          "pct": 75.9
+        },
+        "spec": {
+          "hits": 51,
+          "pct": 64.6
+        }
+      },
+      "n": 79,
+      "paired": {
+        "both_fail": 16,
+        "both_pass": 48,
+        "diag_only_wins": 12,
+        "mcnemar_p": 0.03515625,
+        "spec_minus_diag_pp": -11.4,
+        "spec_only_wins": 3
+      }
+    },
+    "tier_s_cycle1": {
+      "arms": {
+        "diag": {
+          "hits": 72,
+          "pct": 91.1
+        },
+        "spec": {
+          "hits": 78,
+          "pct": 98.7
+        }
+      },
+      "n": 79,
+      "paired": {
+        "both_fail": 0,
+        "both_pass": 71,
+        "diag_only_wins": 1,
+        "mcnemar_p": 0.0703125,
+        "spec_minus_diag_pp": 7.6,
+        "spec_only_wins": 7
+      }
+    },
+    "tier_s_reset_aware": {
+      "arms": {
+        "diag": {
+          "hits": 71,
+          "pct": 89.9
+        },
+        "spec": {
+          "hits": 78,
+          "pct": 98.7
+        }
+      },
+      "n": 79,
+      "paired": {
+        "both_fail": 0,
+        "both_pass": 70,
+        "diag_only_wins": 1,
+        "mcnemar_p": 0.0390625,
+        "spec_minus_diag_pp": 8.9,
+        "spec_only_wins": 8
+      },
+      "scorer": "code/scripts/reset_aware_sim.py"
+    }
+  },
+  "generated_by": "code/scripts/x3_frontier_oracle_flip.py",
+  "model": "azure/openai/gpt-5.5",
+  "n_cases": 85,
+  "n_definitive_both_arms": 79,
+  "note": "Both arms greedy, anonymized, matched budget, same 85 cases; every candidate scored by both tiers. An empty response never occurred here (used_llm 1.0).",
+  "reset_contract_attribution": {
+    "diag": {
+      "cleared_by_reset_aware_tb": 12,
+      "false_divergences": 12
+    },
+    "spec": {
+      "cleared_by_reset_aware_tb": 27,
+      "false_divergences": 30
+    }
+  },
+  "tier_f_contrast": {
+    "diag_only_wins": 1,
+    "mcnemar_p": 0.0390625,
+    "spec_minus_diag_pp": 8.9,
+    "spec_only_wins": 8
+  },
+  "tier_s_contrast": {
+    "diag_only_wins": 12,
+    "mcnemar_p": 0.03515625,
+    "spec_minus_diag_pp": -11.4,
+    "spec_only_wins": 3
+  },
+  "verdict_reverses_sign": true
+}

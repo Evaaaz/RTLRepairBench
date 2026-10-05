@@ -1,0 +1,8 @@
+{
+  "spec_pct": 45.3,
+  "speconly_pct": 60.6,
+  "broken_adds_b": 22,
+  "broken_removes_c": 64,
+  "mcnemar_p": 6.5442273311708145e-06,
+  "n": 274
+}

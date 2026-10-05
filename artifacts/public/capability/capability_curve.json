@@ -1,0 +1,92 @@
+[
+  {
+    "model": "nvcf/meta/llama-3.3-70b-instruct",
+    "baseline_pct": 25.0,
+    "what_pp": 42.1,
+    "what_ci": [
+      26.6,
+      57.9
+    ],
+    "where_pp": 21.4,
+    "where_ci": [
+      9.0,
+      35.1
+    ],
+    "n_cases": 68,
+    "cohort": "retained_equivalence_harness_scheduled_cohort",
+    "case_ids_sha256": "7db08fda17e8a5cd0aeecca6e040faed37da9816ad2e048c02c13cf72ac2b65e",
+    "scoring_rule": "strict_formal_proved_only"
+  },
+  {
+    "model": "azure/openai/gpt-4.1",
+    "baseline_pct": 41.2,
+    "what_pp": 32.9,
+    "what_ci": [
+      14.9,
+      50.5
+    ],
+    "where_pp": 20.0,
+    "where_ci": [
+      5.0,
+      35.8
+    ],
+    "n_cases": 68,
+    "cohort": "retained_equivalence_harness_scheduled_cohort",
+    "case_ids_sha256": "7db08fda17e8a5cd0aeecca6e040faed37da9816ad2e048c02c13cf72ac2b65e",
+    "scoring_rule": "strict_formal_proved_only"
+  },
+  {
+    "model": "openai/openai/gpt-4o-mini",
+    "baseline_pct": 38.2,
+    "what_pp": 27.3,
+    "what_ci": [
+      10.1,
+      44.4
+    ],
+    "where_pp": 9.2,
+    "where_ci": [
+      -3.6,
+      22.5
+    ],
+    "n_cases": 68,
+    "cohort": "retained_equivalence_harness_scheduled_cohort",
+    "case_ids_sha256": "7db08fda17e8a5cd0aeecca6e040faed37da9816ad2e048c02c13cf72ac2b65e",
+    "scoring_rule": "strict_formal_proved_only"
+  },
+  {
+    "model": "OriGen_Fix (RTL-specific 7B)",
+    "baseline_pct": 23.5,
+    "what_pp": 26.4,
+    "what_ci": [
+      13.1,
+      40.3
+    ],
+    "where_pp": 30.0,
+    "where_ci": [
+      18.5,
+      42.3
+    ],
+    "n_cases": 68,
+    "cohort": "retained_equivalence_harness_scheduled_cohort",
+    "case_ids_sha256": "7db08fda17e8a5cd0aeecca6e040faed37da9816ad2e048c02c13cf72ac2b65e",
+    "scoring_rule": "strict_formal_proved_only"
+  },
+  {
+    "model": "azure/openai/gpt-5.5",
+    "baseline_pct": 82.4,
+    "what_pp": 4.5,
+    "what_ci": [
+      -5.9,
+      15.8
+    ],
+    "where_pp": 3.6,
+    "where_ci": [
+      -1.8,
+      9.7
+    ],
+    "n_cases": 68,
+    "cohort": "retained_equivalence_harness_scheduled_cohort",
+    "case_ids_sha256": "7db08fda17e8a5cd0aeecca6e040faed37da9816ad2e048c02c13cf72ac2b65e",
+    "scoring_rule": "strict_formal_proved_only"
+  }
+]

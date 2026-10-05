@@ -1,0 +1,134 @@
+==============================================================================
+REPAIRBENCH -- per-arm recovery (Wilson 95% CI)
+==============================================================================
+
+## rb_base_diag  ->  base [anon]
+   lint           353/374 = 94.4% [91.6, 96.3]
+   semantic       23/85 = 27.1% [18.8, 37.3]
+
+## rb_base_diag_spec  ->  base [anon,+spec]
+   lint           326/374 = 87.2% [83.4, 90.2]
+   semantic       36/85 = 42.4% [32.4, 53.0]
+
+## rb_v5_diag  ->  tuned [anon]
+   lint           324/374 = 86.6% [82.8, 89.7]
+   semantic       23/85 = 27.1% [18.8, 37.3]
+
+## rb_v5_diag_spec  ->  tuned [anon,+spec]
+   lint           303/374 = 81.0% [76.7, 84.7]
+   semantic       36/85 = 42.4% [32.4, 53.0]
+
+## rb_verireason_diag  ->  verireason [anon]
+   lint           220/374 = 58.8% [53.8, 63.7]
+   semantic       13/85 = 15.3% [9.2, 24.4]
+
+## rb_verireason_diag_spec  ->  verireason [anon,+spec]
+   lint           206/374 = 55.1% [50.0, 60.0]
+   semantic       22/85 = 25.9% [17.8, 36.1]
+
+## rb_vrqwen_diag  ->  vrqwen [anon]
+   lint           350/374 = 93.6% [90.6, 95.7]
+   semantic       9/85 = 10.6% [5.7, 18.9]
+
+## rb_vrqwen_diag_spec  ->  vrqwen [anon,+spec]
+   lint           337/374 = 90.1% [86.7, 92.7]
+   semantic       27/85 = 31.8% [22.8, 42.3]
+
+==============================================================================
+SEMANTIC per-mutation recovery (RepairBench arms)
+==============================================================================
+
+## rb_base_diag
+   flip_equality          6/22
+   flip_reset_polarity    2/2
+   off_by_one_literal     1/4
+   op_swap                4/20
+   swap_logical           10/17
+   swap_ternary           0/20
+
+## rb_base_diag_spec
+   flip_equality          8/22
+   flip_reset_polarity    1/2
+   off_by_one_literal     3/4
+   op_swap                10/20
+   swap_logical           11/17
+   swap_ternary           3/20
+
+## rb_v5_diag
+   flip_equality          6/22
+   flip_reset_polarity    0/2
+   off_by_one_literal     0/4
+   op_swap                7/20
+   swap_logical           10/17
+   swap_ternary           0/20
+
+## rb_v5_diag_spec
+   flip_equality          8/22
+   flip_reset_polarity    0/2
+   off_by_one_literal     2/4
+   op_swap                11/20
+   swap_logical           12/17
+   swap_ternary           3/20
+
+## rb_verireason_diag
+   flip_equality          3/22
+   flip_reset_polarity    0/2
+   off_by_one_literal     1/4
+   op_swap                1/20
+   swap_logical           8/17
+   swap_ternary           0/20
+
+## rb_verireason_diag_spec
+   flip_equality          7/22
+   flip_reset_polarity    1/2
+   off_by_one_literal     2/4
+   op_swap                3/20
+   swap_logical           8/17
+   swap_ternary           1/20
+
+## rb_vrqwen_diag
+   flip_equality          1/22
+   flip_reset_polarity    0/2
+   off_by_one_literal     1/4
+   op_swap                1/20
+   swap_logical           5/17
+   swap_ternary           1/20
+
+## rb_vrqwen_diag_spec
+   flip_equality          6/22
+   flip_reset_polarity    0/2
+   off_by_one_literal     3/4
+   op_swap                9/20
+   swap_logical           7/17
+   swap_ternary           2/20
+
+==============================================================================
+PAIRED McNEMAR (exact)
+==============================================================================
+  spec effect on VeriReason [lint]: paired=374 gain=36 loss=50 p=0.16058
+  spec effect on VeriReason [semantic]: paired=85 gain=16 loss=7 p=0.09314
+  spec effect on VeriReason [all]: paired=459 gain=52 loss=57 p=0.70181
+  spec effect on base [lint]: paired=374 gain=13 loss=40 p=0.00027
+  spec effect on base [semantic]: paired=85 gain=22 loss=9 p=0.02945
+  spec effect on base [all]: paired=459 gain=35 loss=49 p=0.15566
+  spec effect on v5 [lint]: paired=374 gain=13 loss=34 p=0.00309
+  spec effect on v5 [semantic]: paired=85 gain=20 loss=7 p=0.01916
+  spec effect on v5 [all]: paired=459 gain=33 loss=41 p=0.41599
+  v5 fine-tune vs base (diag) [lint]: paired=374 gain=19 loss=48 p=0.00052
+  v5 fine-tune vs base (diag) [semantic]: paired=85 gain=13 loss=13 p=1.0
+  v5 fine-tune vs base (diag) [all]: paired=459 gain=32 loss=61 p=0.00346
+  v5 fine-tune vs base (diag+spec) [lint]: paired=374 gain=35 loss=58 p=0.02202
+  v5 fine-tune vs base (diag+spec) [semantic]: paired=85 gain=12 loss=12 p=1.0
+  v5 fine-tune vs base (diag+spec) [all]: paired=459 gain=47 loss=70 p=0.0415
+  VeriReason vs base (diag) [lint]: paired=374 gain=9 loss=142 p=0.0
+  VeriReason vs base (diag) [semantic]: paired=85 gain=7 loss=17 p=0.06391
+  VeriReason vs base (diag) [all]: paired=459 gain=16 loss=159 p=0.0
+  spec effect on VR-Qwen [lint]: paired=374 gain=15 loss=28 p=0.06599
+  spec effect on VR-Qwen [semantic]: paired=85 gain=22 loss=4 p=0.00053
+  spec effect on VR-Qwen [all]: paired=459 gain=37 loss=32 p=0.63046
+  VR-Qwen vs base (diag) [lint]: paired=374 gain=16 loss=19 p=0.73588
+  VR-Qwen vs base (diag) [semantic]: paired=85 gain=3 loss=17 p=0.00258
+  VR-Qwen vs base (diag) [all]: paired=459 gain=19 loss=36 p=0.03003
+  VR-Qwen vs VeriReason-CodeLlama (diag) [lint]: paired=374 gain=137 loss=7 p=0.0
+  VR-Qwen vs VeriReason-CodeLlama (diag) [semantic]: paired=85 gain=5 loss=9 p=0.42395
+  VR-Qwen vs VeriReason-CodeLlama (diag) [all]: paired=459 gain=142 loss=16 p=0.0

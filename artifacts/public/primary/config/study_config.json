@@ -1,0 +1,145 @@
+{
+  "call_budget": {
+    "hard_total_http_attempts": 800,
+    "max_successful_research_calls": 623,
+    "max_transport_retry_attempts_at_full_revision_cohort": 92,
+    "successful_calls_before_revision": 453
+  },
+  "datasets": {
+    "clean_sensitivity_cases": 75,
+    "clean_spec_allowlist": "data/eval_tasks_clean.jsonl",
+    "distribution_shift": "data/repairbench_realbugs.jsonl",
+    "main": "data/repairbench_sem85.jsonl",
+    "main_cases": 85,
+    "main_design_clusters": 52,
+    "shift_cases": 50,
+    "shift_rng_seed": 42,
+    "spec_source": "data/eval_tasks.jsonl"
+  },
+  "experiments": {
+    "distribution_shift": {
+      "spec": [
+        false,
+        true
+      ],
+      "successful_calls": 100
+    },
+    "main_2x2": {
+      "oracle_location": [
+        false,
+        true
+      ],
+      "spec": [
+        false,
+        true
+      ],
+      "successful_calls": 340
+    },
+    "preflight": {
+      "fixture_count": 3,
+      "ping_calls": 1,
+      "prompt_shapes_per_fixture": 4,
+      "successful_calls": 13
+    },
+    "redacted_spec_no_location": {
+      "annotation_status": "DROPPED_NO_INDEPENDENT_HUMAN_ANNOTATORS",
+      "model_outputs_seen_before_decision": false,
+      "previous_twenty_percent_rule_active": false,
+      "successful_calls": 0
+    },
+    "revision": {
+      "arms": [
+        "generic_failure",
+        "concrete_counterexample"
+      ],
+      "max_eligible_cases": 85,
+      "max_successful_calls": 170,
+      "rounds": 1
+    }
+  },
+  "formal": {
+    "bmc_pass_is_proof": false,
+    "combinational_cases": 17,
+    "counterexample_bmc_depth": 256,
+    "fallback_timeout_seconds": 300,
+    "fast_timeout_seconds": 60,
+    "independent_simulation": {
+      "cycles_per_seed": 200,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1009,
+        1010
+      ]
+    },
+    "require_icarus_counterexample_replay": true,
+    "reset_sequential_cases": 60,
+    "statuses": [
+      "PROVED",
+      "COUNTEREXAMPLE",
+      "TIMEOUT",
+      "UNSUPPORTED",
+      "COMPILE_FAIL"
+    ]
+  },
+  "gates": {
+    "calibration": {
+      "distinguishable_known_mutants_required": 85,
+      "exact_independent_simulation_fallback_required": 1,
+      "formal_replayable_known_mutant_counterexamples_required": 84,
+      "golden_vs_golden_required": 85,
+      "only_fallback_case_id": "main_0059",
+      "stop_on_equivalent_known_mutant": true
+    },
+    "formal_primary": {
+      "maximum_simulation_conflicts": 0,
+      "minimum_definitive_cases_per_arm": 77
+    }
+  },
+  "privacy": {
+    "persist_api_key": false,
+    "strip_mutation_label": true,
+    "strip_original_module_name": true,
+    "strip_task_id": true
+  },
+  "protocol_amendment": {
+    "file_sha256": "4f9bc41ac9bda24cd31eeb2c9e32cf18915852b0e498eaf46ba166b8d0843371",
+    "manifest_sha256": "67a961fad36bc60c411b5f7e0ef45ee479bbc4eff91c743b4d4cb47c2b771d52",
+    "path": "configs/vericodegen/protocol_amendment_2026-07-15.json",
+    "required_for_paid_calls": true
+  },
+  "provider": {
+    "api_key_env": "PROVIDER_A_API_KEY",
+    "base_url": "https://provider-a.invalid/v1",
+    "fallback": false,
+    "max_output_tokens": 4096,
+    "model": "azure/openai/gpt-5.5",
+    "reasoning_effort": "high",
+    "wire_api": "responses"
+  },
+  "public_document_sha256": "0999c54f331f0b5344b278a6cb985b386f13483c0e4b36787e39b348302ba392",
+  "schema_version": 1,
+  "statistics": {
+    "cluster_bootstrap_replicates": 10000,
+    "material_improvement_min_absolute_risk_difference": 0.1,
+    "material_improvement_requires_ci_excluding_zero": true,
+    "multiple_testing": "Holm",
+    "unit": "seed_design_cluster"
+  },
+  "study_id": "vericodegen-2026-verifier-guided-rtl-repair",
+  "title": "Where, What, or Counterexamples? Decomposing Verifier-Guided RTL Repair",
+  "venue": {
+    "abstract_deadline_aoe": "2026-08-26T23:59:00-12:00",
+    "cfp_url": "https://vericodegen.github.io/cfp.html",
+    "hard_submission_deadline_pdt": "2026-08-29T04:59:00-07:00",
+    "internal_upload_deadline_pdt": "2026-08-27T17:00:00-07:00",
+    "name": "NeurIPS 2026 Workshop on AI for Verifiable Coding (VeriCodeGen)",
+    "openreview_url": "https://openreview.net/group?id=NeurIPS.cc%2F2026%2FWorkshop%2FVERICODEGEN"
+  }
+}

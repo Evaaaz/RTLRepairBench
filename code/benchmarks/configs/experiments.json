@@ -1,0 +1,158 @@
+{
+  "_comment": "Declarative experiment matrix for RepairBench. Each experiment is one cell of the model x repair-signal grid. `signal` is a list of extra levers on top of the tool diagnostic: 'spec' (intent) and/or 'locate' (oracle line). `anon` strips the VerilogEval identity (leak-free floor). Endpoints: served models read $RTLREPAIR_LLM_URL; set `endpoint_env` to route an experiment at a different served endpoint (e.g. a separate OriGen vLLM server). Claude reads $ANTHROPIC_API_KEY.",
+  "defaults": {
+    "backend": "rtlrepair",
+    "anon": true,
+    "temp": 0.0,
+    "prompt_style": "default"
+  },
+  "experiments": [
+    {
+      "name": "base_diag",
+      "model": "base",
+      "signal": []
+    },
+    {
+      "name": "v5_diag",
+      "model": "tuned",
+      "signal": []
+    },
+    {
+      "name": "base_diag_spec",
+      "model": "base",
+      "signal": [
+        "spec"
+      ]
+    },
+    {
+      "name": "claude_diag",
+      "backend": "claude",
+      "claude_model": "claude-opus-4-8",
+      "signal": []
+    },
+    {
+      "_note": "the two cells missing from Table 2 \u2014 completes the model x signal cross",
+      "name": "v5_diag_spec",
+      "model": "tuned",
+      "signal": [
+        "spec"
+      ]
+    },
+    {
+      "name": "claude_diag_spec",
+      "backend": "claude",
+      "claude_model": "claude-opus-4-8",
+      "signal": [
+        "spec"
+      ]
+    },
+    {
+      "_note": "the purpose-built repair model. OriGen's native template requires a description, so it is a diagnostic+spec arm. Serve DeepSeek-Coder-7B + the OriGen_Fix LoRA via vLLM and point endpoint_env at it.",
+      "name": "origen_diag_spec",
+      "model": "OriGen_Fix",
+      "prompt_style": "origen",
+      "signal": [
+        "spec"
+      ],
+      "endpoint_env": "ORIGEN_LLM_URL"
+    },
+    {
+      "_note": "VeriReason (CodeLlama-7B GRPO reasoning), served on Modal (backend/modal_inference/). Native contract is spec->RTL generation, NOT repair, so repair is off-distribution under any prompt: numbers are lower bounds. The default-style arm is the strict-parity floor (generic prompt, 1024 tokens; expect truncation of think-first output \u2014 label as floor). Native arms use the think/answer template at 2048 tokens (VERIREASON_MAX_TOKENS).",
+      "name": "verireason_default_diag",
+      "model": "verireason",
+      "signal": [],
+      "endpoint_env": "VERIREASON_LLM_URL"
+    },
+    {
+      "name": "verireason_diag",
+      "model": "verireason",
+      "prompt_style": "verireason",
+      "signal": [],
+      "endpoint_env": "VERIREASON_LLM_URL"
+    },
+    {
+      "name": "verireason_diag_spec",
+      "model": "verireason",
+      "prompt_style": "verireason",
+      "signal": [
+        "spec"
+      ],
+      "endpoint_env": "VERIREASON_LLM_URL"
+    },
+    {
+      "_note": "Nellyw888/Qwen2.5-7B-Verilog-RTLCoder-GRPO-reasoning-simple -- same GRPO reasoning recipe as VeriReason but on Qwen2.5-7B instead of CodeLlama-7B. Served with the stock Qwen ChatML template (its trained-on format), so no raw-completion override. Emits full <think>/<answer> incl. closing tags.",
+      "name": "vrqwen_diag",
+      "model": "vrqwen",
+      "prompt_style": "verireason",
+      "signal": [],
+      "endpoint_env": "VRQWEN_LLM_URL"
+    },
+    {
+      "name": "vrqwen_diag_spec",
+      "model": "vrqwen",
+      "prompt_style": "verireason",
+      "signal": [
+        "spec"
+      ],
+      "endpoint_env": "VRQWEN_LLM_URL"
+    }
+  ],
+  "analyses": [
+    {
+      "name": "intent_lever",
+      "contrast": [
+        "base_diag",
+        "base_diag_spec"
+      ]
+    },
+    {
+      "name": "capability",
+      "contrast": [
+        "base_diag",
+        "claude_diag"
+      ]
+    },
+    {
+      "name": "v5_intent",
+      "contrast": [
+        "v5_diag",
+        "v5_diag_spec"
+      ]
+    },
+    {
+      "name": "claude_intent",
+      "contrast": [
+        "claude_diag",
+        "claude_diag_spec"
+      ]
+    },
+    {
+      "name": "origen_vs_base",
+      "contrast": [
+        "base_diag_spec",
+        "origen_diag_spec"
+      ]
+    },
+    {
+      "name": "verireason_vs_base",
+      "contrast": [
+        "base_diag",
+        "verireason_diag"
+      ]
+    },
+    {
+      "name": "verireason_vs_base_spec",
+      "contrast": [
+        "base_diag_spec",
+        "verireason_diag_spec"
+      ]
+    },
+    {
+      "name": "verireason_native_lift",
+      "contrast": [
+        "verireason_default_diag",
+        "verireason_diag"
+      ]
+    }
+  ]
+}

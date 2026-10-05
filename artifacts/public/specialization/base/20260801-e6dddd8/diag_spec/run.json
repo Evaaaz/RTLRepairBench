@@ -1,0 +1,44 @@
+{
+  "model": "base",
+  "version": "20260801-e6dddd8",
+  "signal": "diag_spec",
+  "summary": {
+    "model": "base",
+    "backend": "rtlrepair",
+    "n": 459,
+    "anon": true,
+    "spec": true,
+    "locate": false,
+    "temp": 0.0,
+    "by_bucket": {
+      "lint": {
+        "n": 374,
+        "recovered": 326,
+        "recovery_rate": 0.8717,
+        "used_llm_rate": 1.0,
+        "spec_rate": 1.0
+      },
+      "semantic": {
+        "n": 85,
+        "recovered": 36,
+        "recovery_rate": 0.4235,
+        "used_llm_rate": 1.0,
+        "spec_rate": 1.0
+      }
+    }
+  },
+  "n_records": 459,
+  "raw": [],
+  "arm": "base_diag_spec",
+  "config": {
+    "backend": "rtlrepair",
+    "anon": true,
+    "temp": 0.0,
+    "prompt_style": "default",
+    "name": "base_diag_spec",
+    "model": "base",
+    "signal": [
+      "spec"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "model": "llama-3.3-70b",
+  "n_cases": 68,
+  "full_spec_effect_pp": 42.1,
+  "full_ci": [
+    26.4,
+    57.7
+  ],
+  "redacted_spec_effect_pp": 15.8,
+  "redacted_ci": [
+    2.3,
+    29.7
+  ],
+  "drop_pp": 26.4,
+  "pct_lost": 63
+}

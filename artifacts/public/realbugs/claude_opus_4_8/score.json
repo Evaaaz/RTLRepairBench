@@ -1,0 +1,29 @@
+{
+  "tag": "claude_opus_4_8",
+  "n": 274,
+  "nospec": {
+    "pct": 28.1,
+    "recovered": 77,
+    "n": 274
+  },
+  "spec": {
+    "pct": 63.1,
+    "recovered": 173,
+    "n": 274
+  },
+  "speconly": {
+    "pct": 63.1,
+    "recovered": 173,
+    "n": 274
+  },
+  "intent_effect": {
+    "fixed": 103,
+    "lost": 7,
+    "mcnemar_p": 5.2527095298045276e-23
+  },
+  "regen_vs_repair": {
+    "speconly_fixes_spec_misses": 27,
+    "spec_fixes_speconly_misses": 27,
+    "mcnemar_p": 1.0
+  }
+}

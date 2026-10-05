@@ -1,0 +1,114 @@
+{
+  "base": {
+    "baseline_definitive": 75,
+    "baseline_pct": 24.0,
+    "baseline_proved": 18,
+    "ci": [
+      2.8,
+      33.3
+    ],
+    "clusters": 42,
+    "discordant": [
+      13,
+      6
+    ],
+    "mcnemar_p": 0.1670684814453125,
+    "paired_cases": 67,
+    "what_pp": 17.9,
+    "where_ci": [
+      -16.3,
+      3.3
+    ],
+    "where_clusters": 46,
+    "where_discordant": [
+      3,
+      8
+    ],
+    "where_paired_cases": 70,
+    "where_pp": -6.5
+  },
+  "v5": {
+    "baseline_definitive": 81,
+    "baseline_pct": 27.2,
+    "baseline_proved": 22,
+    "ci": [
+      9.2,
+      34.6
+    ],
+    "clusters": 51,
+    "discordant": [
+      19,
+      5
+    ],
+    "mcnemar_p": 0.006610751152038574,
+    "paired_cases": 80,
+    "what_pp": 21.6,
+    "where_ci": [
+      -10.3,
+      13.3
+    ],
+    "where_clusters": 50,
+    "where_discordant": [
+      11,
+      10
+    ],
+    "where_paired_cases": 76,
+    "where_pp": 1.7
+  },
+  "verireason": {
+    "baseline_definitive": 75,
+    "baseline_pct": 14.7,
+    "baseline_proved": 11,
+    "ci": [
+      -4.8,
+      23.3
+    ],
+    "clusters": 45,
+    "discordant": [
+      12,
+      8
+    ],
+    "mcnemar_p": 0.5034446716308594,
+    "paired_cases": 64,
+    "what_pp": 9.3,
+    "where_ci": [
+      5.9,
+      31.1
+    ],
+    "where_clusters": 45,
+    "where_discordant": [
+      18,
+      3
+    ],
+    "where_paired_cases": 70,
+    "where_pp": 18.5
+  },
+  "vrqwen": {
+    "baseline_definitive": 80,
+    "baseline_pct": 11.2,
+    "baseline_proved": 9,
+    "ci": [
+      16.1,
+      40.6
+    ],
+    "clusters": 48,
+    "discordant": [
+      20,
+      2
+    ],
+    "mcnemar_p": 0.00012111663818359375,
+    "paired_cases": 75,
+    "what_pp": 28.0,
+    "where_ci": [
+      -6.4,
+      12.4
+    ],
+    "where_clusters": 51,
+    "where_discordant": [
+      7,
+      5
+    ],
+    "where_paired_cases": 79,
+    "where_pp": 2.9
+  }
+}

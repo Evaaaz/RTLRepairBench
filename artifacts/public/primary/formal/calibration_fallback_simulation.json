@@ -1,0 +1,301 @@
+{
+  "candidate_sha256": "35c79ef6db0aec962710791bc4a3465979d011f1ae883379ea5fdc1d6f2b57c4",
+  "counterexample_summary": {
+    "by_phase_and_sample_point": {
+      "initialization:post_edge": 20,
+      "post_initialization:pre_edge": 247
+    },
+    "first_post_initialization_concrete": {
+      "concrete_two_state": true,
+      "cycle": 4,
+      "expected": "1",
+      "got": "0",
+      "output": "z",
+      "phase": "post_initialization",
+      "sample_point": "pre_edge",
+      "seed": 1001
+    },
+    "post_initialization_concrete_count": 237
+  },
+  "cycles_per_seed": 200,
+  "formal_protocol_sha256": "0ca7c6f3b5bcbc07e4a52563a5aea7ddf6fa271ea9b0b9c3270ae20774e2b59e",
+  "golden_sha256": "1ee2398da6c8170f1d7937eac091a160ec8bb037bc389ae0d66a8d19a5a49716",
+  "initialization_contract": {
+    "clock_edge": "posedge",
+    "clock_port": "clk",
+    "description": "assert the real asynchronous aresetn reset for two shared clock edges, then hold it inactive",
+    "kind": "reset",
+    "preamble_assignments": {},
+    "preamble_cycles": 2,
+    "reset_active": 0,
+    "reset_port": "aresetn",
+    "reset_synchronous": false
+  },
+  "protocol_amendment_sha256": "4f9bc41ac9bda24cd31eeb2c9e32cf18915852b0e498eaf46ba166b8d0843371",
+  "public_document_sha256": "9a10de8c296b2dfc817d79afcd24b7ad3b5763a4e43d9b08212b4fc488de4f49",
+  "runs": [
+    {
+      "counterexample_summary": {
+        "by_phase_and_sample_point": {
+          "initialization:post_edge": 2,
+          "post_initialization:pre_edge": 27
+        },
+        "first_post_initialization_concrete": {
+          "concrete_two_state": true,
+          "cycle": 4,
+          "expected": "1",
+          "got": "0",
+          "output": "z",
+          "phase": "post_initialization",
+          "sample_point": "pre_edge"
+        },
+        "post_initialization_concrete_count": 26,
+        "total": 29
+      },
+      "cycles": 200,
+      "log_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1001/simulation.log",
+      "passed": false,
+      "seed": 1001,
+      "status": "COUNTEREXAMPLE",
+      "vcd_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1001/independent.vcd"
+    },
+    {
+      "counterexample_summary": {
+        "by_phase_and_sample_point": {
+          "initialization:post_edge": 2,
+          "post_initialization:pre_edge": 32
+        },
+        "first_post_initialization_concrete": {
+          "concrete_two_state": true,
+          "cycle": 18,
+          "expected": "1",
+          "got": "0",
+          "output": "z",
+          "phase": "post_initialization",
+          "sample_point": "pre_edge"
+        },
+        "post_initialization_concrete_count": 31,
+        "total": 34
+      },
+      "cycles": 200,
+      "log_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1002/simulation.log",
+      "passed": false,
+      "seed": 1002,
+      "status": "COUNTEREXAMPLE",
+      "vcd_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1002/independent.vcd"
+    },
+    {
+      "counterexample_summary": {
+        "by_phase_and_sample_point": {
+          "initialization:post_edge": 2,
+          "post_initialization:pre_edge": 28
+        },
+        "first_post_initialization_concrete": {
+          "concrete_two_state": true,
+          "cycle": 8,
+          "expected": "1",
+          "got": "0",
+          "output": "z",
+          "phase": "post_initialization",
+          "sample_point": "pre_edge"
+        },
+        "post_initialization_concrete_count": 27,
+        "total": 30
+      },
+      "cycles": 200,
+      "log_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1003/simulation.log",
+      "passed": false,
+      "seed": 1003,
+      "status": "COUNTEREXAMPLE",
+      "vcd_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1003/independent.vcd"
+    },
+    {
+      "counterexample_summary": {
+        "by_phase_and_sample_point": {
+          "initialization:post_edge": 2,
+          "post_initialization:pre_edge": 25
+        },
+        "first_post_initialization_concrete": {
+          "concrete_two_state": true,
+          "cycle": 4,
+          "expected": "1",
+          "got": "0",
+          "output": "z",
+          "phase": "post_initialization",
+          "sample_point": "pre_edge"
+        },
+        "post_initialization_concrete_count": 24,
+        "total": 27
+      },
+      "cycles": 200,
+      "log_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1004/simulation.log",
+      "passed": false,
+      "seed": 1004,
+      "status": "COUNTEREXAMPLE",
+      "vcd_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1004/independent.vcd"
+    },
+    {
+      "counterexample_summary": {
+        "by_phase_and_sample_point": {
+          "initialization:post_edge": 2,
+          "post_initialization:pre_edge": 22
+        },
+        "first_post_initialization_concrete": {
+          "concrete_two_state": true,
+          "cycle": 6,
+          "expected": "1",
+          "got": "0",
+          "output": "z",
+          "phase": "post_initialization",
+          "sample_point": "pre_edge"
+        },
+        "post_initialization_concrete_count": 21,
+        "total": 24
+      },
+      "cycles": 200,
+      "log_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1005/simulation.log",
+      "passed": false,
+      "seed": 1005,
+      "status": "COUNTEREXAMPLE",
+      "vcd_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1005/independent.vcd"
+    },
+    {
+      "counterexample_summary": {
+        "by_phase_and_sample_point": {
+          "initialization:post_edge": 2,
+          "post_initialization:pre_edge": 24
+        },
+        "first_post_initialization_concrete": {
+          "concrete_two_state": true,
+          "cycle": 19,
+          "expected": "1",
+          "got": "0",
+          "output": "z",
+          "phase": "post_initialization",
+          "sample_point": "pre_edge"
+        },
+        "post_initialization_concrete_count": 23,
+        "total": 26
+      },
+      "cycles": 200,
+      "log_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1006/simulation.log",
+      "passed": false,
+      "seed": 1006,
+      "status": "COUNTEREXAMPLE",
+      "vcd_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1006/independent.vcd"
+    },
+    {
+      "counterexample_summary": {
+        "by_phase_and_sample_point": {
+          "initialization:post_edge": 2,
+          "post_initialization:pre_edge": 16
+        },
+        "first_post_initialization_concrete": {
+          "concrete_two_state": true,
+          "cycle": 30,
+          "expected": "1",
+          "got": "0",
+          "output": "z",
+          "phase": "post_initialization",
+          "sample_point": "pre_edge"
+        },
+        "post_initialization_concrete_count": 15,
+        "total": 18
+      },
+      "cycles": 200,
+      "log_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1007/simulation.log",
+      "passed": false,
+      "seed": 1007,
+      "status": "COUNTEREXAMPLE",
+      "vcd_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1007/independent.vcd"
+    },
+    {
+      "counterexample_summary": {
+        "by_phase_and_sample_point": {
+          "initialization:post_edge": 2,
+          "post_initialization:pre_edge": 23
+        },
+        "first_post_initialization_concrete": {
+          "concrete_two_state": true,
+          "cycle": 13,
+          "expected": "1",
+          "got": "0",
+          "output": "z",
+          "phase": "post_initialization",
+          "sample_point": "pre_edge"
+        },
+        "post_initialization_concrete_count": 22,
+        "total": 25
+      },
+      "cycles": 200,
+      "log_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1008/simulation.log",
+      "passed": false,
+      "seed": 1008,
+      "status": "COUNTEREXAMPLE",
+      "vcd_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1008/independent.vcd"
+    },
+    {
+      "counterexample_summary": {
+        "by_phase_and_sample_point": {
+          "initialization:post_edge": 2,
+          "post_initialization:pre_edge": 28
+        },
+        "first_post_initialization_concrete": {
+          "concrete_two_state": true,
+          "cycle": 9,
+          "expected": "1",
+          "got": "0",
+          "output": "z",
+          "phase": "post_initialization",
+          "sample_point": "pre_edge"
+        },
+        "post_initialization_concrete_count": 27,
+        "total": 30
+      },
+      "cycles": 200,
+      "log_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1009/simulation.log",
+      "passed": false,
+      "seed": 1009,
+      "status": "COUNTEREXAMPLE",
+      "vcd_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1009/independent.vcd"
+    },
+    {
+      "counterexample_summary": {
+        "by_phase_and_sample_point": {
+          "initialization:post_edge": 2,
+          "post_initialization:pre_edge": 22
+        },
+        "first_post_initialization_concrete": {
+          "concrete_two_state": true,
+          "cycle": 15,
+          "expected": "1",
+          "got": "0",
+          "output": "z",
+          "phase": "post_initialization",
+          "sample_point": "pre_edge"
+        },
+        "post_initialization_concrete_count": 21,
+        "total": 24
+      },
+      "cycles": 200,
+      "log_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1010/simulation.log",
+      "passed": false,
+      "seed": 1010,
+      "status": "COUNTEREXAMPLE",
+      "vcd_path": "<REPO>/generated/formal/calibration_full_v16/main_0059/golden_vs_mutant/independent_simulation_fallback/seed_1010/independent.vcd"
+    }
+  ],
+  "seeds": [
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010
+  ],
+  "status": "COUNTEREXAMPLE"
+}

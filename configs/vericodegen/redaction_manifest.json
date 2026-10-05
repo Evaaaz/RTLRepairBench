@@ -1,0 +1,39 @@
+{
+  "annotation_template_sha256": "f2e0d4950c98ea3c436fab62b3cda90811f1cc10207c02920aaf9b2af1114c58",
+  "annotations_performed": false,
+  "arm_decision": "DROP_REDACTED_ARM",
+  "benchmark_source_sha256": "e98c2bec7cb4325088030bafdab17096c9b0cae204257515ea2b4676cf6a97dc",
+  "case_count": 85,
+  "case_ids_sha256": "4e1aef177e1312987c7390f3c097798437253235a194bf3d090b57fdc2c60695",
+  "cases": [],
+  "decision_basis": "NO_INDEPENDENT_HUMAN_ANNOTATORS",
+  "decision_timing": "BEFORE_ANY_MODEL_OUTPUT",
+  "eligible_case_count": 0,
+  "eligible_case_ids": [],
+  "kind": "vericodegen_frozen_spec_redactions",
+  "main_input_manifest_sha256": "9011b7f6e156861579c45f1cee54da4fd8a976b7582df60a7915b8b41c984242",
+  "manifest_sha256": "2c4b616beb321611e85dc3d14df6010756a9743e9fed6bda05d554b5b3a0e2fc",
+  "model_outputs_seen_before_freeze": false,
+  "pre_output_audit": {
+    "additional_model_output_paths_checked": [],
+    "ledger_existed": false,
+    "ledger_path": "generated/logs/vericodegen2026_events.jsonl",
+    "response_count": 0
+  },
+  "schema_version": 2,
+  "sources": {
+    "annotation_template": {
+      "path": "configs/vericodegen/redaction_annotations.template.json",
+      "sha256": "a0b8c2a70c042311f9f854ee0431bcb680b481a4b9b5e21be5416c5e262433a6"
+    },
+    "benchmark_source": {
+      "path": "data/repairbench_sem85.jsonl",
+      "sha256": "e98c2bec7cb4325088030bafdab17096c9b0cae204257515ea2b4676cf6a97dc"
+    },
+    "main_input_manifest": {
+      "path": "configs/vericodegen/main85_inputs.manifest.json",
+      "sha256": "eb61f5d69af2e388f64c87ba4c02e954b8b5e8aaa7b88677fd1a8df26008d7a3"
+    }
+  },
+  "status": "FROZEN"
+}

@@ -1,0 +1,32 @@
+{
+  "container_image_id": "sha256:d2065a4fbf254a0b4c0f5d5f4402e501d1372d797b7cd057d7817031cf77d450",
+  "anonymization": {
+    "behavioral_effect": "none; project-namespace identifiers only",
+    "reason": "double-blind review",
+    "recorded_digest_reconstruction_available_during_review": false
+  },
+  "anonymized_snapshot_fingerprint_sha256": "f109f4b0ea53d934e3820a4c92e4e85c7bef866c000e074b6584148bcf08f388",
+  "kind": "anonymized_noncanonical_historical_formal_protocol_snapshot",
+  "protocol_version": "vericodegen-formal-v5",
+  "recorded_formal_protocol_sha256": "0ca7c6f3b5bcbc07e4a52563a5aea7ddf6fa271ea9b0b9c3270ae20774e2b59e",
+  "schema_version": 2,
+  "sources": [
+    {
+      "path": "formal_verify.py",
+      "sha256": "c290ec1b2ccfd62ea636227b6a1560097d85de72eafccfcbd5c55732d0dd3e43"
+    },
+    {
+      "path": "formal_protocol.py",
+      "sha256": "bd0e04d4b1bde74b1b9e21586475b3621fccce480b2ea62692151faf532867c1"
+    },
+    {
+      "path": "docker/formal/toolchain.lock.json",
+      "sha256": "e7ca99d4352b6ab9f883bf7fc9faae2b75511e3f921fbc7b530b98d250b0301f"
+    },
+    {
+      "path": "configs/vericodegen/protocol_amendment_2026-07-15.json",
+      "sha256": "4f9bc41ac9bda24cd31eeb2c9e32cf18915852b0e498eaf46ba166b8d0843371"
+    }
+  ],
+  "status": "anonymous_historical_representation_not_canonical_for_new_runs"
+}

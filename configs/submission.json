@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "paper_source": "paper/paper.tex",
+  "paper_pdf": "paper/paper.pdf",
+  "title": "What Do RTL Repair Benchmarks Actually Measure?",
+  "venue": {
+    "name": "NeurIPS 2026 Workshop on AI for Chip Design",
+    "short_name": "AI4ChipDesign 2026",
+    "track": "Poster Paper",
+    "cfp_url": "https://neurips-ai-for-chip-design-2026.github.io/pages/cfp.html",
+    "deadline_aoe": "2026-08-31T23:59:00-12:00",
+    "main_text_min_pages": 3,
+    "main_text_max_pages": 4,
+    "references_excluded_from_limit": true,
+    "appendix_excluded_from_limit": true,
+    "double_blind": true,
+    "neurips_checklist_required": true
+  },
+  "anonymous_artifact": "https://anonymous.4open.science/r/rtlrepair-review-9586/README.md",
+  "camera_ready": {
+    "deadline_aoe": "2026-10-09T23:59:00-12:00",
+    "authors": [
+      {
+        "name": "Yeyin (Eva) Zhu",
+        "affiliation": "NVIDIA",
+        "equal_contribution": true
+      },
+      {
+        "name": "Rishabh Ranawat",
+        "affiliation": "Independent",
+        "equal_contribution": true
+      }
+    ],
+    "checklist_included": false,
+    "public_artifact": "https://github.com/Evaaaz/RTLRepairBench",
+    "openreview_forum": "https://openreview.net/forum?id=Qemvbzkv4n"
+  }
+}

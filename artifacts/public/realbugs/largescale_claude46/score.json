@@ -1,0 +1,29 @@
+{
+  "tag": "largescale_claude46",
+  "n": 20,
+  "nospec": {
+    "pct": 20.0,
+    "recovered": 4,
+    "n": 20
+  },
+  "spec": {
+    "pct": 50.0,
+    "recovered": 10,
+    "n": 20
+  },
+  "speconly": {
+    "pct": 60.0,
+    "recovered": 12,
+    "n": 20
+  },
+  "intent_effect": {
+    "fixed": 8,
+    "lost": 2,
+    "mcnemar_p": 0.109375
+  },
+  "regen_vs_repair": {
+    "speconly_fixes_spec_misses": 4,
+    "spec_fixes_speconly_misses": 2,
+    "mcnemar_p": 0.6875
+  }
+}

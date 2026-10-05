@@ -1,0 +1,73 @@
+{
+  "model": "verireason-default",
+  "version": "20260801-3dfe9bf",
+  "signal": "diag",
+  "summary": {
+    "model": "verireason",
+    "arm": "diag",
+    "n": 459,
+    "anon": true,
+    "temp": 0.0,
+    "scored_from": "ledger",
+    "oracles": {
+      "lint": "verilator --lint-only -Wall -sv",
+      "semantic": "tier_s: golden-vs-candidate diff sim, 200 cycles, iverilog"
+    },
+    "by_bucket": {
+      "lint": {
+        "n": 374,
+        "recovered": 0,
+        "recovery_rate": 0.0,
+        "used_llm_rate": 1.0,
+        "spec_rate": 0.0,
+        "parsed_rate": 0.0321
+      },
+      "semantic": {
+        "n": 85,
+        "recovered": 0,
+        "recovery_rate": 0.0,
+        "used_llm_rate": 1.0,
+        "spec_rate": 0.0,
+        "parsed_rate": 0.0235
+      }
+    }
+  },
+  "n_records": 459,
+  "scored": true,
+  "ledger": {
+    "file": "candidates.jsonl",
+    "sha256": "aeb41256f8bf3a6bc7f1c29c2e5da4ac161166679ad9f49851ca129d3e194446",
+    "bytes": 682233,
+    "n_candidates": 459,
+    "n_parsed": 14,
+    "n_errors": 0
+  },
+  "raw": [],
+  "arm": "diag",
+  "generation": {
+    "endpoint": "https://provider-b.invalid/verireason-vllm-serve/v1",
+    "requested_model": "verireason",
+    "temp": 0.0,
+    "max_tokens": 1024,
+    "n": 1,
+    "workers": 8,
+    "prompt_grammar": "build_turn(default)",
+    "extractor": "repair_agent._split_explanation_and_code+bench_common.extract_rtl",
+    "cases": "data/repairbench_heldout.jsonl",
+    "n_cases": 459,
+    "anon": true,
+    "prompt_style": "default",
+    "by_bucket": {
+      "lint": 374,
+      "semantic": 85
+    }
+  },
+  "scoring": {
+    "scorer": "score_ledger.py",
+    "oracles": {
+      "lint": "verilator --lint-only -Wall -sv",
+      "semantic": "tier_s: golden-vs-candidate diff sim, 200 cycles, iverilog"
+    },
+    "workers": 8
+  }
+}

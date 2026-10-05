@@ -1,0 +1,937 @@
+{
+  "bmc": {
+    "counterexample_requires_icarus_replay": true,
+    "depth": 256,
+    "pass_is_proof": false
+  },
+  "case_audit": {
+    "case_count": 85,
+    "contract_counts": {
+      "combinational": 17,
+      "preamble": 8,
+      "reset": 60
+    },
+    "reset_style_counts": {
+      "asynchronous": 23,
+      "synchronous": 37
+    }
+  },
+  "design_contract_counts": {
+    "combinational": 15,
+    "preamble": 6,
+    "reset": 31
+  },
+  "design_count": 52,
+  "designs": [
+    {
+      "canonical_sha256": "5f1704c469635168e16e5fd50a84641eb54c10213bc34e3b8e9ce3ee66f5de6d",
+      "contract": {
+        "clock_edge": null,
+        "clock_port": null,
+        "description": "stateless exhaustive equivalence; no initialization",
+        "kind": "combinational",
+        "preamble_assignments": {},
+        "preamble_cycles": 0,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob010_mt2015_q4a_ref"
+    },
+    {
+      "canonical_sha256": "52d5fefb140e8f5f4230e895d452c8fad04b86916e0ca332cf17dc605f5fed2c",
+      "contract": {
+        "clock_edge": null,
+        "clock_port": null,
+        "description": "stateless exhaustive equivalence; no initialization",
+        "kind": "combinational",
+        "preamble_assignments": {},
+        "preamble_cycles": 0,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob013_m2014_q4e_ref"
+    },
+    {
+      "canonical_sha256": "26df429008fb16cab8d8e3c84c96a394934021591d265de7de85f39d820877e8",
+      "contract": {
+        "clock_edge": null,
+        "clock_port": null,
+        "description": "stateless exhaustive equivalence; no initialization",
+        "kind": "combinational",
+        "preamble_assignments": {},
+        "preamble_cycles": 0,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob019_m2014_q4f_ref"
+    },
+    {
+      "canonical_sha256": "ea8f80869bc4edf77dc3ecaaf384817947f87fcbcc9b6df371cd962da8c392f8",
+      "contract": {
+        "clock_edge": null,
+        "clock_port": null,
+        "description": "stateless exhaustive equivalence; no initialization",
+        "kind": "combinational",
+        "preamble_assignments": {},
+        "preamble_cycles": 0,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob030_popcount255_ref"
+    },
+    {
+      "canonical_sha256": "3984ffe2c1235b4a2d76e8655b218dc4d9312dae3acda2a898857dc7da790615",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob035_count1to10_ref"
+    },
+    {
+      "canonical_sha256": "eefedfc90f33f5dbd953190f508592befefe529a300cf7abbd321f6f099bda2e",
+      "contract": {
+        "clock_edge": null,
+        "clock_port": null,
+        "description": "stateless exhaustive equivalence; no initialization",
+        "kind": "combinational",
+        "preamble_assignments": {},
+        "preamble_cycles": 0,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob036_ringer_ref"
+    },
+    {
+      "canonical_sha256": "ad209b244306b65d9a056030c48eec242dcb2f0b9f41e4a98137c271150a6172",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob037_review2015_count1k_ref"
+    },
+    {
+      "canonical_sha256": "0148c7b660d0ae2dd29882d7b92f62946539abfbffa4aeab97f453e994514f38",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob040_count10_ref"
+    },
+    {
+      "canonical_sha256": "d0d70c07aac23835a452f428171e939e992cdc546f5c5fa2d36e2ad1c03f9577",
+      "contract": {
+        "clock_edge": "negedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob046_dff8p_ref"
+    },
+    {
+      "canonical_sha256": "6418a0611c515c75b9e62746221f59097b0ca5dd31e1f158054d7771e8a3da7f",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "two clock edges with arbitrary inputs shared by both instances",
+        "kind": "preamble",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob054_edgedetect_ref"
+    },
+    {
+      "canonical_sha256": "61b488db6aa1b042e85b1df6e9782b73e67f9ee10acb5783a0e25274fb195a53",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "one shared edge with J=0 and K=1",
+        "kind": "preamble",
+        "preamble_assignments": {
+          "j": 0,
+          "k": 1
+        },
+        "preamble_cycles": 1,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob056_ece241_2013_q7_ref"
+    },
+    {
+      "canonical_sha256": "db138a9ab233c46f4760567f72e6f1311470dcc70ff097b6d34f337ef15e1cf4",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "four shared edges with shift_ena=1",
+        "kind": "preamble",
+        "preamble_assignments": {
+          "shift_ena": 1
+        },
+        "preamble_cycles": 4,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob063_review2015_shiftcount_ref"
+    },
+    {
+      "canonical_sha256": "f6ccc7f926ee14737e00f9ff11de96305c6a0a9fa4d61635aa8bca9b571f552c",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob066_edgecapture_ref"
+    },
+    {
+      "canonical_sha256": "6b7f3eeac5a8c04162b8735f7f834519a171f5b771ec2af21e146d8d70624e24",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob067_countslow_ref"
+    },
+    {
+      "canonical_sha256": "f3246a7976296505e5501ad994bdbdbc028e6bdcf61914d1f4c6199c1a862a38",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob068_countbcd_ref"
+    },
+    {
+      "canonical_sha256": "1c604a1e3f96dac25fbf264daa8a026b1355491056aa4e2fecf411b64db20b60",
+      "contract": {
+        "clock_edge": null,
+        "clock_port": null,
+        "description": "stateless exhaustive equivalence; no initialization",
+        "kind": "combinational",
+        "preamble_assignments": {},
+        "preamble_cycles": 0,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob069_truthtable1_ref"
+    },
+    {
+      "canonical_sha256": "7868a19c63e67f0fa4e931698ee6034d21b0d3a13f4b731a94d839a690b4550e",
+      "contract": {
+        "clock_edge": null,
+        "clock_port": null,
+        "description": "stateless exhaustive equivalence; no initialization",
+        "kind": "combinational",
+        "preamble_assignments": {},
+        "preamble_cycles": 0,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob072_thermostat_ref"
+    },
+    {
+      "canonical_sha256": "3b741411f67b4854632043a139490deea14aef641c1d43e2103865bcdf2f664a",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous resetn reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 0,
+        "reset_port": "resetn",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob073_dff16e_ref"
+    },
+    {
+      "canonical_sha256": "cfa2ead2d57d0cd6cc871c3354e72b406667d43248f0c228e2ff86af792a2904",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real asynchronous areset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "areset",
+        "reset_synchronous": false
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob075_counter_2bc_ref"
+    },
+    {
+      "canonical_sha256": "472052243e3b32248c2cbcb57d5cbe9efa9629b80b669a436db38aab07379d20",
+      "contract": {
+        "clock_edge": null,
+        "clock_port": null,
+        "description": "stateless exhaustive equivalence; no initialization",
+        "kind": "combinational",
+        "preamble_assignments": {},
+        "preamble_cycles": 0,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob079_fsm3onehot_ref"
+    },
+    {
+      "canonical_sha256": "581501714e218a57eccdf9da325a8cf6715c60e06c50602c4603ab0e311b178a",
+      "contract": {
+        "clock_edge": null,
+        "clock_port": null,
+        "description": "stateless exhaustive equivalence; no initialization",
+        "kind": "combinational",
+        "preamble_assignments": {},
+        "preamble_cycles": 0,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob081_7458_ref"
+    },
+    {
+      "canonical_sha256": "c7835b72ec4ead81d718b799875bb0632763ce543a809ca2ff44e6d9008f88f4",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real asynchronous areset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "areset",
+        "reset_synchronous": false
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob088_ece241_2014_q5b_ref"
+    },
+    {
+      "canonical_sha256": "7948456d25f665dda4dc2162c4d747a224ef9d8d22fe3b38a5682bc756e88602",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real asynchronous areset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "areset",
+        "reset_synchronous": false
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob089_ece241_2014_q5a_ref"
+    },
+    {
+      "canonical_sha256": "ee6279ed4edee51b5eb43b13225ffd7e96ef090ff77f7b150d269aaf2231d2d9",
+      "contract": {
+        "clock_edge": null,
+        "clock_port": null,
+        "description": "stateless exhaustive equivalence; no initialization",
+        "kind": "combinational",
+        "preamble_assignments": {},
+        "preamble_cycles": 0,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob093_ece241_2014_q3_ref"
+    },
+    {
+      "canonical_sha256": "b4f5682dc144f3532c03da94a97d968b6903eecfa2112c39a2a1889e3aacd3fa",
+      "contract": {
+        "clock_edge": null,
+        "clock_port": null,
+        "description": "stateless exhaustive equivalence; no initialization",
+        "kind": "combinational",
+        "preamble_assignments": {},
+        "preamble_cycles": 0,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob094_gatesv_ref"
+    },
+    {
+      "canonical_sha256": "9f51a64101368dfd93d8dd20532aa6cc6c5eaf90624602dbce9b62cfbcebbfe6",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob095_review2015_fsmshift_ref"
+    },
+    {
+      "canonical_sha256": "53153ab695c81d41bf4097e3685ea05f25b67174898307b49879370c68ac8556",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob096_review2015_fsmseq_ref"
+    },
+    {
+      "canonical_sha256": "8a890cb7fd7736e29602710136a568cc705740bd917b1b589b93c8c30447d0c8",
+      "contract": {
+        "clock_edge": null,
+        "clock_port": null,
+        "description": "stateless exhaustive equivalence; no initialization",
+        "kind": "combinational",
+        "preamble_assignments": {},
+        "preamble_cycles": 0,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob100_fsm3comb_ref"
+    },
+    {
+      "canonical_sha256": "9070e4bd1ce7ea90706ce6f99fff6bc8bb07d52f2953920ce0d298febee248de",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "one common clock edge after the audited initial declaration",
+        "kind": "preamble",
+        "preamble_assignments": {},
+        "preamble_cycles": 1,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob104_mt2015_muxdff_ref"
+    },
+    {
+      "canonical_sha256": "56616a2d091c9fd651a36fceb711c17447feaadb4b092c3958ad2d980359083d",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "one shared edge with load=1 and arbitrary shared data",
+        "kind": "preamble",
+        "preamble_assignments": {
+          "load": 1
+        },
+        "preamble_cycles": 1,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob105_rotate100_ref"
+    },
+    {
+      "canonical_sha256": "da7df92b52c69a6a0716f1085d8c5efd4f520e72018a71189ae7004791d7db58",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob107_fsm1s_ref"
+    },
+    {
+      "canonical_sha256": "9374b5fd79f2b8fdfe0ad055cacdb41c6034ff51e1585d8f6bdcea77b5ae99e1",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real asynchronous areset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "areset",
+        "reset_synchronous": false
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob109_fsm1_ref"
+    },
+    {
+      "canonical_sha256": "2ca174537de2ea9bdc97568519a859d1e5da62ea213524228efea9438d6db434",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real asynchronous areset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "areset",
+        "reset_synchronous": false
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob110_fsm2_ref"
+    },
+    {
+      "canonical_sha256": "3885b89d9fc17a36e06095f4624f5a7e764b09c191b1f53ea603be8ed96a3037",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob111_fsm2s_ref"
+    },
+    {
+      "canonical_sha256": "ffced33cf65b3af8e939272ff9fb3539789fa830e47b1d0cce8eeb5a86608d44",
+      "contract": {
+        "clock_edge": null,
+        "clock_port": null,
+        "description": "stateless exhaustive equivalence; no initialization",
+        "kind": "combinational",
+        "preamble_assignments": {},
+        "preamble_cycles": 0,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob112_always_case2_ref"
+    },
+    {
+      "canonical_sha256": "332c35f89c0f35c216afd71e047c9fd0ad8029693bce663cf56882aedd9f184c",
+      "contract": {
+        "clock_edge": null,
+        "clock_port": null,
+        "description": "stateless exhaustive equivalence; no initialization",
+        "kind": "combinational",
+        "preamble_assignments": {},
+        "preamble_cycles": 0,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob114_bugs_case_ref"
+    },
+    {
+      "canonical_sha256": "76428c996c8843142be1a13240960454d0de1a0e6eb1f602480cbcfd1c49f6db",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "one shared edge with a=1",
+        "kind": "preamble",
+        "preamble_assignments": {
+          "a": 1
+        },
+        "preamble_cycles": 1,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob117_circuit9_ref"
+    },
+    {
+      "canonical_sha256": "0585809190eca59cd59e5e0ccd47e2c9a1086ab00943004eb4efa27586b65d4d",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob121_2014_q3bfsm_ref"
+    },
+    {
+      "canonical_sha256": "78530237a96739cf98773ed924878100bcff55726ae0addd4c2d2b2fb1c3f479",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real asynchronous areset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "areset",
+        "reset_synchronous": false
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob127_lemmings1_ref"
+    },
+    {
+      "canonical_sha256": "1ee2398da6c8170f1d7937eac091a160ec8bb037bc389ae0d66a8d19a5a49716",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real asynchronous aresetn reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 0,
+        "reset_port": "aresetn",
+        "reset_synchronous": false
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob129_ece241_2013_q8_ref"
+    },
+    {
+      "canonical_sha256": "e775464ce9a14e8df69c0e75f76c288cf999dc0967ad7256f68edc94dee2d524",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob133_2014_q3fsm_ref"
+    },
+    {
+      "canonical_sha256": "3ad0eb45af334502de532c0f83bbe9d547c3203e2d940943c8425b76e27d0dae",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob136_m2014_q6_ref"
+    },
+    {
+      "canonical_sha256": "d02858a6a4550cd6173732588b2c1c861d04f48efd0242ac258fe0c3ad494f34",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob138_2012_q2fsm_ref"
+    },
+    {
+      "canonical_sha256": "cf3fcc485da1f370c5ffee3e1289bc227ca4680f1acfedbd716ff89c4ceb7afa",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous resetn reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 0,
+        "reset_port": "resetn",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob139_2013_q2bfsm_ref"
+    },
+    {
+      "canonical_sha256": "c46e0bb57ba3c2a84bd9cf32c9ae32ad1cc4dddd88fc2f5e5c96609387fdb1de",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob141_count_clock_ref"
+    },
+    {
+      "canonical_sha256": "a8cb1c67313bde5ea282c5ad0d67b2fb7c78d68a6b8edd06e0562eca0ae27b5d",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real asynchronous areset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "areset",
+        "reset_synchronous": false
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob142_lemmings2_ref"
+    },
+    {
+      "canonical_sha256": "516d3914e82648f32f3450472299958c6dc7417d0403826b24fe92b6de02aa0d",
+      "contract": {
+        "clock_edge": null,
+        "clock_port": null,
+        "description": "stateless exhaustive equivalence; no initialization",
+        "kind": "combinational",
+        "preamble_assignments": {},
+        "preamble_cycles": 0,
+        "reset_active": null,
+        "reset_port": null,
+        "reset_synchronous": null
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob143_fsm_onehot_ref"
+    },
+    {
+      "canonical_sha256": "8c18a26f6fce9eff1d3fdb9a5da28f75d6bac8679d17d83a00c8f25a59fd7be3",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous resetn reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 0,
+        "reset_port": "resetn",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob148_2013_q2afsm_ref"
+    },
+    {
+      "canonical_sha256": "ee1a74a3e74d65690cc08e6485d023d0dbbcc29efe73bd9004ac32caa357cab0",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": true,
+      "seed_id": "Prob151_review2015_fsm_ref"
+    },
+    {
+      "canonical_sha256": "ba939800375612db3a192508b731802f4d89a48c560760701b1b78c896b6ef3b",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real asynchronous areset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "areset",
+        "reset_synchronous": false
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob152_lemmings3_ref"
+    },
+    {
+      "canonical_sha256": "62e9bf933748565852f97a5c168e71e04f63ba22bd2f2d931f722461322dba2e",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real synchronous reset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "reset",
+        "reset_synchronous": true
+      },
+      "output_validity_mask": "compare done always; compare out_bytes iff golden done=1",
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob154_fsm_ps2data_ref"
+    },
+    {
+      "canonical_sha256": "2c2b3eec416584c72c9caaa671027414c108f64854df0d20c8782b010f791aa7",
+      "contract": {
+        "clock_edge": "posedge",
+        "clock_port": "clk",
+        "description": "assert the real asynchronous areset reset for two shared clock edges, then hold it inactive",
+        "kind": "reset",
+        "preamble_assignments": {},
+        "preamble_cycles": 2,
+        "reset_active": 1,
+        "reset_port": "areset",
+        "reset_synchronous": false
+      },
+      "output_validity_mask": null,
+      "prob151_normalization_allowed": false,
+      "seed_id": "Prob155_lemmings4_ref"
+    }
+  ],
+  "independent_simulation": {
+    "cycles_per_seed": 200,
+    "may_be_used_for_mutation_selection_or_feedback": false,
+    "seeds": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010
+    ]
+  },
+  "schema_version": 1
+}

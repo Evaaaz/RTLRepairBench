@@ -1,0 +1,79 @@
+{
+  "arm_verdicts": {
+    "spec0_loc0": {
+      "COUNTEREXAMPLE": 13,
+      "PROVED": 49,
+      "UNSUPPORTED": 6
+    },
+    "spec0_loc1": {
+      "COUNTEREXAMPLE": 6,
+      "PROVED": 60,
+      "UNSUPPORTED": 2
+    },
+    "spec1_loc0": {
+      "COUNTEREXAMPLE": 4,
+      "PROVED": 59,
+      "UNSUPPORTED": 5
+    },
+    "spec1_loc1": {
+      "COUNTEREXAMPLE": 1,
+      "PROVED": 67
+    }
+  },
+  "both": {
+    "arm_only_wins": 12,
+    "arm_pct": 98.4,
+    "baseline_only_wins": 0,
+    "baseline_pct": 79.0,
+    "delta_pp": 19.4,
+    "mcnemar_p": 0.0005,
+    "n_definitive_both": 62
+  },
+  "cohort": "68-case frozen formal cohort",
+  "generated_by": "code/scripts/second_model_explore.py + formal_verify validate-batch",
+  "model": "azure/anthropic/claude-opus-4-8",
+  "note": "Replaces the earlier simulation-scored row. Both effects are LARGER under the formal tier than under bounded simulation (What +11.0 -> +13.6, Where +6.8 -> +11.3), the same direction as the cycle-0 comparison defect.",
+  "scored_by": "unbounded_formal_proof_with_replayed_counterexamples",
+  "seed_macro": {
+    "estimand": "mean_seed_mean_paired_proved_difference, 10k cluster bootstrap",
+    "what": {
+      "ci": [
+        2.5,
+        25.8
+      ],
+      "clusters": 33,
+      "n": 59,
+      "pp": 13.1,
+      "rng_seed": 142
+    },
+    "where": {
+      "ci": [
+        1.9,
+        15.7
+      ],
+      "clusters": 35,
+      "n": 62,
+      "pp": 8.1,
+      "rng_seed": 143
+    }
+  },
+  "supersedes": "artifacts/public/capability/second_anchor_claude_opus_4_8.json (simulation-scored)",
+  "what": {
+    "arm_only_wins": 10,
+    "arm_pct": 93.2,
+    "baseline_only_wins": 2,
+    "baseline_pct": 79.7,
+    "delta_pp": 13.6,
+    "mcnemar_p": 0.0386,
+    "n_definitive_both": 59
+  },
+  "where": {
+    "arm_only_wins": 7,
+    "arm_pct": 90.3,
+    "baseline_only_wins": 0,
+    "baseline_pct": 79.0,
+    "delta_pp": 11.3,
+    "mcnemar_p": 0.0156,
+    "n_definitive_both": 62
+  }
+}
