@@ -646,12 +646,12 @@
     {
       "path": "paper/paper.pdf",
       "role": "compiled_manuscript_snapshot",
-      "sha256": "f86bd2f5564eadbf784c796fdab47001379f32de06ce6750899b0def87c6c6d3"
+      "sha256": "8993d65093053141fa158e820408bec2801cdd54645b191bee6902929d5c1d64"
     },
     {
       "path": "paper/paper.tex",
       "role": "manuscript_source",
-      "sha256": "e70f2a0b3ecf16f3484b2040d52dfcd6b42ad3c2f3a25c4ef8d19aff83e92aee"
+      "sha256": "71037f210eafa509caf547a49475f647d4543cec590813ca9eb480940e1e64b2"
     },
     {
       "path": "paper/tab_curve.tex",
