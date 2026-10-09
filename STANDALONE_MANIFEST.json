@@ -1,5 +1,5 @@
 {
-  "artifact_lock_sha256": "4e6c26c811e16b6da5c78376bc4ea476824a28c1c7552487a6b6bb1066672371",
+  "artifact_lock_sha256": "665e20a0b73806ffea426b3f6ca2579c2360ca35fabbeb5d36469c66d6aa78b9",
   "artifact_name": "lint-vs-semantic-standalone",
   "files": [
     {
@@ -60,7 +60,7 @@
       "bytes": 30429,
       "executable": false,
       "path": "artifact.lock.json",
-      "sha256": "4e6c26c811e16b6da5c78376bc4ea476824a28c1c7552487a6b6bb1066672371"
+      "sha256": "665e20a0b73806ffea426b3f6ca2579c2360ca35fabbeb5d36469c66d6aa78b9"
     },
     {
       "bytes": 2546,
@@ -1935,16 +1935,16 @@
       "sha256": "0c1ad36961fcd9198dcc2558cf2793e1df39973bde8264fd701f5e7970672757"
     },
     {
-      "bytes": 193724,
+      "bytes": 193859,
       "executable": false,
       "path": "paper/paper.pdf",
-      "sha256": "8993d65093053141fa158e820408bec2801cdd54645b191bee6902929d5c1d64"
+      "sha256": "f86bd2f5564eadbf784c796fdab47001379f32de06ce6750899b0def87c6c6d3"
     },
     {
-      "bytes": 23896,
+      "bytes": 24026,
       "executable": false,
       "path": "paper/paper.tex",
-      "sha256": "71037f210eafa509caf547a49475f647d4543cec590813ca9eb480940e1e64b2"
+      "sha256": "e70f2a0b3ecf16f3484b2040d52dfcd6b42ad3c2f3a25c4ef8d19aff83e92aee"
     },
     {
       "bytes": 1028,
@@ -2621,12 +2621,12 @@
     {
       "path": "paper/paper.pdf",
       "role": "compiled_manuscript_snapshot",
-      "sha256": "8993d65093053141fa158e820408bec2801cdd54645b191bee6902929d5c1d64"
+      "sha256": "f86bd2f5564eadbf784c796fdab47001379f32de06ce6750899b0def87c6c6d3"
     },
     {
       "path": "paper/paper.tex",
       "role": "manuscript_source",
-      "sha256": "71037f210eafa509caf547a49475f647d4543cec590813ca9eb480940e1e64b2"
+      "sha256": "e70f2a0b3ecf16f3484b2040d52dfcd6b42ad3c2f3a25c4ef8d19aff83e92aee"
     },
     {
       "path": "paper/tab_curve.tex",
@@ -2680,5 +2680,5 @@
     }
   ],
   "schema_version": 1,
-  "tree_sha256": "feac8b28199edce560233f9a921c036dcae0fad2b98a9fd226dde65af39694b6"
+  "tree_sha256": "3cec13b33cb9b2484eb91966a16b94a3138a516d0dd9c73bea863a34b38471b9"
 }

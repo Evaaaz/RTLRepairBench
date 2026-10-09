@@ -35,9 +35,11 @@ RTL repair benchmarks should measure whether a model can fix broken RTL given a 
 this end, we construct and hash-bind RTLRepairDataset, 5{,}784 \emph{(broken, fixed)} training pairs;
 RTLRepairBench, 459 held-out cases with 374 syntactic and 85 behavioral mutations; and an evaluation
 harness supporting simulation and formal equivalence. We then use this infrastructure to identify two
-measurement confounds. First, simulation and formal scoring give opposite signs for the apparent
-effect of providing a specification in one evaluated cohort; reset-aware rescoring attributes almost
-all of the simulation--formal disagreement to reset and first-cycle comparison semantics. Second,
+measurement confounds. First, in a single greedy draw, simulation and formal scoring give opposite
+signs for the apparent effect of providing a specification; reset-aware rescoring attributes almost
+all of the simulation--formal disagreement to reset and first-cycle comparison semantics. The flip
+does not recur in six replicate draws, but starting the simulation comparison at cycle~1 raises the
+estimated specification effect in all six. Second,
 on 274 mined model failures, the specification-only minus specification-conditioned recovery point
 estimate ranges from $-8.5$ to $+18.3$ percentage points across six models. Thus, a conventional repair score
 need not isolate whether the model used the faulty RTL. We translate these findings into evaluation
@@ -124,9 +126,9 @@ declared reset sequence (60), or a designated preamble (8), followed by equivale
 stated initialization and unknown-value semantics. These assumptions matter when state is not fully
 initialized~\cite{eqyxprop}.
 
-In the six-model subset selected for syntactic-repair recovery between $87.7\%$ and $100.0\%$,
-behavioral recovery ranged descriptively from $10.6\%$ to $75.3\%$. This subset exhibits a substantial
-gap while retaining the bug classes and oracle outcomes needed to investigate its source.
+With the tool diagnostic and Tier~S scoring (cycles 0--199), six of the seven evaluated models
+recovered $87.7$--$100.0\%$ of syntactic bugs but only $10.6$--$75.3\%$ of behavioral bugs; the
+seventh, VeriReason-CodeLlama-7B, recovered $58.6\%$ and $15.3\%$, respectively.
 
 \paragraph{Mined failures.}\label{mined}
 Synthetic mutations could introduce construction-specific bias. We therefore mine \emph{model-generated}
@@ -134,7 +136,7 @@ failures for which the spec\to RTL output compiles but fails the task testbench.
 probe the relationship between specification and regeneration for repair tasks in
 Section~\ref{section5}.
 
-\section{Oracle sensitivity: the estimated specification effect reverses across contracts}
+\section{Oracle sensitivity: the scoring contract shifts the specification effect}
 
 To isolate the effect of the tool diagnostic and the specification provided to the models, we ran
 the evaluation with both oracles. This evaluation was restricted to the semantic candidates with
@@ -231,7 +233,7 @@ specification-only arm exposes this ambiguity but does not resolve the mechanism
 \section{Conclusion}
 
 Tool-diagnosed syntactic errors are easier for models to fix than behavioral bugs that compile
-cleanly in the evaluated subset. RTLRepairDataset and RTLRepairBench make it possible to quantify this
+cleanly for the evaluated models. RTLRepairDataset and RTLRepairBench make it possible to quantify this
 gap through a released, hash-bound training resource and its builder, a held-out evaluation
 set, mutation labels, and explicit oracle outcomes. The audit
 also shows that simulation and formal-equivalence scores can disagree substantially, with reset and
