@@ -19,10 +19,12 @@
 \workshoptitle{AI for Chip Design}
 \author{%
   Yeyin (Eva) Zhu\thanks{Equal contribution.}\\
-  NVIDIA
+  NVIDIA\\
+  \texttt{evazhu@mit.edu}
   \And
   Rishabh Ranawat\footnotemark[1]\\
-  Independent
+  Independent\\
+  \texttt{ranawat.rishabh@gmail.com}
 }
 \hypersetup{pdftitle={What Do RTL Repair Benchmarks Actually Measure?},
   pdfauthor={Yeyin (Eva) Zhu, Rishabh Ranawat}}
@@ -35,11 +37,9 @@ RTL repair benchmarks should measure whether a model can fix broken RTL given a 
 this end, we construct and hash-bind RTLRepairDataset, 5{,}784 \emph{(broken, fixed)} training pairs;
 RTLRepairBench, 459 held-out cases with 374 syntactic and 85 behavioral mutations; and an evaluation
 harness supporting simulation and formal equivalence. We then use this infrastructure to identify two
-measurement confounds. First, in a single greedy draw, simulation and formal scoring give opposite
-signs for the apparent effect of providing a specification; reset-aware rescoring attributes almost
-all of the simulation--formal disagreement to reset and first-cycle comparison semantics. The flip
-does not recur in six replicate draws, but starting the simulation comparison at cycle~1 raises the
-estimated specification effect in all six. Second,
+measurement confounds. First, simulation and formal scoring give opposite
+signs for the apparent effect of providing a specification in one evaluated cohort; reset-aware rescoring attributes almost
+all of the simulation--formal disagreement to reset and first-cycle comparison semantics. Second,
 on 274 mined model failures, the specification-only minus specification-conditioned recovery point
 estimate ranges from $-8.5$ to $+18.3$ percentage points across six models. Thus, a conventional repair score
 need not isolate whether the model used the faulty RTL. We translate these findings into evaluation
@@ -126,9 +126,9 @@ declared reset sequence (60), or a designated preamble (8), followed by equivale
 stated initialization and unknown-value semantics. These assumptions matter when state is not fully
 initialized~\cite{eqyxprop}.
 
-With the tool diagnostic and Tier~S scoring (cycles 0--199), six of the seven evaluated models
-recovered $87.7$--$100.0\%$ of syntactic bugs but only $10.6$--$75.3\%$ of behavioral bugs; the
-seventh, VeriReason-CodeLlama-7B, recovered $58.6\%$ and $15.3\%$, respectively.
+In the six-model subset selected for syntactic-repair recovery between $87.7\%$ and $100.0\%$,
+behavioral recovery ranged descriptively from $10.6\%$ to $75.3\%$. This subset exhibits a substantial gap
+while retaining the bug classes and oracle outcomes needed to investigate its source.
 
 \paragraph{Mined failures.}\label{mined}
 Synthetic mutations could introduce construction-specific bias. We therefore mine \emph{model-generated}
@@ -136,12 +136,12 @@ failures for which the spec\to RTL output compiles but fails the task testbench.
 probe the relationship between specification and regeneration for repair tasks in
 Section~\ref{section5}.
 
-\section{Oracle sensitivity: the scoring contract shifts the specification effect}
+\section{Oracle sensitivity: the estimated specification effect reverses across contracts}
 
 To isolate the effect of the tool diagnostic and the specification provided to the models, we ran
 the evaluation with both oracles. This evaluation was restricted to the semantic candidates with
-definitive formal-equivalence verdicts (79 out of 85). Table~\ref{tab:oracle} reports one greedy
-GPT-5.5 draw per arm; replicate draws on two models follow below.
+definitive formal-equivalence verdicts (79 out of 85). We present the results for
+GPT-5.5 here for brevity, although we ran experiments across a variety of models.
 
 \begin{table}[H]
 \centering
@@ -171,11 +171,7 @@ first-cycle semantics, but it does not make bounded simulation equivalent to for
 
 This is an exploratory complete-case comparison from one greedy draw per arm, not a population-level
 effect estimate. Six of 85 cases lack a definitive Tier~F verdict and are excluded; candidates also
-share source designs, so the 79 case outcomes should not be treated as independent replicates. The
-sign reversal does not replicate: in three temperature-0 draws per model on GPT-5.5 and Claude
-Opus~4.8 (68-case cohort), the two oracles never disagree in sign. The first-cycle shift does:
-comparing from cycle~1 raises the simulated specification contrast in all six draws ($+3.1$ to
-$+12.3$\,pp).
+share source designs, so the 79 case outcomes should not be treated as independent replicates.
 
 Within the definitive 79-case cohort, reset-aware rescoring cleared all 39 Tier-S-fail/Tier-F-proved
 outcomes (12 diagnostic-arm and 27 specification-arm). Across all 85 cases, it cleared 12/12 and
